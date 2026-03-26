@@ -1,0 +1,18 @@
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/GlassCard.swift":
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/GlassCard.o"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/GlassCard.swiftdeps"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/GlassCard.dia"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/GlassCard.swiftconstvalues"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/GlassCard.d"
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/RollingNumberText.swift":
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/RollingNumberText.o"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/RollingNumberText.swiftconstvalues"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/RollingNumberText.dia"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/RollingNumberText.d"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/RollingNumberText.swiftdeps"
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/LiveTickerRibbon.swift":
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.o"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.dia"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.swiftconstvalues"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.swiftdeps"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.d"

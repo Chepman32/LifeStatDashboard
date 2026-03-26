@@ -1,0 +1,16 @@
+{
+  "source": "/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/LiveTickerRibbon.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%@ %@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 29
+        }
+      }
+    ]
+  },
+  "version": 1
+}

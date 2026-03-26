@@ -1,0 +1,18 @@
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/ShareCanvasView.swift":
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/ShareCanvasView.d"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/ShareCanvasView.dia"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/ShareCanvasView.o"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/ShareCanvasView.swiftconstvalues"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/ShareCanvasView.swiftdeps"
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Style/Typography.swift":
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/Typography.d"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/Typography.swiftdeps"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/Typography.swiftconstvalues"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/Typography.dia"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/Typography.o"
+"/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/DerivedSources/GeneratedAssetSymbols.swift":
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/GeneratedAssetSymbols.dia"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/GeneratedAssetSymbols.d"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/GeneratedAssetSymbols.o"

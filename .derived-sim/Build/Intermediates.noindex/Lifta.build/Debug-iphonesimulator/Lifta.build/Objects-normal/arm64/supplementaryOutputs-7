@@ -1,0 +1,24 @@
+"/Users/antonchepur/LifeStatDashboard/Lifta/Features/Detail/StatDetailView.swift":
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/StatDetailView.swiftconstvalues"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/StatDetailView.swiftdeps"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/StatDetailView.d"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/StatDetailView.o"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/StatDetailView.dia"
+"/Users/antonchepur/LifeStatDashboard/Lifta/Features/Milestones/MilestonesView.swift":
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/MilestonesView.dia"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/MilestonesView.swiftconstvalues"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/MilestonesView.d"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/MilestonesView.o"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/MilestonesView.swiftdeps"
+"/Users/antonchepur/LifeStatDashboard/Lifta/Features/Methodology/MethodologyView.swift":
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/MethodologyView.swiftconstvalues"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/MethodologyView.o"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/MethodologyView.d"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/MethodologyView.swiftdeps"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/MethodologyView.dia"
+"/Users/antonchepur/LifeStatDashboard/Lifta/Features/Dashboard/DashboardView.swift":
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/DashboardView.swiftdeps"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/DashboardView.dia"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/DashboardView.swiftconstvalues"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/DashboardView.o"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/DashboardView.d"

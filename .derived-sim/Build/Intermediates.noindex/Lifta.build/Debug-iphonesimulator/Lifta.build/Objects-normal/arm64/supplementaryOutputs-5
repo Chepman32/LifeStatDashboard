@@ -1,0 +1,24 @@
+"/Users/antonchepur/LifeStatDashboard/Lifta/Core/Utilities/Formatters.swift":
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/Formatters.swiftconstvalues"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/Formatters.o"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/Formatters.d"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/Formatters.dia"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/Formatters.swiftdeps"
+"/Users/antonchepur/LifeStatDashboard/Lifta/Core/Services/PersistenceController.swift":
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/PersistenceController.swiftdeps"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/PersistenceController.swiftconstvalues"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/PersistenceController.dia"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/PersistenceController.o"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/PersistenceController.d"
+"/Users/antonchepur/LifeStatDashboard/Lifta/Core/Services/HapticsManager.swift":
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/HapticsManager.dia"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/HapticsManager.o"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/HapticsManager.d"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/HapticsManager.swiftconstvalues"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/HapticsManager.swiftdeps"
+"/Users/antonchepur/LifeStatDashboard/Lifta/Core/Services/ShareRenderer.swift":
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/ShareRenderer.o"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/ShareRenderer.d"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/ShareRenderer.swiftdeps"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/ShareRenderer.dia"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-sim/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/ShareRenderer.swiftconstvalues"

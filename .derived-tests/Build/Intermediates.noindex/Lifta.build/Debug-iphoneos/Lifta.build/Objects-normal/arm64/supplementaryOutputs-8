@@ -1,0 +1,18 @@
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/ShareCanvasView.swift":
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-tests/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.o"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-tests/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.swiftconstvalues"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-tests/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.dia"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-tests/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.d"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-tests/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.swiftdeps"
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Style/Typography.swift":
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-tests/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.dia"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-tests/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.swiftconstvalues"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-tests/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.d"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-tests/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.swiftdeps"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-tests/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.o"
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/RollingNumberText.swift":
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-tests/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.d"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-tests/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.swiftdeps"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-tests/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.swiftconstvalues"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-tests/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.o"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-tests/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.dia"

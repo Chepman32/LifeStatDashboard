@@ -1,0 +1,40 @@
+{
+  "source": "/Users/antonchepur/LifeStatDashboard/Lifta/Features/Splash/SplashView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Lifta",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "life keeps moving",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "3,184,557,024",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "0",
+        "location": {
+          "startingColumn": 60,
+          "startingLine": 42
+        }
+      }
+    ]
+  },
+  "version": 1
+}

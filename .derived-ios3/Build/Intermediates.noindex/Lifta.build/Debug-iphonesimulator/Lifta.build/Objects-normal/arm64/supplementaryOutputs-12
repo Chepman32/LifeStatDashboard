@@ -1,0 +1,24 @@
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/AgeChipView.swift":
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/AgeChipView.dia"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/AgeChipView.swiftconstvalues"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/AgeChipView.o"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/AgeChipView.swiftdeps"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/AgeChipView.d"
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/CosmicBackgroundView.swift":
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.o"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.dia"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.d"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.swiftconstvalues"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.swiftdeps"
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/CategoryPicker.swift":
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/CategoryPicker.o"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/CategoryPicker.d"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/CategoryPicker.swiftdeps"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/CategoryPicker.swiftconstvalues"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/CategoryPicker.dia"
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/FloatingTabBar.swift":
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/FloatingTabBar.swiftconstvalues"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/FloatingTabBar.swiftdeps"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/FloatingTabBar.o"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/FloatingTabBar.d"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-ios3/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/arm64/FloatingTabBar.dia"

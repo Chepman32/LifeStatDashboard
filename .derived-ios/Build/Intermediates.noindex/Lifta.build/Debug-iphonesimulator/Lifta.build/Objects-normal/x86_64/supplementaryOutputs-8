@@ -1,0 +1,24 @@
+"/Users/antonchepur/LifeStatDashboard/Lifta/Features/Methodology/MethodologyView.swift":
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/MethodologyView.o"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/MethodologyView.swiftconstvalues"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/MethodologyView.swiftdeps"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/MethodologyView.dia"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/MethodologyView.d"
+"/Users/antonchepur/LifeStatDashboard/Lifta/Features/Milestones/MilestonesView.swift":
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/MilestonesView.d"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/MilestonesView.dia"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/MilestonesView.o"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/MilestonesView.swiftconstvalues"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/MilestonesView.swiftdeps"
+"/Users/antonchepur/LifeStatDashboard/Lifta/Features/Dashboard/DashboardView.swift":
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/DashboardView.swiftconstvalues"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/DashboardView.swiftdeps"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/DashboardView.dia"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/DashboardView.o"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/DashboardView.d"
+"/Users/antonchepur/LifeStatDashboard/Lifta/Features/Detail/StatDetailView.swift":
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/StatDetailView.dia"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/StatDetailView.d"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/StatDetailView.o"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/StatDetailView.swiftconstvalues"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-ios/Build/Intermediates.noindex/Lifta.build/Debug-iphonesimulator/Lifta.build/Objects-normal/x86_64/StatDetailView.swiftdeps"

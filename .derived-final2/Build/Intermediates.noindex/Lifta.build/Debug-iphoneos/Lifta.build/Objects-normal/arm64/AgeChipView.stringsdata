@@ -1,0 +1,16 @@
+{
+  "source": "/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/AgeChipView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%lld years • %lld months • %lld days",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 13
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,18 @@
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/GlassCard.swift":
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-final4/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/GlassCard.o"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-final4/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/GlassCard.dia"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-final4/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/GlassCard.d"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-final4/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/GlassCard.swiftdeps"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-final4/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/GlassCard.swiftconstvalues"
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/LiveTickerRibbon.swift":
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-final4/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.swiftconstvalues"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-final4/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.swiftdeps"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-final4/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.dia"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-final4/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.o"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-final4/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.d"
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/FloatingTabBar.swift":
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-final4/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/FloatingTabBar.dia"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-final4/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/FloatingTabBar.o"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-final4/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/FloatingTabBar.swiftconstvalues"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-final4/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/FloatingTabBar.d"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-final4/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/FloatingTabBar.swiftdeps"

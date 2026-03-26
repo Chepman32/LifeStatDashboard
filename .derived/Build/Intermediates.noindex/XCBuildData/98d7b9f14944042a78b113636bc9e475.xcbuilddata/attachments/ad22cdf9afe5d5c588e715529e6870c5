@@ -1,0 +1,298 @@
+{
+  "" : {
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Lifta-master.dia",
+    "emit-module-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Lifta-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Lifta-master-emit-module.dia",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Lifta-master.swiftdeps"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/App/Lifta/App/AppModel.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AppModel.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AppModel.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AppModel.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AppModel.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AppModel.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AppModel.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AppModel.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AppModel~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/App/Lifta/App/AppRootView.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AppRootView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AppRootView.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AppRootView.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AppRootView.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AppRootView.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AppRootView.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AppRootView.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AppRootView~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/App/Lifta/App/LiftaApp.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiftaApp.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiftaApp.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiftaApp.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiftaApp.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiftaApp.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiftaApp.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiftaApp.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiftaApp~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Core/Engine/Lifta/Core/Engine/LifeStatEngine.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LifeStatEngine.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LifeStatEngine.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LifeStatEngine.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LifeStatEngine.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LifeStatEngine.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LifeStatEngine.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LifeStatEngine.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LifeStatEngine~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Core/Engine/Lifta/Core/Engine/LifeTimeline.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LifeTimeline.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LifeTimeline.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LifeTimeline.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LifeTimeline.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LifeTimeline.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LifeTimeline.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LifeTimeline.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LifeTimeline~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Core/Models/Lifta/Core/Models/StatModels.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/StatModels.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/StatModels.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/StatModels.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/StatModels.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/StatModels.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/StatModels.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/StatModels.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/StatModels~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Core/Models/Lifta/Core/Models/Theme.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Theme.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Theme.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Theme.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Theme.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Theme.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Theme.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Theme.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Theme~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Core/Models/Lifta/Core/Models/UserProfile.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/UserProfile.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/UserProfile.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/UserProfile.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/UserProfile.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/UserProfile.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/UserProfile.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/UserProfile.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/UserProfile~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Core/Services/Lifta/Core/Services/HapticsManager.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/HapticsManager.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/HapticsManager.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/HapticsManager.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/HapticsManager.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/HapticsManager.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/HapticsManager.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/HapticsManager.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/HapticsManager~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Core/Services/Lifta/Core/Services/PersistenceController.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/PersistenceController.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/PersistenceController.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/PersistenceController.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/PersistenceController.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/PersistenceController.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/PersistenceController.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/PersistenceController.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/PersistenceController~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Core/Services/Lifta/Core/Services/ShareRenderer.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareRenderer.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareRenderer.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareRenderer.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareRenderer.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareRenderer.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareRenderer.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareRenderer.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareRenderer~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Core/Utilities/Lifta/Core/Utilities/Formatters.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Formatters.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Formatters.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Formatters.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Formatters.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Formatters.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Formatters.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Formatters.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Formatters~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Features/Dashboard/Lifta/Features/Dashboard/DashboardView.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/DashboardView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/DashboardView.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/DashboardView.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/DashboardView.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/DashboardView.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/DashboardView.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/DashboardView.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/DashboardView~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Features/Detail/Lifta/Features/Detail/StatDetailView.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/StatDetailView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/StatDetailView.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/StatDetailView.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/StatDetailView.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/StatDetailView.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/StatDetailView.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/StatDetailView.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/StatDetailView~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Features/Methodology/Lifta/Features/Methodology/MethodologyView.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/MethodologyView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/MethodologyView.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/MethodologyView.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/MethodologyView.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/MethodologyView.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/MethodologyView.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/MethodologyView.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/MethodologyView~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Features/Milestones/Lifta/Features/Milestones/MilestonesView.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/MilestonesView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/MilestonesView.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/MilestonesView.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/MilestonesView.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/MilestonesView.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/MilestonesView.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/MilestonesView.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/MilestonesView~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Features/Onboarding/Lifta/Features/Onboarding/OnboardingView.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/OnboardingView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/OnboardingView.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/OnboardingView.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/OnboardingView.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/OnboardingView.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/OnboardingView.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/OnboardingView.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/OnboardingView~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Features/Settings/Lifta/Features/Settings/SettingsView.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Features/Share/Lifta/Features/Share/ShareComposerView.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareComposerView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareComposerView.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareComposerView.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareComposerView.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareComposerView.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareComposerView.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareComposerView.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareComposerView~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/Features/Splash/Lifta/Features/Splash/SplashView.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/SplashView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/SplashView.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/SplashView.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/SplashView.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/SplashView.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/SplashView.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/SplashView.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/SplashView~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/UI/Components/Lifta/UI/Components/AgeChipView.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AgeChipView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AgeChipView.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AgeChipView.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AgeChipView.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AgeChipView.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AgeChipView.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AgeChipView.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AgeChipView~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/UI/Components/Lifta/UI/Components/CategoryPicker.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CategoryPicker.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CategoryPicker.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CategoryPicker.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CategoryPicker.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CategoryPicker.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CategoryPicker.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CategoryPicker.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CategoryPicker~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/UI/Components/Lifta/UI/Components/CosmicBackgroundView.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CosmicBackgroundView~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/UI/Components/Lifta/UI/Components/FloatingTabBar.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/FloatingTabBar.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/FloatingTabBar.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/FloatingTabBar.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/FloatingTabBar.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/FloatingTabBar.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/FloatingTabBar.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/FloatingTabBar.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/FloatingTabBar~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/UI/Components/Lifta/UI/Components/GlassCard.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/GlassCard.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/GlassCard.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/GlassCard.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/GlassCard.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/GlassCard.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/GlassCard.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/GlassCard.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/GlassCard~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/UI/Components/Lifta/UI/Components/LiveTickerRibbon.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiveTickerRibbon.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/LiveTickerRibbon~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/UI/Components/Lifta/UI/Components/RollingNumberText.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/UI/Components/Lifta/UI/Components/ShareCanvasView.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Lifta/Lifta/UI/Style/Lifta/UI/Style/Typography.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography~partial.swiftmodule"
+  }
+}
