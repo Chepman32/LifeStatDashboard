@@ -38,8 +38,6 @@ struct StatDetailView: View {
                             comparisons(theme: theme)
                         case .milestones:
                             milestones(theme: theme)
-                        case .share:
-                            share(theme: theme)
                         }
                     }
                     .padding(.horizontal, 20)
@@ -184,30 +182,11 @@ struct StatDetailView: View {
             }
         }
     }
-
-    @ViewBuilder
-    private func share(theme: LiftaTheme) -> some View {
-        let configuration = ShareRenderConfiguration(
-            template: .heroNumber,
-            ratio: .story,
-            theme: theme,
-            includeMethodology: model.profile.showMethodologyInShare,
-            includeEstimateTag: model.profile.showEstimatedTagsInShare
-        )
-
-        GlassCard(theme: theme, cornerRadius: 36, padding: 16) {
-            ShareCanvasView(stats: [stat], configuration: configuration)
-                .frame(height: 440)
-                .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-        }
-    }
-
     private enum DetailMode: String, CaseIterable, Identifiable {
         case overview
         case calculation
         case comparisons
         case milestones
-        case share
 
         var id: String { rawValue }
 
@@ -217,7 +196,6 @@ struct StatDetailView: View {
             case .calculation: "How"
             case .comparisons: "Comparisons"
             case .milestones: "Milestones"
-            case .share: "Share"
             }
         }
     }

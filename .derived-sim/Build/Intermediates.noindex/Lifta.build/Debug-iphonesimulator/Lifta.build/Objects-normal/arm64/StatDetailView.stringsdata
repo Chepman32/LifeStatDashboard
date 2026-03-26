@@ -15,7 +15,7 @@
         "key": "Context",
         "location": {
           "startingColumn": 22,
-          "startingLine": 118
+          "startingLine": 116
         }
       },
       {
@@ -23,7 +23,7 @@
         "key": "How it is calculated",
         "location": {
           "startingColumn": 22,
-          "startingLine": 139
+          "startingLine": 137
         }
       },
       {
@@ -31,7 +31,7 @@
         "key": "These numbers are deterministic and local only. No external services are involved.",
         "location": {
           "startingColumn": 22,
-          "startingLine": 148
+          "startingLine": 146
         }
       }
     ]

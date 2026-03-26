@@ -6,6 +6,48 @@
 	<integer>11</integer>
 	<key>logs</key>
 	<dict>
+		<key>4AE14195-AAA9-4108-B43A-83D6A15D9CF1</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4AE14195-AAA9-4108-B43A-83D6A15D9CF1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Lifta project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Lifta</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Lifta with scheme Lifta</string>
+			<key>timeStartedRecording</key>
+			<real>796232827.96989703</real>
+			<key>timeStoppedRecording</key>
+			<real>796232831.47667205</real>
+			<key>title</key>
+			<string>Building project Lifta with scheme Lifta</string>
+			<key>uniqueIdentifier</key>
+			<string>4AE14195-AAA9-4108-B43A-83D6A15D9CF1</string>
+		</dict>
 		<key>88261F5C-59CB-45B7-970C-6D4A508CABAA</key>
 		<dict>
 			<key>className</key>
