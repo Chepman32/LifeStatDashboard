@@ -1,0 +1,40 @@
+{
+  "source": "/Users/antonchepur/LifeStatDashboard/Lifta/Features/Detail/StatDetailView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Mode",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "Context",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 116
+        }
+      },
+      {
+        "comment": "",
+        "key": "How it is calculated",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 137
+        }
+      },
+      {
+        "comment": "",
+        "key": "These numbers are deterministic and local only. No external services are involved.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 146
+        }
+      }
+    ]
+  },
+  "version": 1
+}

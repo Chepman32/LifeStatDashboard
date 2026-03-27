@@ -7,6 +7,8 @@ struct MilestonesView: View {
     var body: some View {
         let theme = model.profile.selectedTheme
         let palette = theme.palette
+        let visibleUpcomingMilestones = model.snapshot.allMilestones
+            .filter { !model.favoriteMilestoneIDs.contains($0.id) }
 
         NavigationStack {
             List {
@@ -54,7 +56,7 @@ struct MilestonesView: View {
                 }
 
                 Section("All Upcoming") {
-                    ForEach(model.snapshot.allMilestones.prefix(18)) { milestone in
+                    ForEach(Array(visibleUpcomingMilestones.prefix(18)), id: \.id) { milestone in
                         MilestoneRow(
                             milestone: milestone,
                             theme: theme,

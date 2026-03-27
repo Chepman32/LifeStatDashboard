@@ -26,8 +26,13 @@ final class AppModel: ObservableObject {
         self.profile = storedProfile
         self.preferredLanguage = language
         self.hasCompletedOnboarding = persistence.hasCompletedOnboarding()
-        self.favoriteMilestoneIDs = persistence.loadFavoriteMilestoneIDs()
+        self.favoriteMilestoneIDs = Self.deduplicatedIDs(persistence.loadFavoriteMilestoneIDs())
         self.snapshot = engine.snapshot(profile: storedProfile, now: now, language: language)
+        self.favoriteMilestoneIDs = Self.deduplicatedIDs(
+            self.favoriteMilestoneIDs.filter { id in
+                self.snapshot.allMilestones.contains(where: { $0.id == id })
+            }
+        )
 
         startTicker()
     }
@@ -73,9 +78,11 @@ final class AppModel: ObservableObject {
 
     func refresh(now: Date = .now) {
         snapshot = engine.snapshot(profile: profile, now: now, language: preferredLanguage)
-        favoriteMilestoneIDs = favoriteMilestoneIDs.filter { id in
-            snapshot.allMilestones.contains(where: { $0.id == id })
-        }
+        favoriteMilestoneIDs = Self.deduplicatedIDs(
+            favoriteMilestoneIDs.filter { id in
+                snapshot.allMilestones.contains(where: { $0.id == id })
+            }
+        )
         persistence.saveFavoriteMilestoneIDs(favoriteMilestoneIDs)
     }
 
@@ -95,16 +102,20 @@ final class AppModel: ObservableObject {
         } else {
             favoriteMilestoneIDs.insert(milestoneID, at: 0)
         }
+        favoriteMilestoneIDs = Self.deduplicatedIDs(favoriteMilestoneIDs)
         persistence.saveFavoriteMilestoneIDs(favoriteMilestoneIDs)
     }
 
     func moveFavoriteMilestones(from offsets: IndexSet, to destination: Int) {
         favoriteMilestoneIDs.move(fromOffsets: offsets, toOffset: destination)
+        favoriteMilestoneIDs = Self.deduplicatedIDs(favoriteMilestoneIDs)
         persistence.saveFavoriteMilestoneIDs(favoriteMilestoneIDs)
     }
 
     var favoriteMilestones: [Milestone] {
-        let byID = Dictionary(uniqueKeysWithValues: snapshot.allMilestones.map { ($0.id, $0) })
+        let byID = snapshot.allMilestones.reduce(into: [String: Milestone]()) { partialResult, milestone in
+            partialResult[milestone.id] = milestone
+        }
         return favoriteMilestoneIDs.compactMap { byID[$0] }
     }
 
@@ -115,5 +126,10 @@ final class AppModel: ObservableObject {
         default:
             return profile.motionPreference
         }
+    }
+
+    private static func deduplicatedIDs(_ ids: [String]) -> [String] {
+        var seen = Set<String>()
+        return ids.filter { seen.insert($0).inserted }
     }
 }

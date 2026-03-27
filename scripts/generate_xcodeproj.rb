@@ -77,6 +77,11 @@ tests_target.build_configurations.each do |config|
   config.build_settings["BUNDLE_LOADER"] = "$(TEST_HOST)"
 end
 
+Dir.glob(File.join(APP_ROOT, "**", "*.xcassets")).sort.each do |path|
+  relative_path = path.delete_prefix("#{ROOT}/")
+  add_file_to_target(project, project.main_group, app_target, relative_path, app_target.resources_build_phase)
+end
+
 Dir.glob(File.join(APP_ROOT, "**", "*"), File::FNM_DOTMATCH)
   .reject { |path| File.directory?(path) }
   .sort

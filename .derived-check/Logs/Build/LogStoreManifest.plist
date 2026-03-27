@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>11</integer>
+	<key>logs</key>
+	<dict>
+		<key>6004655E-E2FD-43A5-A420-DE341FB91A7C</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6004655E-E2FD-43A5-A420-DE341FB91A7C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Lifta project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Lifta</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Lifta for testing with scheme Lifta</string>
+			<key>timeStartedRecording</key>
+			<real>796234089.05742002</real>
+			<key>timeStoppedRecording</key>
+			<real>796234092.35523796</real>
+			<key>title</key>
+			<string>Building project Lifta for testing with scheme Lifta</string>
+			<key>uniqueIdentifier</key>
+			<string>6004655E-E2FD-43A5-A420-DE341FB91A7C</string>
+		</dict>
+		<key>9DE41F90-C499-4120-ADB2-78782EE3A4B8</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9DE41F90-C499-4120-ADB2-78782EE3A4B8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Lifta project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Lifta</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Lifta for testing with scheme Lifta</string>
+			<key>timeStartedRecording</key>
+			<real>796233685.79691505</real>
+			<key>timeStoppedRecording</key>
+			<real>796233719.85863495</real>
+			<key>title</key>
+			<string>Building project Lifta for testing with scheme Lifta</string>
+			<key>uniqueIdentifier</key>
+			<string>9DE41F90-C499-4120-ADB2-78782EE3A4B8</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

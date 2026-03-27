@@ -156,7 +156,7 @@ struct LifeSnapshot {
     let methodologySections: [MethodologySection]
 
     var allMilestones: [Milestone] {
-        statsByCategory.values.flatMap { stats in
+        let sorted = statsByCategory.values.flatMap { stats in
             stats.flatMap(\.nextMilestones)
         }
         .sorted { lhs, rhs in
@@ -170,6 +170,11 @@ struct LifeSnapshot {
             case (.none, .none):
                 return lhs.targetValue < rhs.targetValue
             }
+        }
+
+        var seen = Set<String>()
+        return sorted.filter { milestone in
+            seen.insert(milestone.id).inserted
         }
     }
 }

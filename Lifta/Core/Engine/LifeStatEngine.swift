@@ -474,7 +474,7 @@ struct LifeStatEngine {
                 id: "words-spoken",
                 category: .life,
                 title: "Words Spoken",
-                icon: "waveform.bubble",
+                icon: "quote.bubble.fill",
                 rawValue: words,
                 unit: "words",
                 style: .words,

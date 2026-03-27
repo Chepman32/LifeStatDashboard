@@ -7,7 +7,7 @@
         "key": "Milestones",
         "location": {
           "startingColumn": 30,
-          "startingLine": 73
+          "startingLine": 75
         }
       },
       {
@@ -15,7 +15,7 @@
         "key": "Favorites",
         "location": {
           "startingColumn": 29,
-          "startingLine": 41
+          "startingLine": 43
         }
       },
       {
@@ -23,7 +23,7 @@
         "key": "All Upcoming",
         "location": {
           "startingColumn": 25,
-          "startingLine": 56
+          "startingLine": 58
         }
       },
       {
@@ -31,7 +31,7 @@
         "key": "Closest Upcoming Milestone",
         "location": {
           "startingColumn": 38,
-          "startingLine": 17
+          "startingLine": 19
         }
       },
       {
@@ -39,7 +39,7 @@
         "key": "Done",
         "location": {
           "startingColumn": 50,
-          "startingLine": 76
+          "startingLine": 78
         }
       },
       {
@@ -47,7 +47,7 @@
         "key": "Reorder",
         "location": {
           "startingColumn": 59,
-          "startingLine": 76
+          "startingLine": 78
         }
       }
     ]

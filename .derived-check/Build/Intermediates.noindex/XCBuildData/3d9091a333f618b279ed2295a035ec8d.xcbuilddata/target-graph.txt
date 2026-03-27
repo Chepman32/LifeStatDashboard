@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'LiftaTests' in project 'Lifta'
+➜ Explicit dependency on target 'Lifta' in project 'Lifta'
+Target 'Lifta' in project 'Lifta' (no dependencies)

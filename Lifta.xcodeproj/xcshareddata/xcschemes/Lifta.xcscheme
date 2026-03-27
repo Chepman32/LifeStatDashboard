@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3637EB8BBB438326CE8D1B64"
+               BlueprintIdentifier = "6F6E2D17C1F45B9153FDB5A8"
                BuildableName = "Lifta.app"
                BlueprintName = "Lifta"
                ReferencedContainer = "container:Lifta.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F3C79FC35773EE3227CB3E5E"
+               BlueprintIdentifier = "A9F1E7B5ACA08F4F53C89521"
                BuildableName = "LiftaTests.xctest"
                BlueprintName = "LiftaTests"
                ReferencedContainer = "container:Lifta.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F3C79FC35773EE3227CB3E5E"
+               BlueprintIdentifier = "A9F1E7B5ACA08F4F53C89521"
                BuildableName = "LiftaTests.xctest"
                BlueprintName = "LiftaTests"
                ReferencedContainer = "container:Lifta.xcodeproj">

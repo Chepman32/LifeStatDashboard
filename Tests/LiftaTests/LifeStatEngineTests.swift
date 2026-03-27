@@ -1,4 +1,5 @@
 import XCTest
+import UIKit
 @testable import Lifta
 
 final class LifeStatEngineTests: XCTestCase {
@@ -42,5 +43,33 @@ final class LifeStatEngineTests: XCTestCase {
         let targets = stat?.nextMilestones.map(\.targetValue) ?? []
         XCTAssertEqual(targets, targets.sorted())
         XCTAssertEqual(targets.count, 3)
+    }
+
+    func testSnapshotAllMilestonesAreUniqueByID() {
+        var profile = UserProfile.default
+        profile.birthDate = Calendar(identifier: .gregorian).date(byAdding: .year, value: -25, to: .now)!
+
+        let snapshot = LifeStatEngine().snapshot(profile: profile, now: .now)
+        let ids = snapshot.allMilestones.map(\.id)
+
+        XCTAssertFalse(ids.isEmpty)
+        XCTAssertEqual(ids.count, Set(ids).count)
+    }
+
+    func testAllStatIconsResolveToSystemSymbols() {
+        var profile = UserProfile.default
+        profile.birthDate = Calendar(identifier: .gregorian).date(byAdding: .year, value: -25, to: .now)!
+
+        let snapshot = LifeStatEngine().snapshot(profile: profile, now: .now)
+        let iconNames = Set(
+            snapshot.statsByCategory.values.flatMap { $0.map(\.iconName) } +
+            snapshot.tickerStats.map(\.iconName)
+        )
+
+        XCTAssertFalse(iconNames.isEmpty)
+
+        for iconName in iconNames {
+            XCTAssertNotNil(UIImage(systemName: iconName), "Missing system symbol: \(iconName)")
+        }
     }
 }

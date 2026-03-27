@@ -7,383 +7,428 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		001AD64C114A0BC80FAC2C9F /* LiftaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EF28E5E52363C896B05E03 /* LiftaApp.swift */; };
-		0784637FC7359F5C50C5F9DA /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886F6EDA98D63DC4457DC078 /* AppModel.swift */; };
-		191D439F6595EA0F97EC7A8F /* PersistenceControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8928AB57F2468C1512687BC6 /* PersistenceControllerTests.swift */; };
-		1B3F3D0B6B21C8703374D959 /* LifeTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068DCF8448394E5B9709CBF8 /* LifeTimeline.swift */; };
-		1D26CE2989F38BBE4EF4CB31 /* MethodologyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E970D9584AF71FDDC4D9733 /* MethodologyView.swift */; };
-		1FF53121CF01ED1902B98BC0 /* MilestonesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9438A39E016D2F20C547164 /* MilestonesView.swift */; };
-		235B4865A04375DBC5F3BA81 /* CategoryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0047D7D46B6FCBA366C2C3BE /* CategoryPicker.swift */; };
-		2E38A54DF9EFD46DB20CE505 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60F22F530AE7441FAC9562 /* OnboardingView.swift */; };
-		3453BB6560EF699F9CCAF797 /* ShareRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9311CA4D68591BC23DBA803F /* ShareRenderer.swift */; };
-		3D86E3DD4FE6745D1A8FF88D /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8D43B1CB9F30C0F30756A /* DashboardView.swift */; };
-		430442DBAF4C26D5D7242445 /* ShareCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFCE6DE8E2520E9AC6C717 /* ShareCanvasView.swift */; };
-		4551AC55220AA3435A0E994A /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39A7CE53911000B743F5133 /* AppRootView.swift */; };
-		476CBE351654214DACBE9661 /* FloatingTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343BF742F3E27912295FA486 /* FloatingTabBar.swift */; };
-		56C189CF53941A0EF7FC8284 /* StatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E22C8806F1F6A0F76F6216 /* StatModels.swift */; };
-		6067F1C6A47F4D97B68B5F40 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE22A9A2AAA3E69B5B5D2806 /* Theme.swift */; };
-		606FA97F97F9C182F785E691 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5EBAD9CFFD33AB88A00C /* Typography.swift */; };
-		6F89257B8FAC5B5B9D330126 /* LifeStatEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAC74244F77A4E7D86D8F33 /* LifeStatEngineTests.swift */; };
-		7C21D063E14164A514E2D386 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D8087B437A93D9116ED078 /* Foundation.framework */; };
-		8046AD3AA5DD52DAC68E155E /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B938B45A77F84B39E980B63 /* PersistenceController.swift */; };
-		94CAB20C94081E5849792F14 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8003F40D3CB9D60C7491FAD /* GlassCard.swift */; };
-		AA0FA6687E2E12B6C2938622 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DC2EF5856368961457D09 /* UserProfile.swift */; };
-		AFC6E75F080A5F5492FC4959 /* RollingNumberText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363BE81C675135FD65B25906 /* RollingNumberText.swift */; };
-		B2A5FB37F0DB8D371CCCE8C1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0300A2DB2D7CB34809881781 /* SettingsView.swift */; };
-		B302680ABC1E7D0A2513BEC4 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278E25B5A18B6B8A1CAA052B /* HapticsManager.swift */; };
-		C1717F05121CD4499249CDCE /* LifeStatEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8782C1091749D947960826C /* LifeStatEngine.swift */; };
-		C4DB6CE2AC157F06A7BCE52F /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43497245DED797044BC743AB /* Formatters.swift */; };
-		D26285A47F622CE9A68533D1 /* LiveTickerRibbon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0538A98AAAD5F570C2E92C /* LiveTickerRibbon.swift */; };
-		D3419A41EC3C1432AF5B4F02 /* ShareComposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B0300F8C4F194A6028B661 /* ShareComposerView.swift */; };
-		D7DFC4B5F3077E0163CBBBA1 /* CosmicBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664C6C601A7F1A9495C41E7A /* CosmicBackgroundView.swift */; };
-		E1551F1BCD11E2B53AB8B1F6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8FE93F168307F40628AFD222 /* PrivacyInfo.xcprivacy */; };
-		E32432AFFAA3961C1595A994 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6310C0E8D374D6E45B112 /* SplashView.swift */; };
-		E3A8FACE67457B74C3D43A9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D8087B437A93D9116ED078 /* Foundation.framework */; };
-		F600446E37DCAA66A2FFEFA6 /* AgeChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CD98CBC360F6398DBB5278 /* AgeChipView.swift */; };
-		FEC566781B430030FCCC6C41 /* StatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E4327130A4BAA613C4F6A /* StatDetailView.swift */; };
+		03E57047559131D0FFE78D6C /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E77D2C299771D14C59724824 /* Icon-60@2x.png */; };
+		07A3F283D444671700695BCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A555413602685D84D8D595 /* Foundation.framework */; };
+		0899F2DAABAE6D8411F16172 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A555413602685D84D8D595 /* Foundation.framework */; };
+		105AB1479C2ED89F97FDF336 /* CosmicBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF55D4317178B0BD22F90CE /* CosmicBackgroundView.swift */; };
+		120E03DB7D80DC838601F57A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3B22CB011BAAFB64A4ABF /* SplashView.swift */; };
+		16924F1B6E689E65D464312C /* LifeStatEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00601FC5B54F6E6AC95D84AB /* LifeStatEngine.swift */; };
+		182C509958949F545D41F789 /* LiftaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE31A901B2E7B68DF69EA6 /* LiftaApp.swift */; };
+		1AA18069B66AA668F645AF5A /* RollingNumberText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252BE1D747B81D623E8AE809 /* RollingNumberText.swift */; };
+		1C1B655D9C183698767CD64F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 09A3B694A9394D78ADA5B9A4 /* PrivacyInfo.xcprivacy */; };
+		2427A779C417B6ABAA6A46BD /* Icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 845B9EA8DBC356C550CE7BAA /* Icon-29@2x.png */; };
+		26D9692C0401B3878333830F /* ShareRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F7701437519B24FAA6913 /* ShareRenderer.swift */; };
+		2DBFEAA410A8A46884AF4B62 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E49239E44C89EAD02647925 /* Icon-76@2x.png */; };
+		307C0E4B015872CB28A88464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8912FE2E8213AD62D036ED1 /* Assets.xcassets */; };
+		3483878058181A67905FCCAF /* StatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4726643C7BF71735FC5338FD /* StatDetailView.swift */; };
+		3FB719AFEB10E6D7A5850791 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6DC4A538DC21B926BDA396 /* HapticsManager.swift */; };
+		41AFC1DD203241D7EF7BC636 /* MethodologyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA78607FE8EB6A880562B9C /* MethodologyView.swift */; };
+		546A9A9D8D4C2ED4BC207DCF /* ShareCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BBDBF7C3A3ED8792A3633 /* ShareCanvasView.swift */; };
+		54787DC8FE82A8A92D09B168 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D8B44A4BE545BE85391470 /* Typography.swift */; };
+		5F3D8D04458E0D8E08AADAAF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CCF4663A2456C6E440F4A5 /* SettingsView.swift */; };
+		64D61011DAC6BF7069EB69B7 /* AgeChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AEEDBF7C662285C53040E3 /* AgeChipView.swift */; };
+		6E868FD5176BAFFFC632426A /* Icon-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7BC48C64FAC0564ED79CB9D /* Icon-20@2x.png */; };
+		77984CA13CB03CFEEC92F76A /* PersistenceControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A230626B378EF42CB89CC45A /* PersistenceControllerTests.swift */; };
+		77B3DBF3CFF8D3063E56A188 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB49AC6D5DA8188752890E /* Formatters.swift */; };
+		7CC94408596F1F88E8248E68 /* LiveTickerRibbon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35003674DFAFDDA012201884 /* LiveTickerRibbon.swift */; };
+		80DB7834B4ECBE1E64301837 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDCC26F628E1D3755DB82A /* AppModel.swift */; };
+		8EF8F05296B798801301B771 /* Icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = D3A159C6C25B72688EBFC2C4 /* Icon-1024.png */; };
+		9630618D57BBF8B3930225F6 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D07F2A5FBCDF0B2385CA2A /* PersistenceController.swift */; };
+		98AB543C5A043700F10DC923 /* Icon-20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AE16851550486B4CF56C7DD /* Icon-20@3x.png */; };
+		990DFF4B6C8A632077CD9D2C /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2976A31426D7BAE64CDE5A3 /* DashboardView.swift */; };
+		A7D97573A1657275B21433CD /* LifeStatEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D1385095169523316BC3C /* LifeStatEngineTests.swift */; };
+		A9E40993B86BA31E449B0E13 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E617C83701D1E6AD7C3A46D /* OnboardingView.swift */; };
+		AEC22B50ECA6627E22FB0302 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D0062ABF8F957327892242 /* GlassCard.swift */; };
+		AF5768086D8CBD69E98DE81C /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BB1BD34D77EBC896A76DED /* Icon-40@2x.png */; };
+		B34F83431524ABBA8F846E62 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E415F258BFC628E76AED65E8 /* Icon-40@3x.png */; };
+		B45C6243ABB2B92A3C6D00FC /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9031197D6F987739449AE9D /* Icon-60@3x.png */; };
+		B75F5A2745216610016CC3F5 /* FloatingTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD02F3527B45F5BCE32B5C1 /* FloatingTabBar.swift */; };
+		BF201C0A6E14AA87A5CCCCC6 /* LifeTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334282688EB04573E62A41C4 /* LifeTimeline.swift */; };
+		D1717661D266C418F9885BE6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A7500E59B9C53DBF9421DA /* Theme.swift */; };
+		D2327CD2B3F6B91CA48F1C5E /* CategoryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9261358B7E4E55BCE62E4C /* CategoryPicker.swift */; };
+		D6336A93D74C7A1F5E1137B3 /* StatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB20E5CE5B573D0DDB220FCF /* StatModels.swift */; };
+		DDFDF5C11EFB3172AAA134CF /* Icon-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F4D2DFC9F6668B07F32449 /* Icon-29@3x.png */; };
+		E25B244907D8D9CB8764643F /* Icon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB305702330CC28D21D98C9A /* Icon-83.5@2x.png */; };
+		E9D0A4912304CC50028F7D95 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF516497CDC6C0EF6598E1DE /* AppRootView.swift */; };
+		ECA5D84AD04A657C7C3D376E /* ShareComposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC8ED55DDF45975E976E4C5 /* ShareComposerView.swift */; };
+		FB471A11D045231D14697131 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B1EB79BD6BF5156F6E4F4F /* UserProfile.swift */; };
+		FF2064276391E4C7EE7BF8A2 /* MilestonesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7A7F2E1B345CC08BDEC40 /* MilestonesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C15160191F5CC87BCFA8BBF2 /* PBXContainerItemProxy */ = {
+		750D58DA77EB79D6DA4832DC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CDA10BF3EF6AE6AC638F2D1D /* Project object */;
+			containerPortal = F95C8A719932409C8774CD5E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3637EB8BBB438326CE8D1B64;
+			remoteGlobalIDString = 6F6E2D17C1F45B9153FDB5A8;
 			remoteInfo = Lifta;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0047D7D46B6FCBA366C2C3BE /* CategoryPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CategoryPicker.swift; sourceTree = "<group>"; };
-		0300A2DB2D7CB34809881781 /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		068DCF8448394E5B9709CBF8 /* LifeTimeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LifeTimeline.swift; sourceTree = "<group>"; };
-		0B938B45A77F84B39E980B63 /* PersistenceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		113E5EBAD9CFFD33AB88A00C /* Typography.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
-		11B0300F8C4F194A6028B661 /* ShareComposerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShareComposerView.swift; sourceTree = "<group>"; };
-		1D0538A98AAAD5F570C2E92C /* LiveTickerRibbon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiveTickerRibbon.swift; sourceTree = "<group>"; };
-		278E25B5A18B6B8A1CAA052B /* HapticsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
-		32A6310C0E8D374D6E45B112 /* SplashView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		343BF742F3E27912295FA486 /* FloatingTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatingTabBar.swift; sourceTree = "<group>"; };
-		363BE81C675135FD65B25906 /* RollingNumberText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RollingNumberText.swift; sourceTree = "<group>"; };
-		3E970D9584AF71FDDC4D9733 /* MethodologyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MethodologyView.swift; sourceTree = "<group>"; };
-		43497245DED797044BC743AB /* Formatters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
-		664C6C601A7F1A9495C41E7A /* CosmicBackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CosmicBackgroundView.swift; sourceTree = "<group>"; };
-		84D8087B437A93D9116ED078 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		85CD98CBC360F6398DBB5278 /* AgeChipView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AgeChipView.swift; sourceTree = "<group>"; };
-		886F6EDA98D63DC4457DC078 /* AppModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
-		8928AB57F2468C1512687BC6 /* PersistenceControllerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PersistenceControllerTests.swift; sourceTree = "<group>"; };
-		8FE93F168307F40628AFD222 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		9311CA4D68591BC23DBA803F /* ShareRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShareRenderer.swift; sourceTree = "<group>"; };
-		934A691903E806A4F4482970 /* LiftaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiftaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93E22C8806F1F6A0F76F6216 /* StatModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatModels.swift; sourceTree = "<group>"; };
-		9F60F22F530AE7441FAC9562 /* OnboardingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		AE22A9A2AAA3E69B5B5D2806 /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		BBB8D43B1CB9F30C0F30756A /* DashboardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
-		CF01167F8AEC04783C39AA14 /* Lifta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lifta.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF1E4327130A4BAA613C4F6A /* StatDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatDetailView.swift; sourceTree = "<group>"; };
-		D1EF28E5E52363C896B05E03 /* LiftaApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiftaApp.swift; sourceTree = "<group>"; };
-		D8003F40D3CB9D60C7491FAD /* GlassCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
-		E02DC2EF5856368961457D09 /* UserProfile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		E8782C1091749D947960826C /* LifeStatEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LifeStatEngine.swift; sourceTree = "<group>"; };
-		E9438A39E016D2F20C547164 /* MilestonesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MilestonesView.swift; sourceTree = "<group>"; };
-		EFAC74244F77A4E7D86D8F33 /* LifeStatEngineTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LifeStatEngineTests.swift; sourceTree = "<group>"; };
-		F39A7CE53911000B743F5133 /* AppRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
-		F3BFCE6DE8E2520E9AC6C717 /* ShareCanvasView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShareCanvasView.swift; sourceTree = "<group>"; };
+		00601FC5B54F6E6AC95D84AB /* LifeStatEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LifeStatEngine.swift; sourceTree = "<group>"; };
+		029BBDBF7C3A3ED8792A3633 /* ShareCanvasView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShareCanvasView.swift; sourceTree = "<group>"; };
+		02D07F2A5FBCDF0B2385CA2A /* PersistenceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		09A3B694A9394D78ADA5B9A4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		252BE1D747B81D623E8AE809 /* RollingNumberText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RollingNumberText.swift; sourceTree = "<group>"; };
+		334282688EB04573E62A41C4 /* LifeTimeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LifeTimeline.swift; sourceTree = "<group>"; };
+		35003674DFAFDDA012201884 /* LiveTickerRibbon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiveTickerRibbon.swift; sourceTree = "<group>"; };
+		36A555413602685D84D8D595 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		36BB1BD34D77EBC896A76DED /* Icon-40@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		39178588C64741E837B54917 /* Lifta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lifta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF55D4317178B0BD22F90CE /* CosmicBackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CosmicBackgroundView.swift; sourceTree = "<group>"; };
+		46B1EB79BD6BF5156F6E4F4F /* UserProfile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		4726643C7BF71735FC5338FD /* StatDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatDetailView.swift; sourceTree = "<group>"; };
+		4CEDCC26F628E1D3755DB82A /* AppModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		60DB49AC6D5DA8188752890E /* Formatters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		76CCF4663A2456C6E440F4A5 /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		791F7701437519B24FAA6913 /* ShareRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShareRenderer.swift; sourceTree = "<group>"; };
+		7E49239E44C89EAD02647925 /* Icon-76@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		845B9EA8DBC356C550CE7BAA /* Icon-29@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-29@2x.png"; sourceTree = "<group>"; };
+		8AE16851550486B4CF56C7DD /* Icon-20@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-20@3x.png"; sourceTree = "<group>"; };
+		8CA78607FE8EB6A880562B9C /* MethodologyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MethodologyView.swift; sourceTree = "<group>"; };
+		8FC8ED55DDF45975E976E4C5 /* ShareComposerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShareComposerView.swift; sourceTree = "<group>"; };
+		93A7500E59B9C53DBF9421DA /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		9E617C83701D1E6AD7C3A46D /* OnboardingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A230626B378EF42CB89CC45A /* PersistenceControllerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PersistenceControllerTests.swift; sourceTree = "<group>"; };
+		A9031197D6F987739449AE9D /* Icon-60@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		A9D0062ABF8F957327892242 /* GlassCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
+		AF516497CDC6C0EF6598E1DE /* AppRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		AF9261358B7E4E55BCE62E4C /* CategoryPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CategoryPicker.swift; sourceTree = "<group>"; };
+		B8E3B22CB011BAAFB64A4ABF /* SplashView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		BA6DC4A538DC21B926BDA396 /* HapticsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		BB20E5CE5B573D0DDB220FCF /* StatModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatModels.swift; sourceTree = "<group>"; };
+		BB305702330CC28D21D98C9A /* Icon-83.5@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-83.5@2x.png"; sourceTree = "<group>"; };
+		BCA690C5878A5798CDB56080 /* LiftaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiftaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2976A31426D7BAE64CDE5A3 /* DashboardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C2F4D2DFC9F6668B07F32449 /* Icon-29@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-29@3x.png"; sourceTree = "<group>"; };
+		CD7D1385095169523316BC3C /* LifeStatEngineTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LifeStatEngineTests.swift; sourceTree = "<group>"; };
+		D3A159C6C25B72688EBFC2C4 /* Icon-1024.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-1024.png"; sourceTree = "<group>"; };
+		D5C7A7F2E1B345CC08BDEC40 /* MilestonesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MilestonesView.swift; sourceTree = "<group>"; };
+		DABE31A901B2E7B68DF69EA6 /* LiftaApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiftaApp.swift; sourceTree = "<group>"; };
+		DAD02F3527B45F5BCE32B5C1 /* FloatingTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatingTabBar.swift; sourceTree = "<group>"; };
+		E415F258BFC628E76AED65E8 /* Icon-40@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		E77D2C299771D14C59724824 /* Icon-60@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		E7BC48C64FAC0564ED79CB9D /* Icon-20@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-20@2x.png"; sourceTree = "<group>"; };
+		E7D8B44A4BE545BE85391470 /* Typography.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		E8AEEDBF7C662285C53040E3 /* AgeChipView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AgeChipView.swift; sourceTree = "<group>"; };
+		F8912FE2E8213AD62D036ED1 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6D5068FDFFC779B0ACCE9619 /* Frameworks */ = {
+		D2576D60CB5EDC7DA79B826D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3A8FACE67457B74C3D43A9C /* Foundation.framework in Frameworks */,
+				07A3F283D444671700695BCE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		799E662BBD3585EB08A87359 /* Frameworks */ = {
+		D84CC416963773081A5C309A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C21D063E14164A514E2D386 /* Foundation.framework in Frameworks */,
+				0899F2DAABAE6D8411F16172 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02D91CDEFC14407480C7A2F2 /* Core */ = {
+		02E880F1CC50FABD988B74AD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				C98FB8501412BA002EB55EE3 /* Engine */,
-				C8CFCDE4AB68F05F7456069A /* Models */,
-				BD804EB1BBB2EACC1E7D8B40 /* Services */,
-				45F234319BCF1508561427A1 /* Utilities */,
-			);
-			name = Core;
-			path = Core;
-			sourceTree = "<group>";
-		};
-		0472497DE03E5CAC1B0916B2 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				B4371A03CCD54ABD73DDB027 /* LiftaTests */,
-			);
-			name = Tests;
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		068B5F0618350B33F7772195 /* Milestones */ = {
-			isa = PBXGroup;
-			children = (
-				E9438A39E016D2F20C547164 /* MilestonesView.swift */,
-			);
-			name = Milestones;
-			path = Milestones;
-			sourceTree = "<group>";
-		};
-		384DE3FD2DC487CC6F3E9D3B /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				E3F63B4A995240BEC68C4CFA /* Components */,
-				B337FF1BC7798F2A6B4932CD /* Style */,
-			);
-			name = UI;
-			path = UI;
-			sourceTree = "<group>";
-		};
-		3D33F91DCDB777AE4F109D2D /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				9F60F22F530AE7441FAC9562 /* OnboardingView.swift */,
-			);
-			name = Onboarding;
-			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		4470FAC44E240D9A603D2AAD /* Share */ = {
-			isa = PBXGroup;
-			children = (
-				11B0300F8C4F194A6028B661 /* ShareComposerView.swift */,
-			);
-			name = Share;
-			path = Share;
-			sourceTree = "<group>";
-		};
-		45F234319BCF1508561427A1 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				43497245DED797044BC743AB /* Formatters.swift */,
+				60DB49AC6D5DA8188752890E /* Formatters.swift */,
 			);
 			name = Utilities;
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		4673877B0AD2C72B71A0E02A /* Lifta */ = {
+		25EF652930535258E07B156F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D833B559B4FD9C6E4CA39DA0 /* App */,
-				02D91CDEFC14407480C7A2F2 /* Core */,
-				677F493981CC9B1CF4B75224 /* Features */,
-				727EDFD82C0B0439CB012396 /* Resources */,
-				384DE3FD2DC487CC6F3E9D3B /* UI */,
-			);
-			name = Lifta;
-			path = Lifta;
-			sourceTree = "<group>";
-		};
-		593AC4A5CF15330F06CAE5CD /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				84D8087B437A93D9116ED078 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		677F493981CC9B1CF4B75224 /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				94CAA8D32BEE15684D430547 /* Dashboard */,
-				FC579B4F0F9AB62B642503D9 /* Detail */,
-				92EFDBE2B1A919DABAFDE03A /* Methodology */,
-				068B5F0618350B33F7772195 /* Milestones */,
-				3D33F91DCDB777AE4F109D2D /* Onboarding */,
-				703CA5780DFD682F3386E91A /* Settings */,
-				4470FAC44E240D9A603D2AAD /* Share */,
-				E0383E129C923C432B782206 /* Splash */,
-			);
-			name = Features;
-			path = Features;
-			sourceTree = "<group>";
-		};
-		703CA5780DFD682F3386E91A /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				0300A2DB2D7CB34809881781 /* SettingsView.swift */,
-			);
-			name = Settings;
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		727EDFD82C0B0439CB012396 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8FE93F168307F40628AFD222 /* PrivacyInfo.xcprivacy */,
-			);
-			name = Resources;
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		92EFDBE2B1A919DABAFDE03A /* Methodology */ = {
-			isa = PBXGroup;
-			children = (
-				3E970D9584AF71FDDC4D9733 /* MethodologyView.swift */,
-			);
-			name = Methodology;
-			path = Methodology;
-			sourceTree = "<group>";
-		};
-		94CAA8D32BEE15684D430547 /* Dashboard */ = {
-			isa = PBXGroup;
-			children = (
-				BBB8D43B1CB9F30C0F30756A /* DashboardView.swift */,
-			);
-			name = Dashboard;
-			path = Dashboard;
-			sourceTree = "<group>";
-		};
-		B21C0C6EE397F2147A52481B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CF01167F8AEC04783C39AA14 /* Lifta.app */,
-				934A691903E806A4F4482970 /* LiftaTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B337FF1BC7798F2A6B4932CD /* Style */ = {
-			isa = PBXGroup;
-			children = (
-				113E5EBAD9CFFD33AB88A00C /* Typography.swift */,
-			);
-			name = Style;
-			path = Style;
-			sourceTree = "<group>";
-		};
-		B4371A03CCD54ABD73DDB027 /* LiftaTests */ = {
-			isa = PBXGroup;
-			children = (
-				EFAC74244F77A4E7D86D8F33 /* LifeStatEngineTests.swift */,
-				8928AB57F2468C1512687BC6 /* PersistenceControllerTests.swift */,
-			);
-			name = LiftaTests;
-			path = LiftaTests;
-			sourceTree = "<group>";
-		};
-		BC623B36C36A224F003CC8D7 = {
-			isa = PBXGroup;
-			children = (
-				B21C0C6EE397F2147A52481B /* Products */,
-				ED86822073FC1937FEFC6C00 /* Frameworks */,
-				4673877B0AD2C72B71A0E02A /* Lifta */,
-				0472497DE03E5CAC1B0916B2 /* Tests */,
-			);
-			sourceTree = "<group>";
-		};
-		BD804EB1BBB2EACC1E7D8B40 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				278E25B5A18B6B8A1CAA052B /* HapticsManager.swift */,
-				0B938B45A77F84B39E980B63 /* PersistenceController.swift */,
-				9311CA4D68591BC23DBA803F /* ShareRenderer.swift */,
-			);
-			name = Services;
-			path = Services;
-			sourceTree = "<group>";
-		};
-		C8CFCDE4AB68F05F7456069A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				93E22C8806F1F6A0F76F6216 /* StatModels.swift */,
-				AE22A9A2AAA3E69B5B5D2806 /* Theme.swift */,
-				E02DC2EF5856368961457D09 /* UserProfile.swift */,
+				BB20E5CE5B573D0DDB220FCF /* StatModels.swift */,
+				93A7500E59B9C53DBF9421DA /* Theme.swift */,
+				46B1EB79BD6BF5156F6E4F4F /* UserProfile.swift */,
 			);
 			name = Models;
 			path = Models;
 			sourceTree = "<group>";
 		};
-		C98FB8501412BA002EB55EE3 /* Engine */ = {
+		2ACBD1FC336D4FD621B31FC0 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				E8782C1091749D947960826C /* LifeStatEngine.swift */,
-				068DCF8448394E5B9709CBF8 /* LifeTimeline.swift */,
-			);
-			name = Engine;
-			path = Engine;
-			sourceTree = "<group>";
-		};
-		D833B559B4FD9C6E4CA39DA0 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				886F6EDA98D63DC4457DC078 /* AppModel.swift */,
-				F39A7CE53911000B743F5133 /* AppRootView.swift */,
-				D1EF28E5E52363C896B05E03 /* LiftaApp.swift */,
-			);
-			name = App;
-			path = App;
-			sourceTree = "<group>";
-		};
-		E0383E129C923C432B782206 /* Splash */ = {
-			isa = PBXGroup;
-			children = (
-				32A6310C0E8D374D6E45B112 /* SplashView.swift */,
+				B8E3B22CB011BAAFB64A4ABF /* SplashView.swift */,
 			);
 			name = Splash;
 			path = Splash;
 			sourceTree = "<group>";
 		};
-		E3F63B4A995240BEC68C4CFA /* Components */ = {
+		2BBC13C39019585A705DBEF6 /* LiftaTests */ = {
 			isa = PBXGroup;
 			children = (
-				85CD98CBC360F6398DBB5278 /* AgeChipView.swift */,
-				0047D7D46B6FCBA366C2C3BE /* CategoryPicker.swift */,
-				664C6C601A7F1A9495C41E7A /* CosmicBackgroundView.swift */,
-				343BF742F3E27912295FA486 /* FloatingTabBar.swift */,
-				D8003F40D3CB9D60C7491FAD /* GlassCard.swift */,
-				1D0538A98AAAD5F570C2E92C /* LiveTickerRibbon.swift */,
-				363BE81C675135FD65B25906 /* RollingNumberText.swift */,
-				F3BFCE6DE8E2520E9AC6C717 /* ShareCanvasView.swift */,
+				CD7D1385095169523316BC3C /* LifeStatEngineTests.swift */,
+				A230626B378EF42CB89CC45A /* PersistenceControllerTests.swift */,
 			);
-			name = Components;
-			path = Components;
+			name = LiftaTests;
+			path = LiftaTests;
 			sourceTree = "<group>";
 		};
-		ED86822073FC1937FEFC6C00 /* Frameworks */ = {
+		3185F81C4E0600F0C0D6441B /* Share */ = {
 			isa = PBXGroup;
 			children = (
-				593AC4A5CF15330F06CAE5CD /* iOS */,
+				8FC8ED55DDF45975E976E4C5 /* ShareComposerView.swift */,
 			);
-			name = Frameworks;
+			name = Share;
+			path = Share;
 			sourceTree = "<group>";
 		};
-		FC579B4F0F9AB62B642503D9 /* Detail */ = {
+		417321D2AE19C7ACEF23FAE1 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				CF1E4327130A4BAA613C4F6A /* StatDetailView.swift */,
+				C2976A31426D7BAE64CDE5A3 /* DashboardView.swift */,
+			);
+			name = Dashboard;
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		464BE8D3E545571FCD7457D0 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4726643C7BF71735FC5338FD /* StatDetailView.swift */,
 			);
 			name = Detail;
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		490AB3A9D2554814DE6D5752 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				00601FC5B54F6E6AC95D84AB /* LifeStatEngine.swift */,
+				334282688EB04573E62A41C4 /* LifeTimeline.swift */,
+			);
+			name = Engine;
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		4A1B6608B0B02AFF4FBF3825 /* AppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				D3A159C6C25B72688EBFC2C4 /* Icon-1024.png */,
+				E7BC48C64FAC0564ED79CB9D /* Icon-20@2x.png */,
+				8AE16851550486B4CF56C7DD /* Icon-20@3x.png */,
+				845B9EA8DBC356C550CE7BAA /* Icon-29@2x.png */,
+				C2F4D2DFC9F6668B07F32449 /* Icon-29@3x.png */,
+				36BB1BD34D77EBC896A76DED /* Icon-40@2x.png */,
+				E415F258BFC628E76AED65E8 /* Icon-40@3x.png */,
+				E77D2C299771D14C59724824 /* Icon-60@2x.png */,
+				A9031197D6F987739449AE9D /* Icon-60@3x.png */,
+				7E49239E44C89EAD02647925 /* Icon-76@2x.png */,
+				BB305702330CC28D21D98C9A /* Icon-83.5@2x.png */,
+			);
+			name = AppIcons;
+			path = AppIcons;
+			sourceTree = "<group>";
+		};
+		51AA8122F30F60C2E705CA9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5723FDE2DAF0CAE9C9D6A43A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5723FDE2DAF0CAE9C9D6A43A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				36A555413602685D84D8D595 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6459490703C21C2D4772133C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				76CCF4663A2456C6E440F4A5 /* SettingsView.swift */,
+			);
+			name = Settings;
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		697A25EBD684C71990BEF9ED /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9E617C83701D1E6AD7C3A46D /* OnboardingView.swift */,
+			);
+			name = Onboarding;
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		69D29F375313355F7B0B2041 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39178588C64741E837B54917 /* Lifta.app */,
+				BCA690C5878A5798CDB56080 /* LiftaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AF7C473F8EE4C62F2D38784 /* Milestones */ = {
+			isa = PBXGroup;
+			children = (
+				D5C7A7F2E1B345CC08BDEC40 /* MilestonesView.swift */,
+			);
+			name = Milestones;
+			path = Milestones;
+			sourceTree = "<group>";
+		};
+		740DC9350263BC456CA7EAA5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7F7676CDEC69D9B1315061A1 /* Components */,
+				9BD66119F659FC0D9EC3C676 /* Style */,
+			);
+			name = UI;
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7F7676CDEC69D9B1315061A1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E8AEEDBF7C662285C53040E3 /* AgeChipView.swift */,
+				AF9261358B7E4E55BCE62E4C /* CategoryPicker.swift */,
+				3FF55D4317178B0BD22F90CE /* CosmicBackgroundView.swift */,
+				DAD02F3527B45F5BCE32B5C1 /* FloatingTabBar.swift */,
+				A9D0062ABF8F957327892242 /* GlassCard.swift */,
+				35003674DFAFDDA012201884 /* LiveTickerRibbon.swift */,
+				252BE1D747B81D623E8AE809 /* RollingNumberText.swift */,
+				029BBDBF7C3A3ED8792A3633 /* ShareCanvasView.swift */,
+			);
+			name = Components;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7F945F02C86762FE125FEDE8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BA6DC4A538DC21B926BDA396 /* HapticsManager.swift */,
+				02D07F2A5FBCDF0B2385CA2A /* PersistenceController.swift */,
+				791F7701437519B24FAA6913 /* ShareRenderer.swift */,
+			);
+			name = Services;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8264B5529E3220B6DA925B65 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				417321D2AE19C7ACEF23FAE1 /* Dashboard */,
+				464BE8D3E545571FCD7457D0 /* Detail */,
+				A9F7CC50B168A874C754CE22 /* Methodology */,
+				6AF7C473F8EE4C62F2D38784 /* Milestones */,
+				697A25EBD684C71990BEF9ED /* Onboarding */,
+				6459490703C21C2D4772133C /* Settings */,
+				3185F81C4E0600F0C0D6441B /* Share */,
+				2ACBD1FC336D4FD621B31FC0 /* Splash */,
+			);
+			name = Features;
+			path = Features;
+			sourceTree = "<group>";
+		};
+		83252EBA71AD82093D93A446 /* Lifta */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC62E74A1B23E9C8FA2E65 /* Resources */,
+				AE814C1D3A1DD5DEE8B77F2E /* App */,
+				9786E969A4F3BB57A86BC6C7 /* Core */,
+				8264B5529E3220B6DA925B65 /* Features */,
+				740DC9350263BC456CA7EAA5 /* UI */,
+			);
+			name = Lifta;
+			path = Lifta;
+			sourceTree = "<group>";
+		};
+		84DCDDD510EF61411B87359A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2BBC13C39019585A705DBEF6 /* LiftaTests */,
+			);
+			name = Tests;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		9786E969A4F3BB57A86BC6C7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				490AB3A9D2554814DE6D5752 /* Engine */,
+				25EF652930535258E07B156F /* Models */,
+				7F945F02C86762FE125FEDE8 /* Services */,
+				02E880F1CC50FABD988B74AD /* Utilities */,
+			);
+			name = Core;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9BD66119F659FC0D9EC3C676 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				E7D8B44A4BE545BE85391470 /* Typography.swift */,
+			);
+			name = Style;
+			path = Style;
+			sourceTree = "<group>";
+		};
+		A9F7CC50B168A874C754CE22 /* Methodology */ = {
+			isa = PBXGroup;
+			children = (
+				8CA78607FE8EB6A880562B9C /* MethodologyView.swift */,
+			);
+			name = Methodology;
+			path = Methodology;
+			sourceTree = "<group>";
+		};
+		AE814C1D3A1DD5DEE8B77F2E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4CEDCC26F628E1D3755DB82A /* AppModel.swift */,
+				AF516497CDC6C0EF6598E1DE /* AppRootView.swift */,
+				DABE31A901B2E7B68DF69EA6 /* LiftaApp.swift */,
+			);
+			name = App;
+			path = App;
+			sourceTree = "<group>";
+		};
+		E7B9169C938029F55E218702 = {
+			isa = PBXGroup;
+			children = (
+				69D29F375313355F7B0B2041 /* Products */,
+				51AA8122F30F60C2E705CA9A /* Frameworks */,
+				83252EBA71AD82093D93A446 /* Lifta */,
+				84DCDDD510EF61411B87359A /* Tests */,
+			);
+			sourceTree = "<group>";
+		};
+		FFCC62E74A1B23E9C8FA2E65 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8912FE2E8213AD62D036ED1 /* Assets.xcassets */,
+				4A1B6608B0B02AFF4FBF3825 /* AppIcons */,
+				09A3B694A9394D78ADA5B9A4 /* PrivacyInfo.xcprivacy */,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3637EB8BBB438326CE8D1B64 /* Lifta */ = {
+		6F6E2D17C1F45B9153FDB5A8 /* Lifta */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F43D704841FF0F86F3649B88 /* Build configuration list for PBXNativeTarget "Lifta" */;
+			buildConfigurationList = 2BFDDFBCEEA058B3D9E6E88C /* Build configuration list for PBXNativeTarget "Lifta" */;
 			buildPhases = (
-				DBD9C374093542569194479E /* Sources */,
-				799E662BBD3585EB08A87359 /* Frameworks */,
-				40BA57CF10082319C2D8A75F /* Resources */,
+				178C5F9552D43F0A28CA0B00 /* Sources */,
+				D2576D60CB5EDC7DA79B826D /* Frameworks */,
+				CC6EE528CB580DCF29911F0B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -391,46 +436,46 @@
 			);
 			name = Lifta;
 			productName = Lifta;
-			productReference = CF01167F8AEC04783C39AA14 /* Lifta.app */;
+			productReference = 39178588C64741E837B54917 /* Lifta.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F3C79FC35773EE3227CB3E5E /* LiftaTests */ = {
+		A9F1E7B5ACA08F4F53C89521 /* LiftaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 303C0CD1783765804938EBBF /* Build configuration list for PBXNativeTarget "LiftaTests" */;
+			buildConfigurationList = 2234E7D8C15CA24926F80CC9 /* Build configuration list for PBXNativeTarget "LiftaTests" */;
 			buildPhases = (
-				CB25D229CDB9ECBBB9A70660 /* Sources */,
-				6D5068FDFFC779B0ACCE9619 /* Frameworks */,
-				5C6DAF77AAEA562470D342D9 /* Resources */,
+				BB9147F984346B8E578FA100 /* Sources */,
+				D84CC416963773081A5C309A /* Frameworks */,
+				C0615A380D6F3D5FBB8EB837 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BD306F34CEC78560EF40A320 /* PBXTargetDependency */,
+				3BB60DD05C31597BAB5FA758 /* PBXTargetDependency */,
 			);
 			name = LiftaTests;
 			productName = LiftaTests;
-			productReference = 934A691903E806A4F4482970 /* LiftaTests.xctest */;
+			productReference = BCA690C5878A5798CDB56080 /* LiftaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CDA10BF3EF6AE6AC638F2D1D /* Project object */ = {
+		F95C8A719932409C8774CD5E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					3637EB8BBB438326CE8D1B64 = {
+					6F6E2D17C1F45B9153FDB5A8 = {
 						CreatedOnToolsVersion = 16.4;
 					};
-					F3C79FC35773EE3227CB3E5E = {
+					A9F1E7B5ACA08F4F53C89521 = {
 						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 3637EB8BBB438326CE8D1B64;
+						TestTargetID = 6F6E2D17C1F45B9153FDB5A8;
 					};
 				};
 			};
-			buildConfigurationList = 1FC5ABA810DA98C903C2EFAB /* Build configuration list for PBXProject "Lifta" */;
+			buildConfigurationList = 7586F65E73DA0872F2163EB8 /* Build configuration list for PBXProject "Lifta" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -438,150 +483,108 @@
 				en,
 				Base,
 			);
-			mainGroup = BC623B36C36A224F003CC8D7;
+			mainGroup = E7B9169C938029F55E218702;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = B21C0C6EE397F2147A52481B /* Products */;
+			productRefGroup = 69D29F375313355F7B0B2041 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3637EB8BBB438326CE8D1B64 /* Lifta */,
-				F3C79FC35773EE3227CB3E5E /* LiftaTests */,
+				6F6E2D17C1F45B9153FDB5A8 /* Lifta */,
+				A9F1E7B5ACA08F4F53C89521 /* LiftaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		40BA57CF10082319C2D8A75F /* Resources */ = {
+		C0615A380D6F3D5FBB8EB837 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1551F1BCD11E2B53AB8B1F6 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C6DAF77AAEA562470D342D9 /* Resources */ = {
+		CC6EE528CB580DCF29911F0B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				307C0E4B015872CB28A88464 /* Assets.xcassets in Resources */,
+				8EF8F05296B798801301B771 /* Icon-1024.png in Resources */,
+				6E868FD5176BAFFFC632426A /* Icon-20@2x.png in Resources */,
+				98AB543C5A043700F10DC923 /* Icon-20@3x.png in Resources */,
+				2427A779C417B6ABAA6A46BD /* Icon-29@2x.png in Resources */,
+				DDFDF5C11EFB3172AAA134CF /* Icon-29@3x.png in Resources */,
+				AF5768086D8CBD69E98DE81C /* Icon-40@2x.png in Resources */,
+				B34F83431524ABBA8F846E62 /* Icon-40@3x.png in Resources */,
+				03E57047559131D0FFE78D6C /* Icon-60@2x.png in Resources */,
+				B45C6243ABB2B92A3C6D00FC /* Icon-60@3x.png in Resources */,
+				2DBFEAA410A8A46884AF4B62 /* Icon-76@2x.png in Resources */,
+				E25B244907D8D9CB8764643F /* Icon-83.5@2x.png in Resources */,
+				1C1B655D9C183698767CD64F /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CB25D229CDB9ECBBB9A70660 /* Sources */ = {
+		178C5F9552D43F0A28CA0B00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F89257B8FAC5B5B9D330126 /* LifeStatEngineTests.swift in Sources */,
-				191D439F6595EA0F97EC7A8F /* PersistenceControllerTests.swift in Sources */,
+				80DB7834B4ECBE1E64301837 /* AppModel.swift in Sources */,
+				E9D0A4912304CC50028F7D95 /* AppRootView.swift in Sources */,
+				182C509958949F545D41F789 /* LiftaApp.swift in Sources */,
+				16924F1B6E689E65D464312C /* LifeStatEngine.swift in Sources */,
+				BF201C0A6E14AA87A5CCCCC6 /* LifeTimeline.swift in Sources */,
+				D6336A93D74C7A1F5E1137B3 /* StatModels.swift in Sources */,
+				D1717661D266C418F9885BE6 /* Theme.swift in Sources */,
+				FB471A11D045231D14697131 /* UserProfile.swift in Sources */,
+				3FB719AFEB10E6D7A5850791 /* HapticsManager.swift in Sources */,
+				9630618D57BBF8B3930225F6 /* PersistenceController.swift in Sources */,
+				26D9692C0401B3878333830F /* ShareRenderer.swift in Sources */,
+				77B3DBF3CFF8D3063E56A188 /* Formatters.swift in Sources */,
+				990DFF4B6C8A632077CD9D2C /* DashboardView.swift in Sources */,
+				3483878058181A67905FCCAF /* StatDetailView.swift in Sources */,
+				41AFC1DD203241D7EF7BC636 /* MethodologyView.swift in Sources */,
+				FF2064276391E4C7EE7BF8A2 /* MilestonesView.swift in Sources */,
+				A9E40993B86BA31E449B0E13 /* OnboardingView.swift in Sources */,
+				5F3D8D04458E0D8E08AADAAF /* SettingsView.swift in Sources */,
+				ECA5D84AD04A657C7C3D376E /* ShareComposerView.swift in Sources */,
+				120E03DB7D80DC838601F57A /* SplashView.swift in Sources */,
+				64D61011DAC6BF7069EB69B7 /* AgeChipView.swift in Sources */,
+				D2327CD2B3F6B91CA48F1C5E /* CategoryPicker.swift in Sources */,
+				105AB1479C2ED89F97FDF336 /* CosmicBackgroundView.swift in Sources */,
+				B75F5A2745216610016CC3F5 /* FloatingTabBar.swift in Sources */,
+				AEC22B50ECA6627E22FB0302 /* GlassCard.swift in Sources */,
+				7CC94408596F1F88E8248E68 /* LiveTickerRibbon.swift in Sources */,
+				1AA18069B66AA668F645AF5A /* RollingNumberText.swift in Sources */,
+				546A9A9D8D4C2ED4BC207DCF /* ShareCanvasView.swift in Sources */,
+				54787DC8FE82A8A92D09B168 /* Typography.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBD9C374093542569194479E /* Sources */ = {
+		BB9147F984346B8E578FA100 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0784637FC7359F5C50C5F9DA /* AppModel.swift in Sources */,
-				4551AC55220AA3435A0E994A /* AppRootView.swift in Sources */,
-				001AD64C114A0BC80FAC2C9F /* LiftaApp.swift in Sources */,
-				C1717F05121CD4499249CDCE /* LifeStatEngine.swift in Sources */,
-				1B3F3D0B6B21C8703374D959 /* LifeTimeline.swift in Sources */,
-				56C189CF53941A0EF7FC8284 /* StatModels.swift in Sources */,
-				6067F1C6A47F4D97B68B5F40 /* Theme.swift in Sources */,
-				AA0FA6687E2E12B6C2938622 /* UserProfile.swift in Sources */,
-				B302680ABC1E7D0A2513BEC4 /* HapticsManager.swift in Sources */,
-				8046AD3AA5DD52DAC68E155E /* PersistenceController.swift in Sources */,
-				3453BB6560EF699F9CCAF797 /* ShareRenderer.swift in Sources */,
-				C4DB6CE2AC157F06A7BCE52F /* Formatters.swift in Sources */,
-				3D86E3DD4FE6745D1A8FF88D /* DashboardView.swift in Sources */,
-				FEC566781B430030FCCC6C41 /* StatDetailView.swift in Sources */,
-				1D26CE2989F38BBE4EF4CB31 /* MethodologyView.swift in Sources */,
-				1FF53121CF01ED1902B98BC0 /* MilestonesView.swift in Sources */,
-				2E38A54DF9EFD46DB20CE505 /* OnboardingView.swift in Sources */,
-				B2A5FB37F0DB8D371CCCE8C1 /* SettingsView.swift in Sources */,
-				D3419A41EC3C1432AF5B4F02 /* ShareComposerView.swift in Sources */,
-				E32432AFFAA3961C1595A994 /* SplashView.swift in Sources */,
-				F600446E37DCAA66A2FFEFA6 /* AgeChipView.swift in Sources */,
-				235B4865A04375DBC5F3BA81 /* CategoryPicker.swift in Sources */,
-				D7DFC4B5F3077E0163CBBBA1 /* CosmicBackgroundView.swift in Sources */,
-				476CBE351654214DACBE9661 /* FloatingTabBar.swift in Sources */,
-				94CAB20C94081E5849792F14 /* GlassCard.swift in Sources */,
-				D26285A47F622CE9A68533D1 /* LiveTickerRibbon.swift in Sources */,
-				AFC6E75F080A5F5492FC4959 /* RollingNumberText.swift in Sources */,
-				430442DBAF4C26D5D7242445 /* ShareCanvasView.swift in Sources */,
-				606FA97F97F9C182F785E691 /* Typography.swift in Sources */,
+				A7D97573A1657275B21433CD /* LifeStatEngineTests.swift in Sources */,
+				77984CA13CB03CFEEC92F76A /* PersistenceControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BD306F34CEC78560EF40A320 /* PBXTargetDependency */ = {
+		3BB60DD05C31597BAB5FA758 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Lifta;
-			target = 3637EB8BBB438326CE8D1B64 /* Lifta */;
-			targetProxy = C15160191F5CC87BCFA8BBF2 /* PBXContainerItemProxy */;
+			target = 6F6E2D17C1F45B9153FDB5A8 /* Lifta */;
+			targetProxy = 750D58DA77EB79D6DA4832DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		441CFB25FE1FCDDC5B16F345 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		8A0D18634C22C6AA9093541A /* Release */ = {
+		29EB14985DD6A9AED8E47C4C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -596,11 +599,10 @@
 				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifta.app/Lifta";
 				TEST_TARGET_NAME = Lifta;
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		8D4371D843795E474EB2AB79 /* Debug */ = {
+		4E47EC0913B323306C921C64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -661,7 +663,80 @@
 			};
 			name = Debug;
 		};
-		92AFCD9789B2AB2C27F3CFC5 /* Debug */ = {
+		C7CCEB7134D4229797946AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DD4F5DDCAF83408CFD84E7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifta.app.tests;
+				PRODUCT_NAME = LiftaTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifta.app/Lifta";
+				TEST_TARGET_NAME = Lifta;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F20A96ACF13B87C1B2213F15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -686,25 +761,7 @@
 			};
 			name = Debug;
 		};
-		D6CE934B126B5797F9C63290 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lifta.app.tests;
-				PRODUCT_NAME = LiftaTests;
-				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifta.app/Lifta";
-				TEST_TARGET_NAME = Lifta;
-			};
-			name = Debug;
-		};
-		FB2CF3ABE96D4706CB533E7E /* Release */ = {
+		F34D0EB05EB9A2AED4521277 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -733,34 +790,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1FC5ABA810DA98C903C2EFAB /* Build configuration list for PBXProject "Lifta" */ = {
+		2234E7D8C15CA24926F80CC9 /* Build configuration list for PBXNativeTarget "LiftaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D4371D843795E474EB2AB79 /* Debug */,
-				441CFB25FE1FCDDC5B16F345 /* Release */,
+				DD4F5DDCAF83408CFD84E7E8 /* Release */,
+				29EB14985DD6A9AED8E47C4C /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		303C0CD1783765804938EBBF /* Build configuration list for PBXNativeTarget "LiftaTests" */ = {
+		2BFDDFBCEEA058B3D9E6E88C /* Build configuration list for PBXNativeTarget "Lifta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8A0D18634C22C6AA9093541A /* Release */,
-				D6CE934B126B5797F9C63290 /* Debug */,
+				F34D0EB05EB9A2AED4521277 /* Release */,
+				F20A96ACF13B87C1B2213F15 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F43D704841FF0F86F3649B88 /* Build configuration list for PBXNativeTarget "Lifta" */ = {
+		7586F65E73DA0872F2163EB8 /* Build configuration list for PBXProject "Lifta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB2CF3ABE96D4706CB533E7E /* Release */,
-				92AFCD9789B2AB2C27F3CFC5 /* Debug */,
+				4E47EC0913B323306C921C64 /* Debug */,
+				C7CCEB7134D4229797946AA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CDA10BF3EF6AE6AC638F2D1D /* Project object */;
+	rootObject = F95C8A719932409C8774CD5E /* Project object */;
 }

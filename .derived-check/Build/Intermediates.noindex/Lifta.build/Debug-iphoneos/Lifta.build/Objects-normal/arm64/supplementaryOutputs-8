@@ -1,0 +1,18 @@
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/RollingNumberText.swift":
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.o"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.swiftdeps"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.swiftconstvalues"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.dia"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/RollingNumberText.d"
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Style/Typography.swift":
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.swiftconstvalues"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.d"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.o"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.dia"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/Typography.swiftdeps"
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/ShareCanvasView.swift":
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.dia"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.o"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.d"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.swiftdeps"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/ShareCanvasView.swiftconstvalues"

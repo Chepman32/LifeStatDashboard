@@ -1,0 +1,18 @@
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/CosmicBackgroundView.swift":
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.d"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.swiftdeps"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.dia"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.o"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CosmicBackgroundView.swiftconstvalues"
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/CategoryPicker.swift":
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CategoryPicker.o"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CategoryPicker.dia"
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CategoryPicker.d"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CategoryPicker.swiftdeps"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/CategoryPicker.swiftconstvalues"
+"/Users/antonchepur/LifeStatDashboard/Lifta/UI/Components/AgeChipView.swift":
+  dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AgeChipView.d"
+  const-values: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AgeChipView.swiftconstvalues"
+  swift-dependencies: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AgeChipView.swiftdeps"
+  object: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AgeChipView.o"
+  diagnostics: "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/Lifta.build/Objects-normal/arm64/AgeChipView.dia"

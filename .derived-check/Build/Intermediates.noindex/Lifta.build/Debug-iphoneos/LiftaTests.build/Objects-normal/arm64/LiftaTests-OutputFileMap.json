@@ -1,0 +1,28 @@
+{
+  "" : {
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/LiftaTests-master.dia",
+    "emit-module-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/LiftaTests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/LiftaTests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/LiftaTests-master.swiftdeps"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Tests/LiftaTests/LifeStatEngineTests.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/LifeStatEngineTests.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/LifeStatEngineTests.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/LifeStatEngineTests.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/LifeStatEngineTests.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/LifeStatEngineTests.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/LifeStatEngineTests.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/LifeStatEngineTests.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/LifeStatEngineTests~partial.swiftmodule"
+  },
+  "/Users/antonchepur/LifeStatDashboard/Tests/LiftaTests/PersistenceControllerTests.swift" : {
+    "const-values" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/PersistenceControllerTests.swiftconstvalues",
+    "dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/PersistenceControllerTests.d",
+    "diagnostics" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/PersistenceControllerTests.dia",
+    "index-unit-output-path" : "/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/PersistenceControllerTests.o",
+    "llvm-bc" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/PersistenceControllerTests.bc",
+    "object" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/PersistenceControllerTests.o",
+    "swift-dependencies" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/PersistenceControllerTests.swiftdeps",
+    "swiftmodule" : "/Users/antonchepur/LifeStatDashboard/.derived-check/Build/Intermediates.noindex/Lifta.build/Debug-iphoneos/LiftaTests.build/Objects-normal/arm64/PersistenceControllerTests~partial.swiftmodule"
+  }
+}

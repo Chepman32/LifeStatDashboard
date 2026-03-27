@@ -1,7 +1,13 @@
 import AppKit
 
-let outputRoot = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
-    .appendingPathComponent("Lifta/Resources/AppIcons")
+let projectRoot = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+let outputRoots = [
+    projectRoot.appendingPathComponent("Lifta/Resources/AppIcons"),
+    projectRoot.appendingPathComponent("Lifta/Resources/Assets.xcassets/AppIcon.appiconset")
+]
+let sourceImage = CommandLine.arguments.dropFirst().first.flatMap { path in
+    NSImage(contentsOfFile: path)
+}
 
 let sizes: [(name: String, points: CGFloat)] = [
     ("Icon-20@2x.png", 40),
@@ -17,7 +23,52 @@ let sizes: [(name: String, points: CGFloat)] = [
     ("Icon-1024.png", 1024)
 ]
 
-func renderIcon(size: CGFloat) -> Data {
+func renderBundledImage(_ image: NSImage, size: CGFloat) -> Data {
+    let pixelSize = Int(size.rounded())
+    guard let bitmap = NSBitmapImageRep(
+        bitmapDataPlanes: nil,
+        pixelsWide: pixelSize,
+        pixelsHigh: pixelSize,
+        bitsPerSample: 8,
+        samplesPerPixel: 4,
+        hasAlpha: true,
+        isPlanar: false,
+        colorSpaceName: .deviceRGB,
+        bytesPerRow: 0,
+        bitsPerPixel: 0
+    ) else {
+        fatalError("Unable to create bitmap")
+    }
+
+    bitmap.size = NSSize(width: size, height: size)
+    guard let context = NSGraphicsContext(bitmapImageRep: bitmap) else {
+        fatalError("Unable to create graphics context")
+    }
+
+    NSGraphicsContext.saveGraphicsState()
+    NSGraphicsContext.current = context
+    context.imageInterpolation = .high
+
+    let rect = NSRect(x: 0, y: 0, width: size, height: size)
+    let sourceSize = image.size
+    let edge = min(sourceSize.width, sourceSize.height)
+    let sourceRect = NSRect(
+        x: (sourceSize.width - edge) / 2,
+        y: (sourceSize.height - edge) / 2,
+        width: edge,
+        height: edge
+    )
+    image.draw(in: rect, from: sourceRect, operation: .copy, fraction: 1)
+
+    NSGraphicsContext.restoreGraphicsState()
+
+    guard let png = bitmap.representation(using: .png, properties: [:]) else {
+        fatalError("Unable to encode PNG")
+    }
+    return png
+}
+
+func renderFallbackIcon(size: CGFloat) -> Data {
     let pixelSize = Int(size.rounded())
     guard let bitmap = NSBitmapImageRep(
         bitmapDataPlanes: nil,
@@ -94,9 +145,18 @@ func renderIcon(size: CGFloat) -> Data {
     return png
 }
 
-try FileManager.default.createDirectory(at: outputRoot, withIntermediateDirectories: true)
+for outputRoot in outputRoots {
+    try FileManager.default.createDirectory(at: outputRoot, withIntermediateDirectories: true)
+}
 
 for item in sizes {
-    let png = renderIcon(size: item.points)
-    try png.write(to: outputRoot.appendingPathComponent(item.name))
+    let png = if let sourceImage {
+        renderBundledImage(sourceImage, size: item.points)
+    } else {
+        renderFallbackIcon(size: item.points)
+    }
+
+    for outputRoot in outputRoots {
+        try png.write(to: outputRoot.appendingPathComponent(item.name))
+    }
 }
