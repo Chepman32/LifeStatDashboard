@@ -1,0 +1,61 @@
+Corivo je váš ultimátní editor fotoefektů — výkonný, okamžitý a vytvořený pro tvůrce. Transformujte své fotky s více než 50 profesionálními GPU efekty s náhledem v reálném čase. Žádné čekání. Žádné zpoždění. Jen klepněte, upravte a sdílejte.
+
+OKAMŽITÉ EFEKTY V REÁLNÉM ČASE
+• GPU akcelerované vykreslování pro plynulé, okamžité náhledy
+• 50+ profesionálních efektů ve 12 kategoriích
+• Nastavitelné parametry s živou zpětnou vazbou
+• Zpět/Opakovat pro dokonalé úpravy pokaždé
+
+12 KATEGORIÍ EFEKTŮ
+• Mozaika a Buňky: Pixelace, Krystalizace, Polotón, Pointilismus
+• Efekty Skla: Tekuté Sklo, Matné Sklo, Glassmorphism, Oceánská Vlnka
+• Glitch a RGB: RGB Separace, Skenovací Linky, Glitch Řádky
+• Vlna a Deformace: Vlna, Vír, Vyboulení, Ščipnutí, Zkosení
+• Dlaždice: Kaleidoskop, Zrcadlo, Vzory dlaždic
+• Rozostření a Ostrost: Gaussovo, Rozostření Pohybu, Povrchové Rozostření, Maska Ostrosti
+• Umělecké: Olejová Barva, Akvarel, Posterizace, Hrany Plakátu
+• Efekty Štětce: Křížové Šrafování, Inkoustové Obrysy, Stříkání, Sumi-e
+• Relief: Reliéf, Zkosení, Detekce Hran
+• Frekvence: Vysokopropustný, Nízkopropustný, Gradientový Filtr
+• Vykreslování: Plamen, Mraky
+• Plus 14 barevných filtrů: Vintage, Filmový, Cyberpunk, Neon, HDR a další
+
+VYTVOŘENO PRO TVŮRCE OBSAHU
+• Exportujte v 1080p vysokém rozlišení
+• Sdílejte přímo na Instagram, Instagram Stories, Twitter/X
+• Automatické ukládání projektů — nikdy neztratíte svou práci
+• Pokračujte v úpravách kdykoli s galerií projektů
+• Dokonalé pro virální příspěvky, stories a kreativní obsah
+
+GPU VÝKON
+Postavená na Shopify's Skia rendering engine, Corivo poskytuje výkon desktopové třídy na vašem telefonu. Každý efekt běží na GPU vašeho zařízení pro okamžité, plynulé náhledy. Upravujte parametry v reálném čase a vidíte výsledky okamžitě — žádné zpoždění vykreslování, nikdy.
+
+PROFESIONÁLNÍ FUNKCE
+• Plátno se štípnutím pro přibližování pro přesné úpravy
+• Paměť parametrů — pamatuje si vaše oblíbená nastavení
+• Úplná historie zpět/opakovat
+• Dávkové řízení projektů
+• Exportujte do PNG nebo JPEG s kontrolou kvality
+• Funguje 100% offline — není potřeba internet
+
+KRÁSNÉ A INTUITIVNÍ
+• Tmavé téma optimalizované pro soustředění
+• Plynulé animace a přechody
+• Haptická zpětná vazba pro uspokojivé interakce
+• Organizované kategorie efektů pro snadné objevování
+• Čisté, minimalistické rozhraní
+
+Dokonalé pro:
+• Tvůrce obsahu na Instagram a TikTok
+• Manažery sociálních médií a influencery
+• Nadšence do fotografie hledající kreativní nástroje
+• Digitální umělce a designéry
+• Kohokoli, kdo chce jedinečné, poutavé fotky
+• Tvůrce, kteří oceňují rychlost a kvalitu
+
+JAK TO FUNGUJE
+1. Vyberte fotku ze své knihovny nebo vytvořte nový projekt
+2. Procházejte 50+ efektů, klepněte pro aplikaci, upravte parametry v reálném čase
+3. Exportujte v 1080p a sdílejte na Instagram, TikTok nebo uložte do galerie
+
+Stáhněte si Corivo dnes a transformujte své fotky s profesionálními GPU efekty. Vytvářejte úžasný, virální obsah za sekundy — žádné čekání, žádné limity, jen čistá kreativita.

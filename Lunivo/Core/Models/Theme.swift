@@ -90,6 +90,10 @@ struct ThemePalette {
     let cardStroke: Color
     let starColor: Color
     let glow: Color
+
+    var listRowBackground: Color {
+        background.first.map { $0.opacity(0.55) } ?? cardFill
+    }
 }
 
 extension Color {
@@ -101,5 +105,37 @@ extension Color {
             blue: Double(hex & 0xFF) / 255,
             opacity: alpha
         )
+    }
+
+    func blended(with other: Color, amount: Double) -> Color {
+        #if canImport(UIKit)
+        let clampedAmount = min(max(amount, 0), 1)
+        let base = UIColor(self)
+        let overlay = UIColor(other)
+
+        var baseRed: CGFloat = 0
+        var baseGreen: CGFloat = 0
+        var baseBlue: CGFloat = 0
+        var baseAlpha: CGFloat = 0
+        var overlayRed: CGFloat = 0
+        var overlayGreen: CGFloat = 0
+        var overlayBlue: CGFloat = 0
+        var overlayAlpha: CGFloat = 0
+
+        guard base.getRed(&baseRed, green: &baseGreen, blue: &baseBlue, alpha: &baseAlpha),
+              overlay.getRed(&overlayRed, green: &overlayGreen, blue: &overlayBlue, alpha: &overlayAlpha) else {
+            return other.opacity(clampedAmount)
+        }
+
+        return Color(
+            .sRGB,
+            red: Double(baseRed + (overlayRed - baseRed) * clampedAmount),
+            green: Double(baseGreen + (overlayGreen - baseGreen) * clampedAmount),
+            blue: Double(baseBlue + (overlayBlue - baseBlue) * clampedAmount),
+            opacity: Double(baseAlpha + (overlayAlpha - baseAlpha) * clampedAmount)
+        )
+        #else
+        return other.opacity(amount)
+        #endif
     }
 }

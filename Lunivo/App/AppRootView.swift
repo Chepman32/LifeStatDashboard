@@ -28,6 +28,7 @@ struct AppRootView: View {
             }
         }
         .preferredColorScheme(model.profile.selectedTheme.preferredScheme)
+        .dynamicTypeSize(model.profile.largeTextMode ? .accessibility1 : .large)
     }
 }
 

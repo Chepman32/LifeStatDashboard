@@ -1,0 +1,61 @@
+Corivo là trình chỉnh sửa hiệu ứng ảnh tối thượng của bạn — mạnh mẽ, tức thì và được xây dựng cho người sáng tạo. Biến đổi ảnh của bạn với 50+ hiệu ứng GPU chuyên nghiệp với xem trước thời gian thực. Không chờ đợi. Không lag. Chỉ cần chạm, điều chỉnh và chia sẻ.
+
+HIỆU ỨNG THỜI GIAN THỰC TỨC THÌ
+• Kết xuất tăng tốc GPU cho xem trước mượt mà, tức thì
+• 50+ hiệu ứng chuyên nghiệp trong 12 danh mục
+• Tham số có thể điều chỉnh với phản hồi trực tiếp
+• Hoàn tác/Làm lại cho chỉnh sửa hoàn hảo mỗi lần
+
+12 DANH MỤC HIỆU ỨNG
+• Khảm & Tế Bào: Pixel hóa, Kết tinh, Halftone, Chủ nghĩa Pointillist
+• Hiệu Ứng Thủy Tinh: Thủy Tinh Lỏng, Thủy Tinh Mờ, Glassmorphism, Gợn Sóng Đại Dương
+• Glitch & RGB: Tách RGB, Đường Quét, Hàng Glitch
+• Sóng & Biến Dạng: Sóng, Xoáy, Phồng, Nhéo, Cắt
+• Lát: Vạn Hoa Kính, Gương, Mẫu lát
+• Mờ & Sắc Nét: Gaussian, Mờ Chuyển Động, Mờ Bề Mặt, Mặt Nạ Sắc Nét
+• Nghệ Thuật: Sơn Dầu, Màu Nước, Poster hóa, Cạnh Poster
+• Hiệu Ứng Cọ: Gạch Chéo, Đường Viền Mực, Bắn Tóe, Sumi-e
+• Phù Điêu: Dập Nổi, Vát, Phát Hiện Cạnh
+• Tần Số: Thông Cao, Thông Thấp, Bộ Lọc Gradient
+• Kết Xuất: Ngọn Lửa, Đám Mây
+• Cộng 14 bộ lọc màu: Vintage, Điện Ảnh, Cyberpunk, Neon, HDR và nhiều hơn
+
+ĐƯỢC TẠO CHO NGƯỜI TẠO NỘI DUNG
+• Xuất ở độ phân giải 1080p cao
+• Chia sẻ trực tiếp lên Instagram, Instagram Stories, Twitter/X
+• Tự động lưu dự án — không bao giờ mất công việc của bạn
+• Tiếp tục chỉnh sửa bất cứ lúc nào với thư viện dự án
+• Hoàn hảo cho bài đăng lan truyền, câu chuyện và nội dung sáng tạo
+
+HIỆU SUẤT GPU
+Được xây dựng trên động cơ kết xuất Skia của Shopify, Corivo mang lại hiệu suất cấp desktop trên điện thoại của bạn. Mỗi hiệu ứng chạy trên GPU thiết bị của bạn để xem trước tức thì, mượt mà. Điều chỉnh tham số theo thời gian thực và xem kết quả ngay lập tức — không có độ trễ kết xuất, bao giờ hết.
+
+TÍNH NĂNG CHUYÊN NGHIỆP
+• Khung vẽ nhéo để zoom cho chỉnh sửa chính xác
+• Bộ nhớ tham số — ghi nhớ cài đặt yêu thích của bạn
+• Lịch sử hoàn tác/làm lại đầy đủ
+• Quản lý dự án hàng loạt
+• Xuất sang PNG hoặc JPEG với kiểm soát chất lượng
+• Hoạt động 100% ngoại tuyến — không cần internet
+
+ĐẸP & TRỰC QUAN
+• Chủ đề tối được tối ưu hóa cho sự tập trung
+• Hoạt ảnh và chuyển tiếp mượt mà
+• Phản hồi xúc giác cho tương tác thỏa mãn
+• Danh mục hiệu ứng được tổ chức cho khám phá dễ dàng
+• Giao diện sạch sẽ, tối giản
+
+Hoàn hảo cho:
+• Người tạo nội dung Instagram và TikTok
+• Quản lý mạng xã hội và người có ảnh hưởng
+• Người đam mê nhiếp ảnh tìm kiếm công cụ sáng tạo
+• Nghệ sĩ kỹ thuật số và nhà thiết kế
+• Bất kỳ ai muốn ảnh độc đáo, bắt mắt
+• Người sáng tạo coi trọng tốc độ và chất lượng
+
+CÁCH HOẠT ĐỘNG
+1. Chọn ảnh từ thư viện của bạn hoặc tạo dự án mới
+2. Duyệt 50+ hiệu ứng, chạm để áp dụng, điều chỉnh tham số theo thời gian thực
+3. Xuất ở 1080p và chia sẻ lên Instagram, TikTok hoặc lưu vào thư viện của bạn
+
+Tải Corivo ngay hôm nay và biến đổi ảnh của bạn với hiệu ứng GPU chuyên nghiệp. Tạo nội dung tuyệt đẹp, xứng đáng lan truyền trong vài giây — không chờ đợi, không giới hạn, chỉ có sự sáng tạo thuần khiết.

@@ -4,194 +4,186 @@ struct SettingsView: View {
     @EnvironmentObject private var model: AppModel
 
     var body: some View {
-        let theme = model.profile.selectedTheme
+        let palette = model.profile.selectedTheme.palette
 
         NavigationStack {
             Form {
-                profileSection
-                appearanceSection
-                motionSection
-                tickerSection
-                localizationSection
-                methodologySection
-                privacySection
-                aboutSection
+                profileSection(palette: palette)
+                appearanceSection(palette: palette)
+                motionSection(palette: palette)
+                tickerSection(palette: palette)
+                localizationSection(palette: palette)
+                methodologySection(palette: palette)
+                privacySection(palette: palette)
+                aboutSection(palette: palette)
             }
             .scrollContentBackground(.hidden)
             .background(Color.clear)
+            .foregroundStyle(palette.textPrimary)
             .navigationTitle("Settings")
-            .tint(theme.palette.accent)
+            .tint(palette.accent)
         }
     }
 
-    private var profileSection: some View {
+    private func rowBG(_ palette: ThemePalette) -> some View {
+        palette.listRowBackground.ignoresSafeArea()
+    }
+
+    private func profileSection(palette: ThemePalette) -> some View {
         Section("Profile Input") {
             DatePicker(
                 "Birth Date",
                 selection: Binding(
                     get: { model.profile.birthDate },
-                    set: { newValue in
-                        model.updateProfile { $0.birthDate = newValue }
-                    }
+                    set: { v in model.updateProfile { $0.birthDate = v } }
                 ),
                 in: ...Date(),
                 displayedComponents: model.profile.hasBirthTime ? [.date, .hourAndMinute] : [.date]
             )
+            .listRowBackground(rowBG(palette))
 
             Toggle("Include birth time", isOn: Binding(
                 get: { model.profile.hasBirthTime },
-                set: { value in
-                    model.updateProfile { $0.hasBirthTime = value }
-                }
+                set: { v in model.updateProfile { $0.hasBirthTime = v } }
             ))
+            .listRowBackground(rowBG(palette))
 
             Picker("Units", selection: Binding(
                 get: { model.profile.unitPreference },
-                set: { value in
-                    model.updateProfile { $0.unitPreference = value }
-                }
+                set: { v in model.updateProfile { $0.unitPreference = v } }
             )) {
                 ForEach(UnitPreference.allCases) { preference in
                     Text(preference.title).tag(preference)
                 }
             }
+            .listRowBackground(rowBG(palette))
 
-            Button("Reset All", role: .destructive) {
-                model.resetAll()
-            }
+            Button("Reset All", role: .destructive) { model.resetAll() }
+                .listRowBackground(rowBG(palette))
         }
     }
 
-    private var appearanceSection: some View {
+    private func appearanceSection(palette: ThemePalette) -> some View {
         Section("Appearance") {
             Picker("Theme", selection: Binding(
                 get: { model.profile.selectedTheme },
-                set: { value in
-                    model.updateProfile { $0.selectedTheme = value }
-                }
+                set: { v in model.updateProfile { $0.selectedTheme = v } }
             )) {
                 ForEach(LunivoTheme.allCases) { theme in
                     Text(theme.title).tag(theme)
                 }
             }
+            .listRowBackground(rowBG(palette))
 
             Picker("Display Density", selection: Binding(
                 get: { model.profile.displayDensity },
-                set: { value in
-                    model.updateProfile { $0.displayDensity = value }
-                }
+                set: { v in model.updateProfile { $0.displayDensity = v } }
             )) {
                 Text("Calm").tag(DisplayDensity.calm)
                 Text("Detailed").tag(DisplayDensity.detailed)
             }
+            .listRowBackground(rowBG(palette))
 
             Toggle("Large text mode", isOn: Binding(
                 get: { model.profile.largeTextMode },
-                set: { value in
-                    model.updateProfile { $0.largeTextMode = value }
-                }
+                set: { v in model.updateProfile { $0.largeTextMode = v } }
             ))
+            .listRowBackground(rowBG(palette))
 
             VStack(alignment: .leading) {
                 Text("Background intensity")
                 Slider(value: Binding(
                     get: { model.profile.backgroundIntensity },
-                    set: { value in
-                        model.updateProfile { $0.backgroundIntensity = value }
-                    }
+                    set: { v in model.updateProfile { $0.backgroundIntensity = v } }
                 ), in: 0.3...1)
             }
+            .listRowBackground(rowBG(palette))
         }
     }
 
-    private var motionSection: some View {
+    private func motionSection(palette: ThemePalette) -> some View {
         Section("Motion") {
             Picker("Motion mode", selection: Binding(
                 get: { model.profile.motionPreference },
-                set: { value in
-                    model.updateProfile { $0.motionPreference = value }
-                }
+                set: { v in model.updateProfile { $0.motionPreference = v } }
             )) {
                 ForEach(MotionPreference.allCases) { mode in
                     Text(mode.title).tag(mode)
                 }
             }
+            .listRowBackground(rowBG(palette))
 
             Stepper(
                 "Ticker interval: \(model.profile.liveTickerInterval.formatted(.number.precision(.fractionLength(0))))s",
                 value: Binding(
                     get: { model.profile.liveTickerInterval },
-                    set: { value in
-                        model.updateProfile { $0.liveTickerInterval = value }
-                    }
+                    set: { v in model.updateProfile { $0.liveTickerInterval = v } }
                 ),
-                in: 2...8,
-                step: 1
+                in: 2...8, step: 1
             )
+            .listRowBackground(rowBG(palette))
         }
     }
 
-    private var tickerSection: some View {
+    private func tickerSection(palette: ThemePalette) -> some View {
         Section("Live Ticker") {
             Toggle("Auto cycle", isOn: Binding(
                 get: { model.profile.liveTickerAutoCycle },
-                set: { value in
-                    model.updateProfile { $0.liveTickerAutoCycle = value }
-                }
+                set: { v in model.updateProfile { $0.liveTickerAutoCycle = v } }
             ))
+            .listRowBackground(rowBG(palette))
 
             Picker("Visibility", selection: Binding(
                 get: { model.profile.liveTickerVisibility },
-                set: { value in
-                    model.updateProfile { $0.liveTickerVisibility = value }
-                }
+                set: { v in model.updateProfile { $0.liveTickerVisibility = v } }
             )) {
                 ForEach(LiveTickerVisibility.allCases) { option in
                     Text(option.rawValue.capitalized).tag(option)
                 }
             }
+            .listRowBackground(rowBG(palette))
         }
     }
 
-    private var localizationSection: some View {
+    private func localizationSection(palette: ThemePalette) -> some View {
         Section("Language") {
             Picker("Preferred language", selection: Binding(
                 get: { model.preferredLanguage },
-                set: { value in
-                    model.updateLanguage(value)
-                }
+                set: { model.updateLanguage($0) }
             )) {
                 ForEach(AppLanguage.allCases) { language in
                     Text(language.title).tag(language)
                 }
             }
+            .listRowBackground(rowBG(palette))
         }
     }
 
-    private var methodologySection: some View {
+    private func methodologySection(palette: ThemePalette) -> some View {
         Section("Methodology") {
             NavigationLink("Constants and assumptions") {
-                MethodologyView()
-                    .environmentObject(model)
+                MethodologyView().environmentObject(model)
             }
+            .listRowBackground(rowBG(palette))
             Text("All calculations happen on this device and are labeled by derivation type.")
+                .listRowBackground(rowBG(palette))
         }
     }
 
-    private var privacySection: some View {
+    private func privacySection(palette: ThemePalette) -> some View {
         Section("Privacy") {
-            Text("All calculations happen on this device.")
-            Text("No account.")
-            Text("No server.")
-            Text("No tracking.")
+            Text("All calculations happen on this device.").listRowBackground(rowBG(palette))
+            Text("No account.").listRowBackground(rowBG(palette))
+            Text("No server.").listRowBackground(rowBG(palette))
+            Text("No tracking.").listRowBackground(rowBG(palette))
         }
     }
 
-    private var aboutSection: some View {
+    private func aboutSection(palette: ThemePalette) -> some View {
         Section("About") {
-            Text("Version 1.0")
-            Text("Built as a native SwiftUI iPhone app with deterministic offline calculations.")
-            Text("Typography uses Apple-native system type with Helvetica Neue for select editorial treatments.")
+            Text("Version 1.0").listRowBackground(rowBG(palette))
+            Text("Built as a native SwiftUI iPhone app with deterministic offline calculations.").listRowBackground(rowBG(palette))
+            Text("Typography uses Apple-native system type with Helvetica Neue for select editorial treatments.").listRowBackground(rowBG(palette))
         }
     }
 }

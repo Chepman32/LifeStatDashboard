@@ -1,0 +1,61 @@
+Corivo is your ultimate photo effects editor — powerful, instant, and built for creators. Transform your photos with 50+ professional GPU-powered effects that preview in real-time. No waiting. No lag. Just tap, adjust, and share.
+
+INSTANT REAL-TIME EFFECTS
+• GPU-accelerated rendering for smooth, instant previews
+• 50+ professional effects across 12 categories
+• Adjustable parameters with live feedback
+• Undo/redo for perfect edits every time
+
+12 EFFECT CATEGORIES
+• Mosaic & Cellular: Pixelate, Crystallize, Halftone, Pointillize
+• Glass Effects: Liquid Glass, Frosted Glass, Glassmorphism, Ocean Ripple
+• Glitch & RGB: RGB Split, Scanlines, Glitch Rows
+• Wave & Distortion: Wave, Twirl, Bulge, Pinch, Shear
+• Tiling: Kaleidoscope, Mirror, Tile patterns
+• Blur & Sharpen: Gaussian, Motion Blur, Surface Blur, Unsharp Mask
+• Artistic: Oil Paint, Watercolor, Posterize, Poster Edges
+• Brush Effects: Cross Hatch, Ink Outlines, Spatter, Sumi-e
+• Relief: Emboss, Bevel, Find Edges
+• Frequency: High-Pass, Low-Pass, Gradient Filter
+• Render: Flame, Clouds
+• Plus 14 color filters: Vintage, Cinematic, Cyberpunk, Neon, HDR & more
+
+MADE FOR CONTENT CREATORS
+• Export in 1080p high resolution
+• Share directly to Instagram, Instagram Stories, Twitter/X
+• Auto-save projects — never lose your work
+• Resume editing anytime with project gallery
+• Perfect for viral posts, stories, and creative content
+
+GPU-POWERED PERFORMANCE
+Built on Shopify's Skia rendering engine, Corivo delivers desktop-class performance on your phone. Every effect runs on your device's GPU for instant, silky-smooth previews. Adjust parameters in real-time and see results immediately — no rendering delays, ever.
+
+PROFESSIONAL FEATURES
+• Pinch-to-zoom canvas for precise editing
+• Parameter memory — remembers your favorite settings
+• Full undo/redo history
+• Batch project management
+• Export to PNG or JPEG with quality control
+• Works 100% offline — no internet required
+
+BEAUTIFUL & INTUITIVE
+• Dark theme optimized for focus
+• Smooth animations and transitions
+• Haptic feedback for satisfying interactions
+• Organized effect categories for easy discovery
+• Clean, minimalist interface
+
+Perfect for:
+• Instagram and TikTok content creators
+• Social media managers and influencers
+• Photography enthusiasts seeking creative tools
+• Digital artists and designers
+• Anyone wanting unique, eye-catching photos
+• Creators who value speed and quality
+
+HOW IT WORKS
+1. Select a photo from your library or create a new project
+2. Browse 50+ effects, tap to apply, adjust parameters in real-time
+3. Export in 1080p and share to Instagram, TikTok, or save to your gallery
+
+Download Corivo today and transform your photos with professional GPU-powered effects. Create stunning, viral-worthy content in seconds — no waiting, no limits, just pure creativity.

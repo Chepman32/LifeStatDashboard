@@ -1,0 +1,61 @@
+Corivo adalah editor efek foto ultimate Anda — powerful, instan, dan dibuat untuk kreator. Ubah foto Anda dengan 50+ efek profesional bertenaga GPU dengan pratinjau real-time. Tanpa menunggu. Tanpa lag. Cukup ketuk, sesuaikan, dan bagikan.
+
+EFEK REAL-TIME INSTAN
+• Rendering dipercepat GPU untuk pratinjau yang mulus dan instan
+• 50+ efek profesional dalam 12 kategori
+• Parameter yang dapat disesuaikan dengan umpan balik langsung
+• Undo/redo untuk pengeditan sempurna setiap saat
+
+12 KATEGORI EFEK
+• Mosaik & Selular: Pikselasi, Kristalisasi, Halftone, Pointillisme
+• Efek Kaca: Kaca Cair, Kaca Buram, Glassmorphism, Riak Laut
+• Glitch & RGB: Pemisahan RGB, Garis Scan, Baris Glitch
+• Gelombang & Distorsi: Gelombang, Pusaran, Tonjolan, Cubit, Geser
+• Ubin: Kaleidoskop, Cermin, Pola ubin
+• Blur & Tajam: Gaussian, Motion Blur, Surface Blur, Unsharp Mask
+• Artistik: Cat Minyak, Cat Air, Posterisasi, Tepi Poster
+• Efek Kuas: Cross Hatch, Kontur Tinta, Percikan, Sumi-e
+• Relief: Embos, Bevel, Deteksi Tepi
+• Frekuensi: High-Pass, Low-Pass, Filter Gradien
+• Render: Api, Awan
+• Plus 14 filter warna: Vintage, Sinematik, Cyberpunk, Neon, HDR dan lainnya
+
+DIBUAT UNTUK KREATOR KONTEN
+• Ekspor dalam resolusi 1080p tinggi
+• Bagikan langsung ke Instagram, Instagram Stories, Twitter/X
+• Simpan otomatis proyek — jangan pernah kehilangan pekerjaan Anda
+• Lanjutkan pengeditan kapan saja dengan galeri proyek
+• Sempurna untuk postingan viral, cerita, dan konten kreatif
+
+PERFORMA BERTENAGA GPU
+Dibangun di atas mesin rendering Skia Shopify, Corivo memberikan performa kelas desktop di ponsel Anda. Setiap efek berjalan di GPU perangkat Anda untuk pratinjau instan yang mulus. Sesuaikan parameter secara real-time dan lihat hasilnya segera — tanpa penundaan rendering, selamanya.
+
+FITUR PROFESIONAL
+• Kanvas pinch-to-zoom untuk pengeditan presisi
+• Memori parameter — mengingat pengaturan favorit Anda
+• Riwayat undo/redo lengkap
+• Manajemen proyek batch
+• Ekspor ke PNG atau JPEG dengan kontrol kualitas
+• Bekerja 100% offline — tidak perlu internet
+
+INDAH & INTUITIF
+• Tema gelap dioptimalkan untuk fokus
+• Animasi dan transisi yang mulus
+• Umpan balik haptic untuk interaksi yang memuaskan
+• Kategori efek terorganisir untuk penemuan mudah
+• Antarmuka bersih, minimalis
+
+Sempurna untuk:
+• Kreator konten Instagram dan TikTok
+• Manajer media sosial dan influencer
+• Penggemar fotografi yang mencari alat kreatif
+• Seniman digital dan desainer
+• Siapa saja yang menginginkan foto unik dan menarik perhatian
+• Kreator yang menghargai kecepatan dan kualitas
+
+CARA KERJANYA
+1. Pilih foto dari perpustakaan Anda atau buat proyek baru
+2. Jelajahi 50+ efek, ketuk untuk menerapkan, sesuaikan parameter secara real-time
+3. Ekspor dalam 1080p dan bagikan ke Instagram, TikTok, atau simpan ke galeri Anda
+
+Unduh Corivo hari ini dan ubah foto Anda dengan efek profesional bertenaga GPU. Buat konten menakjubkan yang layak viral dalam hitungan detik — tanpa menunggu, tanpa batas, hanya kreativitas murni.

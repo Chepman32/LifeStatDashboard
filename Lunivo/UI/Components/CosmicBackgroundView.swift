@@ -9,9 +9,12 @@ struct CosmicBackgroundView: View {
         TimelineView(.animation(minimumInterval: 1 / 24, paused: !animate)) { timeline in
             let t = timeline.date.timeIntervalSinceReferenceDate
             let palette = theme.palette
+            let isLight = theme == .light || theme == .solar
+            let blendColor = isLight ? Color.white : Color.black
+            let gradientColors = palette.background.map { blendColor.blended(with: $0, amount: intensity) }
 
             ZStack {
-                LinearGradient(colors: palette.background, startPoint: .topLeading, endPoint: .bottomTrailing)
+                LinearGradient(colors: gradientColors, startPoint: .topLeading, endPoint: .bottomTrailing)
 
                 Canvas { context, size in
                     for index in 0..<120 {
