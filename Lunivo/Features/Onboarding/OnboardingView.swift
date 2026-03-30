@@ -21,7 +21,7 @@ struct OnboardingView: View {
                     .foregroundStyle(palette.textPrimary)
                     .padding(.top, 24)
 
-                Text(progressTitle)
+                Text(LocalizedStringKey(progressTitle))
                     .font(.caption.weight(.semibold))
                     .tracking(2.5)
                     .foregroundStyle(palette.textSecondary)
@@ -219,11 +219,11 @@ struct OnboardingView: View {
             if let hero {
                 GlassCard(theme: theme, cornerRadius: 36, padding: 28) {
                     VStack(alignment: .leading, spacing: 18) {
-                        Text(hero.title)
+                        Text(LocalizedStringKey(hero.title))
                             .font(.headline.weight(.semibold))
                             .foregroundStyle(palette.textSecondary)
                         RollingNumberText(text: hero.formattedValue, unit: hero.unit, theme: theme, emphasis: true)
-                        Text(hero.wittyComparison)
+                        Text(LocalizedStringKey(hero.wittyComparison))
                             .font(LunivoTypography.editorial(24))
                             .foregroundStyle(palette.textPrimary)
                     }
@@ -273,7 +273,7 @@ private struct ThemePreviewCard: View {
                         .offset(x: 16, y: -14)
                 }
 
-            Text(theme.title)
+            Text(LocalizedStringKey(theme.title))
                 .font(.headline.weight(.semibold))
                 .foregroundStyle(palette.textPrimary)
         }

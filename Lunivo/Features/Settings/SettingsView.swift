@@ -5,22 +5,23 @@ struct SettingsView: View {
 
     var body: some View {
         let palette = model.profile.selectedTheme.palette
+        let locale = model.locale
 
         NavigationStack {
             Form {
-                profileSection(palette: palette)
-                appearanceSection(palette: palette)
-                motionSection(palette: palette)
-                tickerSection(palette: palette)
-                localizationSection(palette: palette)
-                methodologySection(palette: palette)
-                privacySection(palette: palette)
-                aboutSection(palette: palette)
+                profileSection(palette: palette, locale: locale)
+                appearanceSection(palette: palette, locale: locale)
+                motionSection(palette: palette, locale: locale)
+                tickerSection(palette: palette, locale: locale)
+                localizationSection(palette: palette, locale: locale)
+                methodologySection(palette: palette, locale: locale)
+                privacySection(palette: palette, locale: locale)
+                aboutSection(palette: palette, locale: locale)
             }
             .scrollContentBackground(.hidden)
             .background(Color.clear)
             .foregroundStyle(palette.textPrimary)
-            .navigationTitle("Settings")
+            .navigationTitle(LunivoLocalization.string("Settings", locale: locale))
             .tint(palette.accent)
         }
     }
@@ -29,10 +30,10 @@ struct SettingsView: View {
         palette.listRowBackground.ignoresSafeArea()
     }
 
-    private func profileSection(palette: ThemePalette) -> some View {
-        Section("Profile Input") {
+    private func profileSection(palette: ThemePalette, locale: Locale) -> some View {
+        Section(LunivoLocalization.string("Profile Input", locale: locale)) {
             DatePicker(
-                "Birth Date",
+                LunivoLocalization.string("Birth Date", locale: locale),
                 selection: Binding(
                     get: { model.profile.birthDate },
                     set: { v in model.updateProfile { $0.birthDate = v } }
@@ -42,56 +43,57 @@ struct SettingsView: View {
             )
             .listRowBackground(rowBG(palette))
 
-            Toggle("Include birth time", isOn: Binding(
+            Toggle(LunivoLocalization.string("Include birth time", locale: locale), isOn: Binding(
                 get: { model.profile.hasBirthTime },
                 set: { v in model.updateProfile { $0.hasBirthTime = v } }
             ))
             .listRowBackground(rowBG(palette))
 
-            Picker("Units", selection: Binding(
+            Picker(LunivoLocalization.string("Units", locale: locale), selection: Binding(
                 get: { model.profile.unitPreference },
                 set: { v in model.updateProfile { $0.unitPreference = v } }
             )) {
                 ForEach(UnitPreference.allCases) { preference in
-                    Text(preference.title).tag(preference)
+                    Text(preference.localizedTitle(locale: locale)).tag(preference)
                 }
             }
             .listRowBackground(rowBG(palette))
 
-            Button("Reset All", role: .destructive) { model.resetAll() }
+            Button(LunivoLocalization.string("Reset All", locale: locale), role: .destructive) { model.resetAll() }
                 .listRowBackground(rowBG(palette))
         }
     }
 
-    private func appearanceSection(palette: ThemePalette) -> some View {
-        Section("Appearance") {
-            Picker("Theme", selection: Binding(
+    private func appearanceSection(palette: ThemePalette, locale: Locale) -> some View {
+        Section(LunivoLocalization.string("Appearance", locale: locale)) {
+            Picker(LunivoLocalization.string("Theme", locale: locale), selection: Binding(
                 get: { model.profile.selectedTheme },
                 set: { v in model.updateProfile { $0.selectedTheme = v } }
             )) {
                 ForEach(LunivoTheme.allCases) { theme in
-                    Text(theme.title).tag(theme)
+                    Text(theme.localizedTitle(locale: locale)).tag(theme)
                 }
             }
             .listRowBackground(rowBG(palette))
 
-            Picker("Display Density", selection: Binding(
+            Picker(LunivoLocalization.string("Display Density", locale: locale), selection: Binding(
                 get: { model.profile.displayDensity },
                 set: { v in model.updateProfile { $0.displayDensity = v } }
             )) {
-                Text("Calm").tag(DisplayDensity.calm)
-                Text("Detailed").tag(DisplayDensity.detailed)
+                ForEach(DisplayDensity.allCases) { density in
+                    Text(density.localizedTitle(locale: locale)).tag(density)
+                }
             }
             .listRowBackground(rowBG(palette))
 
-            Toggle("Large text mode", isOn: Binding(
+            Toggle(LunivoLocalization.string("Large text mode", locale: locale), isOn: Binding(
                 get: { model.profile.largeTextMode },
                 set: { v in model.updateProfile { $0.largeTextMode = v } }
             ))
             .listRowBackground(rowBG(palette))
 
             VStack(alignment: .leading) {
-                Text("Background intensity")
+                Text(LunivoLocalization.string("Background intensity", locale: locale))
                 Slider(value: Binding(
                     get: { model.profile.backgroundIntensity },
                     set: { v in model.updateProfile { $0.backgroundIntensity = v } }
@@ -101,20 +103,20 @@ struct SettingsView: View {
         }
     }
 
-    private func motionSection(palette: ThemePalette) -> some View {
-        Section("Motion") {
-            Picker("Motion mode", selection: Binding(
+    private func motionSection(palette: ThemePalette, locale: Locale) -> some View {
+        Section(LunivoLocalization.string("Motion", locale: locale)) {
+            Picker(LunivoLocalization.string("Motion mode", locale: locale), selection: Binding(
                 get: { model.profile.motionPreference },
                 set: { v in model.updateProfile { $0.motionPreference = v } }
             )) {
                 ForEach(MotionPreference.allCases) { mode in
-                    Text(mode.title).tag(mode)
+                    Text(mode.localizedTitle(locale: locale)).tag(mode)
                 }
             }
             .listRowBackground(rowBG(palette))
 
             Stepper(
-                "Ticker interval: \(model.profile.liveTickerInterval.formatted(.number.precision(.fractionLength(0))))s",
+                "\(LunivoLocalization.string("Ticker interval", locale: locale)): \(model.profile.liveTickerInterval.formatted(.number.precision(.fractionLength(0))))s",
                 value: Binding(
                     get: { model.profile.liveTickerInterval },
                     set: { v in model.updateProfile { $0.liveTickerInterval = v } }
@@ -125,29 +127,29 @@ struct SettingsView: View {
         }
     }
 
-    private func tickerSection(palette: ThemePalette) -> some View {
-        Section("Live Ticker") {
-            Toggle("Auto cycle", isOn: Binding(
+    private func tickerSection(palette: ThemePalette, locale: Locale) -> some View {
+        Section(LunivoLocalization.string("Live Ticker", locale: locale)) {
+            Toggle(LunivoLocalization.string("Auto cycle", locale: locale), isOn: Binding(
                 get: { model.profile.liveTickerAutoCycle },
                 set: { v in model.updateProfile { $0.liveTickerAutoCycle = v } }
             ))
             .listRowBackground(rowBG(palette))
 
-            Picker("Visibility", selection: Binding(
+            Picker(LunivoLocalization.string("Visibility", locale: locale), selection: Binding(
                 get: { model.profile.liveTickerVisibility },
                 set: { v in model.updateProfile { $0.liveTickerVisibility = v } }
             )) {
                 ForEach(LiveTickerVisibility.allCases) { option in
-                    Text(option.rawValue.capitalized).tag(option)
+                    Text(option.localizedTitle(locale: locale)).tag(option)
                 }
             }
             .listRowBackground(rowBG(palette))
         }
     }
 
-    private func localizationSection(palette: ThemePalette) -> some View {
-        Section("Language") {
-            Picker("Preferred language", selection: Binding(
+    private func localizationSection(palette: ThemePalette, locale: Locale) -> some View {
+        Section(LunivoLocalization.string("Language", locale: locale)) {
+            Picker(LunivoLocalization.string("Preferred language", locale: locale), selection: Binding(
                 get: { model.preferredLanguage },
                 set: { model.updateLanguage($0) }
             )) {
@@ -159,31 +161,31 @@ struct SettingsView: View {
         }
     }
 
-    private func methodologySection(palette: ThemePalette) -> some View {
-        Section("Methodology") {
-            NavigationLink("Constants and assumptions") {
+    private func methodologySection(palette: ThemePalette, locale: Locale) -> some View {
+        Section(LunivoLocalization.string("Methodology", locale: locale)) {
+            NavigationLink(LunivoLocalization.string("Constants and assumptions", locale: locale)) {
                 MethodologyView().environmentObject(model)
             }
             .listRowBackground(rowBG(palette))
-            Text("All calculations happen on this device and are labeled by derivation type.")
+            Text(LunivoLocalization.string("All calculations happen on this device and are labeled by derivation type.", locale: locale))
                 .listRowBackground(rowBG(palette))
         }
     }
 
-    private func privacySection(palette: ThemePalette) -> some View {
-        Section("Privacy") {
-            Text("All calculations happen on this device.").listRowBackground(rowBG(palette))
-            Text("No account.").listRowBackground(rowBG(palette))
-            Text("No server.").listRowBackground(rowBG(palette))
-            Text("No tracking.").listRowBackground(rowBG(palette))
+    private func privacySection(palette: ThemePalette, locale: Locale) -> some View {
+        Section(LunivoLocalization.string("Privacy", locale: locale)) {
+            Text(LunivoLocalization.string("All calculations happen on this device.", locale: locale)).listRowBackground(rowBG(palette))
+            Text(LunivoLocalization.string("No account.", locale: locale)).listRowBackground(rowBG(palette))
+            Text(LunivoLocalization.string("No server.", locale: locale)).listRowBackground(rowBG(palette))
+            Text(LunivoLocalization.string("No tracking.", locale: locale)).listRowBackground(rowBG(palette))
         }
     }
 
-    private func aboutSection(palette: ThemePalette) -> some View {
-        Section("About") {
-            Text("Version 1.0").listRowBackground(rowBG(palette))
-            Text("Built as a native SwiftUI iPhone app with deterministic offline calculations.").listRowBackground(rowBG(palette))
-            Text("Typography uses Apple-native system type with Helvetica Neue for select editorial treatments.").listRowBackground(rowBG(palette))
+    private func aboutSection(palette: ThemePalette, locale: Locale) -> some View {
+        Section(LunivoLocalization.string("About", locale: locale)) {
+            Text(LunivoLocalization.string("Version 1.0", locale: locale)).listRowBackground(rowBG(palette))
+            Text(LunivoLocalization.string("Built as a native SwiftUI iPhone app with deterministic offline calculations.", locale: locale)).listRowBackground(rowBG(palette))
+            Text(LunivoLocalization.string("Typography uses Apple-native system type with Helvetica Neue for select editorial treatments.", locale: locale)).listRowBackground(rowBG(palette))
         }
     }
 }

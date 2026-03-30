@@ -17,11 +17,15 @@ enum LunivoTheme: String, Codable, CaseIterable, Identifiable {
         }
     }
 
+    func localizedTitle(locale: Locale) -> String {
+        LunivoLocalization.string(title, locale: locale)
+    }
+
     var preferredScheme: ColorScheme? {
         switch self {
-        case .light, .solar:
+        case .light, .solar, .mono:
             return .light
-        case .dark, .mono:
+        case .dark:
             return .dark
         }
     }
@@ -66,15 +70,15 @@ enum LunivoTheme: String, Codable, CaseIterable, Identifiable {
             )
         case .mono:
             ThemePalette(
-                background: [Color(hex: 0x111214), Color(hex: 0x2A2C31), Color(hex: 0x555961)],
-                textPrimary: Color.white,
-                textSecondary: Color(hex: 0xD3D7DF),
-                accent: Color(hex: 0xECEFF6),
-                accentSecondary: Color(hex: 0x959BA7),
-                cardFill: Color.white.opacity(0.12),
-                cardStroke: Color.white.opacity(0.16),
-                starColor: Color.white.opacity(0.4),
-                glow: Color.white.opacity(0.2)
+                background: [Color(hex: 0xF4F4F1), Color(hex: 0xE6E6E1), Color(hex: 0xD6D6D0)],
+                textPrimary: Color(hex: 0x1D1D1B),
+                textSecondary: Color(hex: 0x686863),
+                accent: Color(hex: 0x7A7A74),
+                accentSecondary: Color(hex: 0xB2B2AB),
+                cardFill: Color.white.opacity(0.56),
+                cardStroke: Color.white.opacity(0.74),
+                starColor: Color(hex: 0x6E6E68).opacity(0.22),
+                glow: Color.white.opacity(0.42)
             )
         }
     }

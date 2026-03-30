@@ -20,14 +20,14 @@ struct MilestonesView: View {
                                     .font(.caption.weight(.bold))
                                     .tracking(2.2)
                                     .foregroundStyle(palette.textSecondary)
-                                Text(hero.title)
+                                Text(LocalizedStringKey(hero.title))
                                     .font(LunivoTypography.display(30, weight: .bold))
                                     .foregroundStyle(palette.textPrimary)
                                 Text(hero.value)
                                     .font(LunivoTypography.hero(44))
                                     .monospacedDigit()
                                     .foregroundStyle(palette.accent)
-                                Text(hero.estimatedDate.map { LunivoDateFormatter.medium(date: $0, locale: model.locale) } ?? "Static")
+                                Text(LocalizedStringKey(hero.estimatedDate.map { LunivoDateFormatter.medium(date: $0, locale: model.locale) } ?? "Static"))
                                     .font(.headline.weight(.medium))
                                     .foregroundStyle(palette.textSecondary)
                                 ProgressView(value: hero.progress)
@@ -99,7 +99,7 @@ struct MilestoneRow: View {
             VStack(alignment: .leading, spacing: 12) {
                 HStack {
                     VStack(alignment: .leading, spacing: 6) {
-                        Text(milestone.title)
+                        Text(LocalizedStringKey(milestone.title))
                             .font(.headline.weight(.semibold))
                             .foregroundStyle(palette.textPrimary)
                         Text(milestone.value)
@@ -127,7 +127,7 @@ struct MilestoneRow: View {
                 ProgressView(value: milestone.progress)
                     .tint(palette.accent)
 
-                Text(milestone.description)
+                Text(LocalizedStringKey(milestone.description))
                     .font(.footnote)
                     .foregroundStyle(palette.textSecondary)
             }

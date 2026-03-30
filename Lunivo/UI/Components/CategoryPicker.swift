@@ -3,6 +3,7 @@ import SwiftUI
 struct CategoryPicker: View {
     @Binding var selection: StatCategory
     let theme: LunivoTheme
+    @EnvironmentObject private var model: AppModel
 
     var body: some View {
         let palette = theme.palette
@@ -19,7 +20,7 @@ struct CategoryPicker: View {
                         HStack(spacing: 8) {
                             Image(systemName: category.iconName)
                                 .font(.caption.weight(.bold))
-                            Text(category.title)
+                            Text(category.localizedTitle(locale: model.locale))
                                 .font(.subheadline.weight(.semibold))
                         }
                         .foregroundStyle(selection == category ? palette.textPrimary : palette.textSecondary)

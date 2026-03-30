@@ -26,7 +26,9 @@
 		546A9A9D8D4C2ED4BC207DCF /* ShareCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BBDBF7C3A3ED8792A3633 /* ShareCanvasView.swift */; };
 		54787DC8FE82A8A92D09B168 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D8B44A4BE545BE85391470 /* Typography.swift */; };
 		5F3D8D04458E0D8E08AADAAF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CCF4663A2456C6E440F4A5 /* SettingsView.swift */; };
+		62A8F496DB72474FA76E33C4 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3665F719D485489AAB7855B8 /* Localizable.xcstrings */; };
 		64D61011DAC6BF7069EB69B7 /* AgeChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AEEDBF7C662285C53040E3 /* AgeChipView.swift */; };
+		6668A458FF504D92863DD00B /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41015BC3F347B48B7A57AE /* Localization.swift */; };
 		6E868FD5176BAFFFC632426A /* Icon-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7BC48C64FAC0564ED79CB9D /* Icon-20@2x.png */; };
 		77984CA13CB03CFEEC92F76A /* PersistenceControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A230626B378EF42CB89CC45A /* PersistenceControllerTests.swift */; };
 		77B3DBF3CFF8D3063E56A188 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB49AC6D5DA8188752890E /* Formatters.swift */; };
@@ -75,6 +77,8 @@
 		35003674DFAFDDA012201884 /* LiveTickerRibbon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiveTickerRibbon.swift; sourceTree = "<group>"; };
 		36A555413602685D84D8D595 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		36BB1BD34D77EBC896A76DED /* Icon-40@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		3665F719D485489AAB7855B8 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		1D41015BC3F347B48B7A57AE /* Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		39178588C64741E837B54917 /* Lunivo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lunivo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF55D4317178B0BD22F90CE /* CosmicBackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CosmicBackgroundView.swift; sourceTree = "<group>"; };
 		46B1EB79BD6BF5156F6E4F4F /* UserProfile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 		02E880F1CC50FABD988B74AD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				1D41015BC3F347B48B7A57AE /* Localization.swift */,
 				60DB49AC6D5DA8188752890E /* Formatters.swift */,
 			);
 			name = Utilities;
@@ -413,6 +418,7 @@
 			children = (
 				F8912FE2E8213AD62D036ED1 /* Assets.xcassets */,
 				4A1B6608B0B02AFF4FBF3825 /* AppIcons */,
+				3665F719D485489AAB7855B8 /* Localizable.xcstrings */,
 				09A3B694A9394D78ADA5B9A4 /* PrivacyInfo.xcprivacy */,
 			);
 			name = Resources;
@@ -520,6 +526,7 @@
 				B45C6243ABB2B92A3C6D00FC /* Icon-60@3x.png in Resources */,
 				2DBFEAA410A8A46884AF4B62 /* Icon-76@2x.png in Resources */,
 				E25B244907D8D9CB8764643F /* Icon-83.5@2x.png in Resources */,
+				62A8F496DB72474FA76E33C4 /* Localizable.xcstrings in Resources */,
 				1C1B655D9C183698767CD64F /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,6 +549,7 @@
 				3FB719AFEB10E6D7A5850791 /* HapticsManager.swift in Sources */,
 				9630618D57BBF8B3930225F6 /* PersistenceController.swift in Sources */,
 				26D9692C0401B3878333830F /* ShareRenderer.swift in Sources */,
+				6668A458FF504D92863DD00B /* Localization.swift in Sources */,
 				77B3DBF3CFF8D3063E56A188 /* Formatters.swift in Sources */,
 				990DFF4B6C8A632077CD9D2C /* DashboardView.swift in Sources */,
 				3483878058181A67905FCCAF /* StatDetailView.swift in Sources */,

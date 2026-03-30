@@ -17,6 +17,10 @@ enum AppTab: String, CaseIterable, Identifiable {
         }
     }
 
+    func localizedTitle(locale: Locale) -> String {
+        LunivoLocalization.string(title, locale: locale)
+    }
+
     var iconName: String {
         switch self {
         case .dashboard: "sparkles.rectangle.stack"
@@ -48,6 +52,10 @@ enum StatCategory: String, CaseIterable, Codable, Identifiable {
         }
     }
 
+    func localizedTitle(locale: Locale) -> String {
+        LunivoLocalization.string(title, locale: locale)
+    }
+
     var iconName: String {
         switch self {
         case .body: "waveform.path.ecg"
@@ -71,6 +79,10 @@ enum DerivationType: String, Codable {
         case .physicalConstant: "Derived from physical constant"
         case .lifestyleEstimate: "Lifestyle estimate"
         }
+    }
+
+    func localizedTitle(locale: Locale) -> String {
+        LunivoLocalization.string(title, locale: locale)
     }
 }
 

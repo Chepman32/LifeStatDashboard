@@ -1,0 +1,36 @@
+import Foundation
+
+enum LunivoLocalization {
+    static func string(_ key: String, locale: Locale) -> String {
+        let bundle = localizedBundle(for: locale)
+        return NSLocalizedString(key, bundle: bundle, comment: "")
+    }
+
+    private static func localizedBundle(for locale: Locale) -> Bundle {
+        let candidates = localizationCandidates(for: locale)
+
+        for candidate in candidates {
+            if let path = Bundle.main.path(forResource: candidate, ofType: "lproj"),
+               let bundle = Bundle(path: path) {
+                return bundle
+            }
+        }
+
+        return .main
+    }
+
+    private static func localizationCandidates(for locale: Locale) -> [String] {
+        var candidates: [String] = []
+
+        if !locale.identifier.isEmpty {
+            candidates.append(locale.identifier)
+            candidates.append(locale.identifier.replacingOccurrences(of: "_", with: "-"))
+        }
+
+        if let languageCode = locale.language.languageCode?.identifier {
+            candidates.append(languageCode)
+        }
+
+        return Array(NSOrderedSet(array: candidates)) as? [String] ?? candidates
+    }
+}

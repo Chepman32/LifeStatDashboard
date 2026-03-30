@@ -19,7 +19,7 @@ struct FloatingTabBar: View {
                     VStack(spacing: 7) {
                         Image(systemName: tab.iconName)
                             .font(.system(size: 16, weight: .semibold))
-                        Text(tab.title)
+                        Text(tab.localizedTitle(locale: model.locale))
                             .font(.caption2.weight(.semibold))
                     }
                     .frame(maxWidth: .infinity)
