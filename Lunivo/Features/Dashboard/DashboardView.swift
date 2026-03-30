@@ -73,14 +73,14 @@ struct DashboardView: View {
     }
 
     @ViewBuilder
-    private func header(theme: LiftaTheme) -> some View {
+    private func header(theme: LunivoTheme) -> some View {
         let palette = theme.palette
 
         VStack(alignment: .leading, spacing: 14) {
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 10) {
                     Text("Your Life Dashboard")
-                        .font(LiftaTypography.display(34, weight: .bold))
+                        .font(LunivoTypography.display(34, weight: .bold))
                         .foregroundStyle(palette.textPrimary)
                     Text(selectedCategory == .space ? "Still moving through space." : currentSubtitle)
                         .font(.headline.weight(.medium))
@@ -115,7 +115,7 @@ struct DashboardView: View {
 
 private struct StatCardView: View {
     let stat: LifeStat
-    let theme: LiftaTheme
+    let theme: LunivoTheme
     @State private var lifted = false
     @State private var alternateIndex = 0
 
@@ -158,7 +158,7 @@ private struct StatCardView: View {
                     .foregroundStyle(palette.textSecondary)
 
                 Text(stat.wittyComparison)
-                    .font(LiftaTypography.editorial(stat.highlight ? 20 : 18, weight: .medium))
+                    .font(LunivoTypography.editorial(stat.highlight ? 20 : 18, weight: .medium))
                     .foregroundStyle(palette.textPrimary)
 
                 if !stat.alternateRepresentations.isEmpty {
@@ -269,7 +269,7 @@ private struct StatCardView: View {
                 )
                 .overlay(alignment: .bottomLeading) {
                     Text(stat.compactValue)
-                        .font(LiftaTypography.editorial(38, weight: .bold))
+                        .font(LunivoTypography.editorial(38, weight: .bold))
                         .foregroundStyle(palette.textPrimary.opacity(0.1))
                         .padding()
                 }
@@ -291,11 +291,11 @@ private extension Milestone {
             precisionStyle: .count,
             derivationType: .lifestyleEstimate,
             shortDescription: description,
-            wittyComparison: estimatedDate.map { "Estimated for \(LiftaDateFormatter.medium(date: $0, locale: locale))." } ?? "Already reached.",
+            wittyComparison: estimatedDate.map { "Estimated for \(LunivoDateFormatter.medium(date: $0, locale: locale))." } ?? "Already reached.",
             methodologySummary: "Projected using the source stat's current rate.",
             alternateRepresentations: [
-                LifeStatAlternate(title: "Progress", value: LiftaNumberFormatter.exact(progress * 100, locale: locale, fractionDigits: 1) + "%", subtitle: "Current completion"),
-                LifeStatAlternate(title: "Date", value: estimatedDate.map { LiftaDateFormatter.medium(date: $0, locale: locale) } ?? "Static", subtitle: "Projected milestone date")
+                LifeStatAlternate(title: "Progress", value: LunivoNumberFormatter.exact(progress * 100, locale: locale, fractionDigits: 1) + "%", subtitle: "Current completion"),
+                LifeStatAlternate(title: "Date", value: estimatedDate.map { LunivoDateFormatter.medium(date: $0, locale: locale) } ?? "Static", subtitle: "Projected milestone date")
             ],
             nextMilestones: [self],
             deltaPerSecond: 0,

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CosmicBackgroundView: View {
-    let theme: LiftaTheme
+    let theme: LunivoTheme
     let intensity: Double
     let animate: Bool
 

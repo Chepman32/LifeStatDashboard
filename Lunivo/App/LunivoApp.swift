@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct LiftaApp: App {
+struct LunivoApp: App {
     @StateObject private var model = AppModel()
 
     var body: some Scene {

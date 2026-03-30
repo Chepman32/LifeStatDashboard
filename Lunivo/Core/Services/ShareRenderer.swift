@@ -42,7 +42,7 @@ enum ShareRatio: String, CaseIterable, Identifiable {
 struct ShareRenderConfiguration {
     var template: ShareTemplate
     var ratio: ShareRatio
-    var theme: LiftaTheme
+    var theme: LunivoTheme
     var includeMethodology: Bool
     var includeEstimateTag: Bool
 }

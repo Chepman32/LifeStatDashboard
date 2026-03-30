@@ -16,8 +16,8 @@ struct OnboardingView: View {
                 .ignoresSafeArea()
 
             VStack(alignment: .leading, spacing: 24) {
-                Text("Lifta")
-                    .font(LiftaTypography.editorial(36, weight: .bold))
+                Text("Lunivo")
+                    .font(LunivoTypography.editorial(36, weight: .bold))
                     .foregroundStyle(palette.textPrimary)
                     .padding(.top, 24)
 
@@ -56,15 +56,15 @@ struct OnboardingView: View {
     }
 
     @ViewBuilder
-    private func welcome(theme: LiftaTheme) -> some View {
+    private func welcome(theme: LunivoTheme) -> some View {
         let palette = theme.palette
         VStack(alignment: .leading, spacing: 22) {
             Spacer(minLength: 20)
             Text("Your life, translated into impossible numbers.")
-                .font(LiftaTypography.hero(44))
+                .font(LunivoTypography.hero(44))
                 .foregroundStyle(palette.textPrimary)
 
-            Text("Lifta keeps everything on your device. No account. No cloud. No tracking. Just your timeline, rendered at unreasonable scale.")
+            Text("Lunivo keeps everything on your device. No account. No cloud. No tracking. Just your timeline, rendered at unreasonable scale.")
                 .font(.title3.weight(.medium))
                 .foregroundStyle(palette.textSecondary)
                 .fixedSize(horizontal: false, vertical: true)
@@ -93,13 +93,13 @@ struct OnboardingView: View {
     }
 
     @ViewBuilder
-    private func birthday(theme: LiftaTheme) -> some View {
+    private func birthday(theme: LunivoTheme) -> some View {
         let preview = LifeTimeline(profile: draft, now: .now, calendar: Calendar.current).ageSummary.totalDays
         let palette = theme.palette
 
         VStack(alignment: .leading, spacing: 18) {
             Text("When did the timeline start?")
-                .font(LiftaTypography.display(36, weight: .bold))
+                .font(LunivoTypography.display(36, weight: .bold))
                 .foregroundStyle(palette.textPrimary)
 
             Text("Used only on your device.")
@@ -141,17 +141,17 @@ struct OnboardingView: View {
     }
 
     @ViewBuilder
-    private func preferences(theme: LiftaTheme) -> some View {
+    private func preferences(theme: LunivoTheme) -> some View {
         let palette = theme.palette
 
         VStack(alignment: .leading, spacing: 18) {
             Text("Set the mood.")
-                .font(LiftaTypography.display(36, weight: .bold))
+                .font(LunivoTypography.display(36, weight: .bold))
                 .foregroundStyle(palette.textPrimary)
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 14) {
-                    ForEach(LiftaTheme.allCases) { option in
+                    ForEach(LunivoTheme.allCases) { option in
                         Button {
                             withAnimation(.spring(duration: 0.55, bounce: 0.18)) {
                                 draft.selectedTheme = option
@@ -206,14 +206,14 @@ struct OnboardingView: View {
     }
 
     @ViewBuilder
-    private func reveal(theme: LiftaTheme) -> some View {
+    private func reveal(theme: LunivoTheme) -> some View {
         let palette = theme.palette
         let previewSnapshot = LifeStatEngine().snapshot(profile: draft, now: .now)
         let hero = previewSnapshot.statsByCategory[.time]?.first
 
         VStack(alignment: .leading, spacing: 22) {
             Text("First reveal.")
-                .font(LiftaTypography.display(38, weight: .bold))
+                .font(LunivoTypography.display(38, weight: .bold))
                 .foregroundStyle(palette.textPrimary)
 
             if let hero {
@@ -224,7 +224,7 @@ struct OnboardingView: View {
                             .foregroundStyle(palette.textSecondary)
                         RollingNumberText(text: hero.formattedValue, unit: hero.unit, theme: theme, emphasis: true)
                         Text(hero.wittyComparison)
-                            .font(LiftaTypography.editorial(24))
+                            .font(LunivoTypography.editorial(24))
                             .foregroundStyle(palette.textPrimary)
                     }
                 }
@@ -237,7 +237,7 @@ struct OnboardingView: View {
                 .font(.headline.weight(.medium))
                 .foregroundStyle(palette.textSecondary)
 
-            Button("Enter Lifta") {
+            Button("Enter Lunivo") {
                 model.completeOnboarding(with: draft)
             }
             .buttonStyle(PrimaryButtonStyle(theme: theme))
@@ -256,7 +256,7 @@ struct OnboardingView: View {
 }
 
 private struct ThemePreviewCard: View {
-    let theme: LiftaTheme
+    let theme: LunivoTheme
     let selected: Bool
 
     var body: some View {
@@ -292,7 +292,7 @@ private struct ThemePreviewCard: View {
 }
 
 struct PrimaryButtonStyle: ButtonStyle {
-    let theme: LiftaTheme
+    let theme: LunivoTheme
 
     func makeBody(configuration: Configuration) -> some View {
         let palette = theme.palette

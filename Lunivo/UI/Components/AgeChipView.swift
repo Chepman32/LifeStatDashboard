@@ -2,7 +2,7 @@ import SwiftUI
 
 struct AgeChipView: View {
     let summary: AgeSummary
-    let theme: LiftaTheme
+    let theme: LunivoTheme
 
     var body: some View {
         let palette = theme.palette

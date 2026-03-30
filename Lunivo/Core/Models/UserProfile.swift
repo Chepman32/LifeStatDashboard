@@ -95,7 +95,7 @@ struct UserProfile: Codable, Equatable {
     var birthDate: Date
     var hasBirthTime: Bool
     var unitPreference: UnitPreference
-    var selectedTheme: LiftaTheme
+    var selectedTheme: LunivoTheme
     var motionPreference: MotionPreference
     var displayDensity: DisplayDensity
     var liveTickerVisibility: LiveTickerVisibility

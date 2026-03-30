@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum LiftaTypography {
+enum LunivoTypography {
     static func hero(_ size: CGFloat, weight: Font.Weight = .bold) -> Font {
         .system(size: size, weight: weight, design: .default)
     }

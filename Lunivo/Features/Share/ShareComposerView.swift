@@ -16,7 +16,7 @@ struct ShareComposerView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 18) {
                     Text("Share Composer")
-                        .font(LiftaTypography.display(34, weight: .bold))
+                        .font(LunivoTypography.display(34, weight: .bold))
                         .foregroundStyle(theme.palette.textPrimary)
 
                     GlassCard(theme: theme, cornerRadius: 34, padding: 12) {
@@ -76,7 +76,7 @@ struct ShareComposerView: View {
     }
 
     @ViewBuilder
-    private func controls(theme: LiftaTheme) -> some View {
+    private func controls(theme: LunivoTheme) -> some View {
         let palette = theme.palette
 
         GlassCard(theme: theme, cornerRadius: 30, padding: 18) {

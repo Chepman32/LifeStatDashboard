@@ -3,7 +3,7 @@ import SwiftUI
 struct RollingNumberText: View {
     let text: String
     let unit: String
-    let theme: LiftaTheme
+    let theme: LunivoTheme
     var emphasis: Bool = false
 
     var body: some View {
@@ -11,7 +11,7 @@ struct RollingNumberText: View {
 
         VStack(alignment: .leading, spacing: 6) {
             Text(text)
-                .font(LiftaTypography.hero(emphasis ? 42 : 34))
+                .font(LunivoTypography.hero(emphasis ? 42 : 34))
                 .monospacedDigit()
                 .foregroundStyle(
                     LinearGradient(

@@ -83,7 +83,7 @@ struct StatDetailView: View {
     }
 
     @ViewBuilder
-    private func header(theme: LiftaTheme) -> some View {
+    private func header(theme: LunivoTheme) -> some View {
         let palette = theme.palette
 
         GlassCard(theme: theme, cornerRadius: 36, padding: 24) {
@@ -109,7 +109,7 @@ struct StatDetailView: View {
     }
 
     @ViewBuilder
-    private func overview(theme: LiftaTheme) -> some View {
+    private func overview(theme: LunivoTheme) -> some View {
         let palette = theme.palette
         GlassCard(theme: theme) {
             VStack(alignment: .leading, spacing: 18) {
@@ -117,7 +117,7 @@ struct StatDetailView: View {
                     .font(.headline.weight(.semibold))
                     .foregroundStyle(palette.textPrimary)
                 Text(stat.wittyComparison)
-                    .font(LiftaTypography.editorial(28))
+                    .font(LunivoTypography.editorial(28))
                     .foregroundStyle(palette.textPrimary)
 
                 Divider().overlay(.white.opacity(0.1))
@@ -130,7 +130,7 @@ struct StatDetailView: View {
     }
 
     @ViewBuilder
-    private func methodology(theme: LiftaTheme) -> some View {
+    private func methodology(theme: LunivoTheme) -> some View {
         let palette = theme.palette
         GlassCard(theme: theme) {
             VStack(alignment: .leading, spacing: 18) {
@@ -151,7 +151,7 @@ struct StatDetailView: View {
     }
 
     @ViewBuilder
-    private func comparisons(theme: LiftaTheme) -> some View {
+    private func comparisons(theme: LunivoTheme) -> some View {
         VStack(spacing: 14) {
             ForEach(stat.alternateRepresentations) { alternate in
                 GlassCard(theme: theme, cornerRadius: 28, padding: 18) {
@@ -173,7 +173,7 @@ struct StatDetailView: View {
     }
 
     @ViewBuilder
-    private func milestones(theme: LiftaTheme) -> some View {
+    private func milestones(theme: LunivoTheme) -> some View {
         VStack(spacing: 14) {
             ForEach(stat.nextMilestones) { milestone in
                 MilestoneRow(milestone: milestone, theme: theme, favorite: model.favoriteMilestoneIDs.contains(milestone.id)) {

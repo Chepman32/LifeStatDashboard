@@ -2,7 +2,7 @@ import SwiftUI
 
 struct CategoryPicker: View {
     @Binding var selection: StatCategory
-    let theme: LiftaTheme
+    let theme: LunivoTheme
 
     var body: some View {
         let palette = theme.palette

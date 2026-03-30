@@ -1,6 +1,6 @@
 import XCTest
 import UIKit
-@testable import Lifta
+@testable import Lunivo
 
 final class LifeStatEngineTests: XCTestCase {
     func testSecondsLivedMatchesExactElapsedTime() {

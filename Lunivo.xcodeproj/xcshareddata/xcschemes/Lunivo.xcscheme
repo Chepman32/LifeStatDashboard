@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6F6E2D17C1F45B9153FDB5A8"
-               BuildableName = "Lifta.app"
-               BlueprintName = "Lifta"
-               ReferencedContainer = "container:Lifta.xcodeproj">
+               BuildableName = "Lunivo.app"
+               BlueprintName = "Lunivo"
+               ReferencedContainer = "container:Lunivo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A9F1E7B5ACA08F4F53C89521"
-               BuildableName = "LiftaTests.xctest"
-               BlueprintName = "LiftaTests"
-               ReferencedContainer = "container:Lifta.xcodeproj">
+               BuildableName = "LunivoTests.xctest"
+               BlueprintName = "LunivoTests"
+               ReferencedContainer = "container:Lunivo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A9F1E7B5ACA08F4F53C89521"
-               BuildableName = "LiftaTests.xctest"
-               BlueprintName = "LiftaTests"
-               ReferencedContainer = "container:Lifta.xcodeproj">
+               BuildableName = "LunivoTests.xctest"
+               BlueprintName = "LunivoTests"
+               ReferencedContainer = "container:Lunivo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

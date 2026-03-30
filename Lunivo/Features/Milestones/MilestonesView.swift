@@ -21,13 +21,13 @@ struct MilestonesView: View {
                                     .tracking(2.2)
                                     .foregroundStyle(palette.textSecondary)
                                 Text(hero.title)
-                                    .font(LiftaTypography.display(30, weight: .bold))
+                                    .font(LunivoTypography.display(30, weight: .bold))
                                     .foregroundStyle(palette.textPrimary)
                                 Text(hero.value)
-                                    .font(LiftaTypography.hero(44))
+                                    .font(LunivoTypography.hero(44))
                                     .monospacedDigit()
                                     .foregroundStyle(palette.accent)
-                                Text(hero.estimatedDate.map { LiftaDateFormatter.medium(date: $0, locale: model.locale) } ?? "Static")
+                                Text(hero.estimatedDate.map { LunivoDateFormatter.medium(date: $0, locale: model.locale) } ?? "Static")
                                     .font(.headline.weight(.medium))
                                     .foregroundStyle(palette.textSecondary)
                                 ProgressView(value: hero.progress)
@@ -88,7 +88,7 @@ struct MilestonesView: View {
 
 struct MilestoneRow: View {
     let milestone: Milestone
-    let theme: LiftaTheme
+    let theme: LunivoTheme
     let favorite: Bool
     let onFavorite: () -> Void
 
@@ -119,7 +119,7 @@ struct MilestoneRow: View {
                 }
 
                 if let estimatedDate = milestone.estimatedDate {
-                    Text(LiftaDateFormatter.medium(date: estimatedDate, locale: Locale.current))
+                    Text(LunivoDateFormatter.medium(date: estimatedDate, locale: Locale.current))
                         .font(.subheadline.weight(.medium))
                         .foregroundStyle(palette.textSecondary)
                 }

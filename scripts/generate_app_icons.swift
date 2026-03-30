@@ -2,8 +2,8 @@ import AppKit
 
 let projectRoot = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
 let outputRoots = [
-    projectRoot.appendingPathComponent("Lifta/Resources/AppIcons"),
-    projectRoot.appendingPathComponent("Lifta/Resources/Assets.xcassets/AppIcon.appiconset")
+    projectRoot.appendingPathComponent("Lunivo/Resources/AppIcons"),
+    projectRoot.appendingPathComponent("Lunivo/Resources/Assets.xcassets/AppIcon.appiconset")
 ]
 let sourceImage = CommandLine.arguments.dropFirst().first.flatMap { path in
     NSImage(contentsOfFile: path)

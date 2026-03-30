@@ -4,9 +4,9 @@ require "fileutils"
 require "xcodeproj"
 
 ROOT = File.expand_path("..", __dir__)
-PROJECT_PATH = File.join(ROOT, "Lifta.xcodeproj")
-APP_ROOT = File.join(ROOT, "Lifta")
-TEST_ROOT = File.join(ROOT, "Tests", "LiftaTests")
+PROJECT_PATH = File.join(ROOT, "Lunivo.xcodeproj")
+APP_ROOT = File.join(ROOT, "Lunivo")
+TEST_ROOT = File.join(ROOT, "Tests", "LunivoTests")
 
 def ensure_group(parent, name)
   parent.children.find { |child| child.display_name == name } || parent.new_group(name, name)
@@ -34,8 +34,8 @@ project = Xcodeproj::Project.new(PROJECT_PATH)
 project.root_object.attributes["LastUpgradeCheck"] = "1640"
 project.root_object.attributes["TargetAttributes"] = {}
 
-app_target = project.new_target(:application, "Lifta", :ios, "17.0")
-tests_target = project.new_target(:unit_test_bundle, "LiftaTests", :ios, "17.0")
+app_target = project.new_target(:application, "Lunivo", :ios, "17.0")
+tests_target = project.new_target(:unit_test_bundle, "LunivoTests", :ios, "17.0")
 tests_target.add_dependency(app_target)
 
 project.root_object.attributes["TargetAttributes"][app_target.uuid] = {
@@ -48,13 +48,13 @@ project.root_object.attributes["TargetAttributes"][tests_target.uuid] = {
 }
 
 app_target.build_configurations.each do |config|
-  config.build_settings["PRODUCT_BUNDLE_IDENTIFIER"] = "com.lifta.app"
-  config.build_settings["INFOPLIST_FILE"] = "Lifta/Resources/Info.plist"
+  config.build_settings["PRODUCT_BUNDLE_IDENTIFIER"] = "com.lunivo.app"
+  config.build_settings["INFOPLIST_FILE"] = "Lunivo/Resources/Info.plist"
   config.build_settings["GENERATE_INFOPLIST_FILE"] = "NO"
   config.build_settings["IPHONEOS_DEPLOYMENT_TARGET"] = "17.0"
   config.build_settings["MARKETING_VERSION"] = "1.0"
   config.build_settings["CURRENT_PROJECT_VERSION"] = "1"
-  config.build_settings["PRODUCT_NAME"] = "Lifta"
+  config.build_settings["PRODUCT_NAME"] = "Lunivo"
   config.build_settings["SWIFT_VERSION"] = "6.0"
   config.build_settings["SWIFT_EMIT_LOC_STRINGS"] = "YES"
   config.build_settings["TARGETED_DEVICE_FAMILY"] = "1"
@@ -65,15 +65,15 @@ app_target.build_configurations.each do |config|
 end
 
 tests_target.build_configurations.each do |config|
-  config.build_settings["PRODUCT_BUNDLE_IDENTIFIER"] = "com.lifta.app.tests"
+  config.build_settings["PRODUCT_BUNDLE_IDENTIFIER"] = "com.lunivo.app.tests"
   config.build_settings["GENERATE_INFOPLIST_FILE"] = "YES"
   config.build_settings["IPHONEOS_DEPLOYMENT_TARGET"] = "17.0"
-  config.build_settings["PRODUCT_NAME"] = "LiftaTests"
+  config.build_settings["PRODUCT_NAME"] = "LunivoTests"
   config.build_settings["SWIFT_VERSION"] = "6.0"
   config.build_settings["TARGETED_DEVICE_FAMILY"] = "1"
   config.build_settings["SUPPORTED_PLATFORMS"] = "iphoneos iphonesimulator"
-  config.build_settings["TEST_TARGET_NAME"] = "Lifta"
-  config.build_settings["TEST_HOST"] = "$(BUILT_PRODUCTS_DIR)/Lifta.app/Lifta"
+  config.build_settings["TEST_TARGET_NAME"] = "Lunivo"
+  config.build_settings["TEST_HOST"] = "$(BUILT_PRODUCTS_DIR)/Lunivo.app/Lunivo"
   config.build_settings["BUNDLE_LOADER"] = "$(TEST_HOST)"
 end
 
@@ -104,7 +104,7 @@ end
 
 scheme = Xcodeproj::XCScheme.new
 scheme.configure_with_targets(app_target, tests_target)
-scheme.save_as(PROJECT_PATH, "Lifta", true)
+scheme.save_as(PROJECT_PATH, "Lunivo", true)
 
 project.save
 puts "Generated #{PROJECT_PATH}"

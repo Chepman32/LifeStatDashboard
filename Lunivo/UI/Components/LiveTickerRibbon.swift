@@ -2,7 +2,7 @@ import SwiftUI
 
 struct LiveTickerRibbon: View {
     let stats: [LifeStat]
-    let theme: LiftaTheme
+    let theme: LunivoTheme
     let autoCycle: Bool
     let cycleInterval: Double
     let visibility: LiveTickerVisibility

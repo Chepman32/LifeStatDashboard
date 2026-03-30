@@ -1,5 +1,5 @@
 import XCTest
-@testable import Lifta
+@testable import Lunivo
 
 final class PersistenceControllerTests: XCTestCase {
     func testProfileRoundTrip() {

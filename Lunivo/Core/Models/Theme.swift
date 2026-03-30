@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum LiftaTheme: String, Codable, CaseIterable, Identifiable {
+enum LunivoTheme: String, Codable, CaseIterable, Identifiable {
     case light
     case dark
     case solar

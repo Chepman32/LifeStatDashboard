@@ -12,8 +12,8 @@ struct ShareCanvasView: View {
             VStack(alignment: .leading, spacing: 28) {
                 HStack {
                     VStack(alignment: .leading, spacing: 8) {
-                        Text("Lifta")
-                            .font(LiftaTypography.editorial(34, weight: .bold))
+                        Text("Lunivo")
+                            .font(LunivoTypography.editorial(34, weight: .bold))
                             .foregroundStyle(palette.textPrimary)
                         Text("Your life, translated into impossible numbers.")
                             .font(.subheadline.weight(.medium))
@@ -43,7 +43,7 @@ struct ShareCanvasView: View {
                         .foregroundStyle(palette.textSecondary)
                     Spacer()
                     Text("lifta")
-                        .font(LiftaTypography.editorial(18, weight: .bold))
+                        .font(LunivoTypography.editorial(18, weight: .bold))
                         .foregroundStyle(palette.textPrimary.opacity(0.8))
                 }
             }
@@ -60,7 +60,7 @@ struct ShareCanvasView: View {
                     .tracking(2.6)
                     .foregroundStyle(palette.textSecondary)
                 Text(stat.compactValue)
-                    .font(LiftaTypography.hero(110))
+                    .font(LunivoTypography.hero(110))
                     .monospacedDigit()
                     .foregroundStyle(palette.textPrimary)
                     .minimumScaleFactor(0.5)
@@ -68,7 +68,7 @@ struct ShareCanvasView: View {
                     .font(.title3.weight(.semibold))
                     .foregroundStyle(palette.accent)
                 Text(stat.wittyComparison)
-                    .font(LiftaTypography.editorial(28))
+                    .font(LunivoTypography.editorial(28))
                     .foregroundStyle(palette.textPrimary)
                 if configuration.includeMethodology {
                     methodologyTag(for: stat)
@@ -82,11 +82,11 @@ struct ShareCanvasView: View {
         return GlassCard(theme: configuration.theme, cornerRadius: 42, padding: 36) {
             VStack(alignment: .leading, spacing: 24) {
                 Text(stat.compactValue + " " + stat.unit)
-                    .font(LiftaTypography.hero(72))
+                    .font(LunivoTypography.hero(72))
                     .monospacedDigit()
                     .foregroundStyle(palette.textPrimary)
                 Text(stat.wittyComparison)
-                    .font(LiftaTypography.editorial(36, weight: .bold))
+                    .font(LunivoTypography.editorial(36, weight: .bold))
                     .foregroundStyle(palette.textPrimary)
                     .multilineTextAlignment(.leading)
                 if let alternate = stat.alternateRepresentations.first {
@@ -114,7 +114,7 @@ struct ShareCanvasView: View {
                             Text(stat.title)
                                 .font(.headline.weight(.semibold))
                             Text("\(stat.compactValue) \(stat.unit)")
-                                .font(LiftaTypography.hero(36))
+                                .font(LunivoTypography.hero(36))
                                 .monospacedDigit()
                         }
                         Spacer()
@@ -142,10 +142,10 @@ struct ShareCanvasView: View {
                     .offset(x: 210, y: 0)
                 VStack(spacing: 10) {
                     Text(stat.compactValue)
-                        .font(LiftaTypography.hero(82))
+                        .font(LunivoTypography.hero(82))
                         .monospacedDigit()
                     Text(stat.title)
-                        .font(LiftaTypography.editorial(28, weight: .bold))
+                        .font(LunivoTypography.editorial(28, weight: .bold))
                         .multilineTextAlignment(.center)
                 }
             }
@@ -157,7 +157,7 @@ struct ShareCanvasView: View {
     }
 
     private func minimalCard(stat: LifeStat) -> some View {
-        let palette = LiftaTheme.mono.palette
+        let palette = LunivoTheme.mono.palette
         return RoundedRectangle(cornerRadius: 46, style: .continuous)
             .fill(Color.black.opacity(0.72))
             .overlay(
@@ -171,7 +171,7 @@ struct ShareCanvasView: View {
                         .tracking(3)
                         .foregroundStyle(palette.textSecondary)
                     Text(stat.compactValue)
-                        .font(LiftaTypography.hero(96))
+                        .font(LunivoTypography.hero(96))
                         .monospacedDigit()
                         .foregroundStyle(palette.textPrimary)
                     Text(stat.unit)

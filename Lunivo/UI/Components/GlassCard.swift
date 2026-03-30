@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct GlassCard<Content: View>: View {
-    let theme: LiftaTheme
+    let theme: LunivoTheme
     var cornerRadius: CGFloat = 30
     var padding: CGFloat = 22
     @ViewBuilder var content: Content

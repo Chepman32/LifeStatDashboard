@@ -13,7 +13,7 @@
 		105AB1479C2ED89F97FDF336 /* CosmicBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF55D4317178B0BD22F90CE /* CosmicBackgroundView.swift */; };
 		120E03DB7D80DC838601F57A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3B22CB011BAAFB64A4ABF /* SplashView.swift */; };
 		16924F1B6E689E65D464312C /* LifeStatEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00601FC5B54F6E6AC95D84AB /* LifeStatEngine.swift */; };
-		182C509958949F545D41F789 /* LiftaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE31A901B2E7B68DF69EA6 /* LiftaApp.swift */; };
+		182C509958949F545D41F789 /* LunivoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE31A901B2E7B68DF69EA6 /* LunivoApp.swift */; };
 		1AA18069B66AA668F645AF5A /* RollingNumberText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252BE1D747B81D623E8AE809 /* RollingNumberText.swift */; };
 		1C1B655D9C183698767CD64F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 09A3B694A9394D78ADA5B9A4 /* PrivacyInfo.xcprivacy */; };
 		2427A779C417B6ABAA6A46BD /* Icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 845B9EA8DBC356C550CE7BAA /* Icon-29@2x.png */; };
@@ -61,7 +61,7 @@
 			containerPortal = F95C8A719932409C8774CD5E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6F6E2D17C1F45B9153FDB5A8;
-			remoteInfo = Lifta;
+			remoteInfo = Lunivo;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -75,7 +75,7 @@
 		35003674DFAFDDA012201884 /* LiveTickerRibbon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiveTickerRibbon.swift; sourceTree = "<group>"; };
 		36A555413602685D84D8D595 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		36BB1BD34D77EBC896A76DED /* Icon-40@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
-		39178588C64741E837B54917 /* Lifta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lifta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39178588C64741E837B54917 /* Lunivo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lunivo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF55D4317178B0BD22F90CE /* CosmicBackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CosmicBackgroundView.swift; sourceTree = "<group>"; };
 		46B1EB79BD6BF5156F6E4F4F /* UserProfile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		4726643C7BF71735FC5338FD /* StatDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatDetailView.swift; sourceTree = "<group>"; };
@@ -99,13 +99,13 @@
 		BA6DC4A538DC21B926BDA396 /* HapticsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		BB20E5CE5B573D0DDB220FCF /* StatModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatModels.swift; sourceTree = "<group>"; };
 		BB305702330CC28D21D98C9A /* Icon-83.5@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-83.5@2x.png"; sourceTree = "<group>"; };
-		BCA690C5878A5798CDB56080 /* LiftaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiftaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA690C5878A5798CDB56080 /* LunivoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunivoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2976A31426D7BAE64CDE5A3 /* DashboardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		C2F4D2DFC9F6668B07F32449 /* Icon-29@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-29@3x.png"; sourceTree = "<group>"; };
 		CD7D1385095169523316BC3C /* LifeStatEngineTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LifeStatEngineTests.swift; sourceTree = "<group>"; };
 		D3A159C6C25B72688EBFC2C4 /* Icon-1024.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-1024.png"; sourceTree = "<group>"; };
 		D5C7A7F2E1B345CC08BDEC40 /* MilestonesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MilestonesView.swift; sourceTree = "<group>"; };
-		DABE31A901B2E7B68DF69EA6 /* LiftaApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiftaApp.swift; sourceTree = "<group>"; };
+		DABE31A901B2E7B68DF69EA6 /* LunivoApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LunivoApp.swift; sourceTree = "<group>"; };
 		DAD02F3527B45F5BCE32B5C1 /* FloatingTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatingTabBar.swift; sourceTree = "<group>"; };
 		E415F258BFC628E76AED65E8 /* Icon-40@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
 		E77D2C299771D14C59724824 /* Icon-60@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
@@ -164,14 +164,14 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
-		2BBC13C39019585A705DBEF6 /* LiftaTests */ = {
+		2BBC13C39019585A705DBEF6 /* LunivoTests */ = {
 			isa = PBXGroup;
 			children = (
 				CD7D1385095169523316BC3C /* LifeStatEngineTests.swift */,
 				A230626B378EF42CB89CC45A /* PersistenceControllerTests.swift */,
 			);
-			name = LiftaTests;
-			path = LiftaTests;
+			name = LunivoTests;
+			path = LunivoTests;
 			sourceTree = "<group>";
 		};
 		3185F81C4E0600F0C0D6441B /* Share */ = {
@@ -267,8 +267,8 @@
 		69D29F375313355F7B0B2041 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				39178588C64741E837B54917 /* Lifta.app */,
-				BCA690C5878A5798CDB56080 /* LiftaTests.xctest */,
+				39178588C64741E837B54917 /* Lunivo.app */,
+				BCA690C5878A5798CDB56080 /* LunivoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -335,7 +335,7 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
-		83252EBA71AD82093D93A446 /* Lifta */ = {
+		83252EBA71AD82093D93A446 /* Lunivo */ = {
 			isa = PBXGroup;
 			children = (
 				FFCC62E74A1B23E9C8FA2E65 /* Resources */,
@@ -344,14 +344,14 @@
 				8264B5529E3220B6DA925B65 /* Features */,
 				740DC9350263BC456CA7EAA5 /* UI */,
 			);
-			name = Lifta;
-			path = Lifta;
+			name = Lunivo;
+			path = Lunivo;
 			sourceTree = "<group>";
 		};
 		84DCDDD510EF61411B87359A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2BBC13C39019585A705DBEF6 /* LiftaTests */,
+				2BBC13C39019585A705DBEF6 /* LunivoTests */,
 			);
 			name = Tests;
 			path = Tests;
@@ -392,7 +392,7 @@
 			children = (
 				4CEDCC26F628E1D3755DB82A /* AppModel.swift */,
 				AF516497CDC6C0EF6598E1DE /* AppRootView.swift */,
-				DABE31A901B2E7B68DF69EA6 /* LiftaApp.swift */,
+				DABE31A901B2E7B68DF69EA6 /* LunivoApp.swift */,
 			);
 			name = App;
 			path = App;
@@ -403,7 +403,7 @@
 			children = (
 				69D29F375313355F7B0B2041 /* Products */,
 				51AA8122F30F60C2E705CA9A /* Frameworks */,
-				83252EBA71AD82093D93A446 /* Lifta */,
+				83252EBA71AD82093D93A446 /* Lunivo */,
 				84DCDDD510EF61411B87359A /* Tests */,
 			);
 			sourceTree = "<group>";
@@ -422,9 +422,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6F6E2D17C1F45B9153FDB5A8 /* Lifta */ = {
+		6F6E2D17C1F45B9153FDB5A8 /* Lunivo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BFDDFBCEEA058B3D9E6E88C /* Build configuration list for PBXNativeTarget "Lifta" */;
+			buildConfigurationList = 2BFDDFBCEEA058B3D9E6E88C /* Build configuration list for PBXNativeTarget "Lunivo" */;
 			buildPhases = (
 				178C5F9552D43F0A28CA0B00 /* Sources */,
 				D2576D60CB5EDC7DA79B826D /* Frameworks */,
@@ -434,14 +434,14 @@
 			);
 			dependencies = (
 			);
-			name = Lifta;
-			productName = Lifta;
-			productReference = 39178588C64741E837B54917 /* Lifta.app */;
+			name = Lunivo;
+			productName = Lunivo;
+			productReference = 39178588C64741E837B54917 /* Lunivo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A9F1E7B5ACA08F4F53C89521 /* LiftaTests */ = {
+		A9F1E7B5ACA08F4F53C89521 /* LunivoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2234E7D8C15CA24926F80CC9 /* Build configuration list for PBXNativeTarget "LiftaTests" */;
+			buildConfigurationList = 2234E7D8C15CA24926F80CC9 /* Build configuration list for PBXNativeTarget "LunivoTests" */;
 			buildPhases = (
 				BB9147F984346B8E578FA100 /* Sources */,
 				D84CC416963773081A5C309A /* Frameworks */,
@@ -452,9 +452,9 @@
 			dependencies = (
 				3BB60DD05C31597BAB5FA758 /* PBXTargetDependency */,
 			);
-			name = LiftaTests;
-			productName = LiftaTests;
-			productReference = BCA690C5878A5798CDB56080 /* LiftaTests.xctest */;
+			name = LunivoTests;
+			productName = LunivoTests;
+			productReference = BCA690C5878A5798CDB56080 /* LunivoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -475,7 +475,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7586F65E73DA0872F2163EB8 /* Build configuration list for PBXProject "Lifta" */;
+			buildConfigurationList = 7586F65E73DA0872F2163EB8 /* Build configuration list for PBXProject "Lunivo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -490,8 +490,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6F6E2D17C1F45B9153FDB5A8 /* Lifta */,
-				A9F1E7B5ACA08F4F53C89521 /* LiftaTests */,
+				6F6E2D17C1F45B9153FDB5A8 /* Lunivo */,
+				A9F1E7B5ACA08F4F53C89521 /* LunivoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -533,7 +533,7 @@
 			files = (
 				80DB7834B4ECBE1E64301837 /* AppModel.swift in Sources */,
 				E9D0A4912304CC50028F7D95 /* AppRootView.swift in Sources */,
-				182C509958949F545D41F789 /* LiftaApp.swift in Sources */,
+				182C509958949F545D41F789 /* LunivoApp.swift in Sources */,
 				16924F1B6E689E65D464312C /* LifeStatEngine.swift in Sources */,
 				BF201C0A6E14AA87A5CCCCC6 /* LifeTimeline.swift in Sources */,
 				D6336A93D74C7A1F5E1137B3 /* StatModels.swift in Sources */,
@@ -577,8 +577,8 @@
 /* Begin PBXTargetDependency section */
 		3BB60DD05C31597BAB5FA758 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Lifta;
-			target = 6F6E2D17C1F45B9153FDB5A8 /* Lifta */;
+			name = Lunivo;
+			target = 6F6E2D17C1F45B9153FDB5A8 /* Lunivo */;
 			targetProxy = 750D58DA77EB79D6DA4832DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -591,14 +591,14 @@
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lifta.app.tests;
-				PRODUCT_NAME = LiftaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lunivo.app.tests;
+				PRODUCT_NAME = LunivoTests;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifta.app/Lifta";
-				TEST_TARGET_NAME = Lifta;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lunivo.app/Lunivo";
+				TEST_TARGET_NAME = Lunivo;
 			};
 			name = Debug;
 		};
@@ -724,14 +724,14 @@
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lifta.app.tests;
-				PRODUCT_NAME = LiftaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lunivo.app.tests;
+				PRODUCT_NAME = LunivoTests;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifta.app/Lifta";
-				TEST_TARGET_NAME = Lifta;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lunivo.app/Lunivo";
+				TEST_TARGET_NAME = Lunivo;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -746,12 +746,12 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = Lifta/Resources/Info.plist;
+				INFOPLIST_FILE = Lunivo/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lifta.app;
-				PRODUCT_NAME = Lifta;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lunivo.app;
+				PRODUCT_NAME = Lunivo;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -771,12 +771,12 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = Lifta/Resources/Info.plist;
+				INFOPLIST_FILE = Lunivo/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lifta.app;
-				PRODUCT_NAME = Lifta;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lunivo.app;
+				PRODUCT_NAME = Lunivo;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -790,7 +790,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2234E7D8C15CA24926F80CC9 /* Build configuration list for PBXNativeTarget "LiftaTests" */ = {
+		2234E7D8C15CA24926F80CC9 /* Build configuration list for PBXNativeTarget "LunivoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD4F5DDCAF83408CFD84E7E8 /* Release */,
@@ -799,7 +799,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BFDDFBCEEA058B3D9E6E88C /* Build configuration list for PBXNativeTarget "Lifta" */ = {
+		2BFDDFBCEEA058B3D9E6E88C /* Build configuration list for PBXNativeTarget "Lunivo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F34D0EB05EB9A2AED4521277 /* Release */,
@@ -808,7 +808,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7586F65E73DA0872F2163EB8 /* Build configuration list for PBXProject "Lifta" */ = {
+		7586F65E73DA0872F2163EB8 /* Build configuration list for PBXProject "Lunivo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E47EC0913B323306C921C64 /* Debug */,

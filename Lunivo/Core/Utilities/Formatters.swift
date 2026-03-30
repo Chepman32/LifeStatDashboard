@@ -1,6 +1,6 @@
 import Foundation
 
-enum LiftaNumberFormatter {
+enum LunivoNumberFormatter {
     static func exact(_ value: Double, locale: Locale, fractionDigits: Int = 0) -> String {
         value.formatted(
             .number
@@ -47,7 +47,7 @@ enum LiftaNumberFormatter {
     }
 }
 
-enum LiftaDateFormatter {
+enum LunivoDateFormatter {
     static func medium(date: Date, locale: Locale) -> String {
         let formatter = DateFormatter()
         formatter.locale = locale

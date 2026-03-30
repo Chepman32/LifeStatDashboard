@@ -31,8 +31,8 @@ struct SplashView: View {
                         .frame(width: 80, height: 80)
                         .blur(radius: 24)
 
-                    Text("Lifta")
-                        .font(LiftaTypography.editorial(48, weight: .bold))
+                    Text("Lunivo")
+                        .font(LunivoTypography.editorial(48, weight: .bold))
                         .foregroundStyle(palette.textPrimary)
                         .opacity(logoVisible ? 1 : 0)
                         .blur(radius: logoVisible ? 0 : 16)
@@ -40,7 +40,7 @@ struct SplashView: View {
 
                 VStack(spacing: 12) {
                     Text(digitsVisible ? "3,184,557,024" : "0")
-                        .font(LiftaTypography.hero(46))
+                        .font(LunivoTypography.hero(46))
                         .monospacedDigit()
                         .foregroundStyle(palette.textPrimary)
                         .contentTransition(.numericText())

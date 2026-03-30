@@ -837,7 +837,7 @@ struct LifeStatEngine {
         methodology: String,
         visualStyle: StatVisualStyle
     ) -> LifeStat {
-        let display = LiftaNumberFormatter.growth(millimeters, unitPreference: timeline.profile.unitPreference, locale: locale)
+        let display = LunivoNumberFormatter.growth(millimeters, unitPreference: timeline.profile.unitPreference, locale: locale)
         let rate = timeline.profile.unitPreference == .metric ? dailyRateMillimeters / 86_400 / 10 : dailyRateMillimeters / 86_400 / 25.4
         return LifeStat(
             id: id,
@@ -880,7 +880,7 @@ struct LifeStatEngine {
         visualStyle: StatVisualStyle,
         highlight: Bool = false
     ) -> LifeStat {
-        let distance = LiftaNumberFormatter.distance(kilometers, unitPreference: timeline.profile.unitPreference, locale: locale)
+        let distance = LunivoNumberFormatter.distance(kilometers, unitPreference: timeline.profile.unitPreference, locale: locale)
         let adjustedRaw = timeline.profile.unitPreference == .metric ? kilometers : kilometers * 0.621371
         let adjustedRate = timeline.profile.unitPreference == .metric ? deltaPerSecond : deltaPerSecond * 0.621371
         return LifeStat(
@@ -947,11 +947,11 @@ struct LifeStatEngine {
     }
 
     private func formatted(_ value: Double, locale: Locale, fractionDigits: Int = 0) -> String {
-        LiftaNumberFormatter.exact(value, locale: locale, fractionDigits: fractionDigits)
+        LunivoNumberFormatter.exact(value, locale: locale, fractionDigits: fractionDigits)
     }
 
     private func compact(_ value: Double, locale: Locale) -> String {
-        LiftaNumberFormatter.compact(value, locale: locale, fractionDigits: value < 1000 ? 1 : 1)
+        LunivoNumberFormatter.compact(value, locale: locale, fractionDigits: value < 1000 ? 1 : 1)
     }
 
     private func alt(_ title: String, value: String, subtitle: String) -> LifeStatAlternate {
@@ -962,7 +962,7 @@ struct LifeStatEngine {
         guard rate > 0 else { return "Static" }
         let seconds = max(0, (nextTarget - current) / rate)
         let date = Date().addingTimeInterval(seconds)
-        return LiftaDateFormatter.medium(date: date, locale: locale)
+        return LunivoDateFormatter.medium(date: date, locale: locale)
     }
 
     private func methodologySections() -> [MethodologySection] {
@@ -1015,8 +1015,8 @@ private extension Milestone {
             wittyComparison: description,
             methodologySummary: "Projected using the current live rate of the source statistic.",
             alternateRepresentations: [
-                LifeStatAlternate(title: "Date", value: estimatedDate.map { LiftaDateFormatter.medium(date: $0, locale: locale) } ?? "Static", subtitle: "Estimated arrival"),
-                LifeStatAlternate(title: "Progress", value: LiftaNumberFormatter.exact(progress * 100, locale: locale, fractionDigits: 1) + "%", subtitle: "How close you already are")
+                LifeStatAlternate(title: "Date", value: estimatedDate.map { LunivoDateFormatter.medium(date: $0, locale: locale) } ?? "Static", subtitle: "Estimated arrival"),
+                LifeStatAlternate(title: "Progress", value: LunivoNumberFormatter.exact(progress * 100, locale: locale, fractionDigits: 1) + "%", subtitle: "How close you already are")
             ],
             nextMilestones: [self],
             deltaPerSecond: 0,

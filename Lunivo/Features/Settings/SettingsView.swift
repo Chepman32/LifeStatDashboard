@@ -70,7 +70,7 @@ struct SettingsView: View {
                     model.updateProfile { $0.selectedTheme = value }
                 }
             )) {
-                ForEach(LiftaTheme.allCases) { theme in
+                ForEach(LunivoTheme.allCases) { theme in
                     Text(theme.title).tag(theme)
                 }
             }
