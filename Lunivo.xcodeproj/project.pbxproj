@@ -71,14 +71,14 @@
 		00601FC5B54F6E6AC95D84AB /* LifeStatEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LifeStatEngine.swift; sourceTree = "<group>"; };
 		029BBDBF7C3A3ED8792A3633 /* ShareCanvasView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShareCanvasView.swift; sourceTree = "<group>"; };
 		02D07F2A5FBCDF0B2385CA2A /* PersistenceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		09A3B694A9394D78ADA5B9A4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		09A3B694A9394D78ADA5B9A4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1D41015BC3F347B48B7A57AE /* Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		252BE1D747B81D623E8AE809 /* RollingNumberText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RollingNumberText.swift; sourceTree = "<group>"; };
 		334282688EB04573E62A41C4 /* LifeTimeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LifeTimeline.swift; sourceTree = "<group>"; };
 		35003674DFAFDDA012201884 /* LiveTickerRibbon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiveTickerRibbon.swift; sourceTree = "<group>"; };
+		3665F719D485489AAB7855B8 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		36A555413602685D84D8D595 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		36BB1BD34D77EBC896A76DED /* Icon-40@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
-		3665F719D485489AAB7855B8 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		1D41015BC3F347B48B7A57AE /* Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		39178588C64741E837B54917 /* Lunivo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lunivo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF55D4317178B0BD22F90CE /* CosmicBackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CosmicBackgroundView.swift; sourceTree = "<group>"; };
 		46B1EB79BD6BF5156F6E4F4F /* UserProfile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
@@ -145,7 +145,6 @@
 				1D41015BC3F347B48B7A57AE /* Localization.swift */,
 				60DB49AC6D5DA8188752890E /* Formatters.swift */,
 			);
-			name = Utilities;
 			path = Utilities;
 			sourceTree = "<group>";
 		};
@@ -156,7 +155,6 @@
 				93A7500E59B9C53DBF9421DA /* Theme.swift */,
 				46B1EB79BD6BF5156F6E4F4F /* UserProfile.swift */,
 			);
-			name = Models;
 			path = Models;
 			sourceTree = "<group>";
 		};
@@ -165,7 +163,6 @@
 			children = (
 				B8E3B22CB011BAAFB64A4ABF /* SplashView.swift */,
 			);
-			name = Splash;
 			path = Splash;
 			sourceTree = "<group>";
 		};
@@ -175,7 +172,6 @@
 				CD7D1385095169523316BC3C /* LifeStatEngineTests.swift */,
 				A230626B378EF42CB89CC45A /* PersistenceControllerTests.swift */,
 			);
-			name = LunivoTests;
 			path = LunivoTests;
 			sourceTree = "<group>";
 		};
@@ -184,7 +180,6 @@
 			children = (
 				8FC8ED55DDF45975E976E4C5 /* ShareComposerView.swift */,
 			);
-			name = Share;
 			path = Share;
 			sourceTree = "<group>";
 		};
@@ -193,7 +188,6 @@
 			children = (
 				C2976A31426D7BAE64CDE5A3 /* DashboardView.swift */,
 			);
-			name = Dashboard;
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
@@ -202,7 +196,6 @@
 			children = (
 				4726643C7BF71735FC5338FD /* StatDetailView.swift */,
 			);
-			name = Detail;
 			path = Detail;
 			sourceTree = "<group>";
 		};
@@ -212,7 +205,6 @@
 				00601FC5B54F6E6AC95D84AB /* LifeStatEngine.swift */,
 				334282688EB04573E62A41C4 /* LifeTimeline.swift */,
 			);
-			name = Engine;
 			path = Engine;
 			sourceTree = "<group>";
 		};
@@ -231,7 +223,6 @@
 				7E49239E44C89EAD02647925 /* Icon-76@2x.png */,
 				BB305702330CC28D21D98C9A /* Icon-83.5@2x.png */,
 			);
-			name = AppIcons;
 			path = AppIcons;
 			sourceTree = "<group>";
 		};
@@ -256,7 +247,6 @@
 			children = (
 				76CCF4663A2456C6E440F4A5 /* SettingsView.swift */,
 			);
-			name = Settings;
 			path = Settings;
 			sourceTree = "<group>";
 		};
@@ -265,7 +255,6 @@
 			children = (
 				9E617C83701D1E6AD7C3A46D /* OnboardingView.swift */,
 			);
-			name = Onboarding;
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
@@ -283,7 +272,6 @@
 			children = (
 				D5C7A7F2E1B345CC08BDEC40 /* MilestonesView.swift */,
 			);
-			name = Milestones;
 			path = Milestones;
 			sourceTree = "<group>";
 		};
@@ -293,7 +281,6 @@
 				7F7676CDEC69D9B1315061A1 /* Components */,
 				9BD66119F659FC0D9EC3C676 /* Style */,
 			);
-			name = UI;
 			path = UI;
 			sourceTree = "<group>";
 		};
@@ -309,7 +296,6 @@
 				252BE1D747B81D623E8AE809 /* RollingNumberText.swift */,
 				029BBDBF7C3A3ED8792A3633 /* ShareCanvasView.swift */,
 			);
-			name = Components;
 			path = Components;
 			sourceTree = "<group>";
 		};
@@ -320,7 +306,6 @@
 				02D07F2A5FBCDF0B2385CA2A /* PersistenceController.swift */,
 				791F7701437519B24FAA6913 /* ShareRenderer.swift */,
 			);
-			name = Services;
 			path = Services;
 			sourceTree = "<group>";
 		};
@@ -336,7 +321,6 @@
 				3185F81C4E0600F0C0D6441B /* Share */,
 				2ACBD1FC336D4FD621B31FC0 /* Splash */,
 			);
-			name = Features;
 			path = Features;
 			sourceTree = "<group>";
 		};
@@ -349,7 +333,6 @@
 				8264B5529E3220B6DA925B65 /* Features */,
 				740DC9350263BC456CA7EAA5 /* UI */,
 			);
-			name = Lunivo;
 			path = Lunivo;
 			sourceTree = "<group>";
 		};
@@ -358,7 +341,6 @@
 			children = (
 				2BBC13C39019585A705DBEF6 /* LunivoTests */,
 			);
-			name = Tests;
 			path = Tests;
 			sourceTree = "<group>";
 		};
@@ -370,7 +352,6 @@
 				7F945F02C86762FE125FEDE8 /* Services */,
 				02E880F1CC50FABD988B74AD /* Utilities */,
 			);
-			name = Core;
 			path = Core;
 			sourceTree = "<group>";
 		};
@@ -379,7 +360,6 @@
 			children = (
 				E7D8B44A4BE545BE85391470 /* Typography.swift */,
 			);
-			name = Style;
 			path = Style;
 			sourceTree = "<group>";
 		};
@@ -388,7 +368,6 @@
 			children = (
 				8CA78607FE8EB6A880562B9C /* MethodologyView.swift */,
 			);
-			name = Methodology;
 			path = Methodology;
 			sourceTree = "<group>";
 		};
@@ -399,7 +378,6 @@
 				AF516497CDC6C0EF6598E1DE /* AppRootView.swift */,
 				DABE31A901B2E7B68DF69EA6 /* LunivoApp.swift */,
 			);
-			name = App;
 			path = App;
 			sourceTree = "<group>";
 		};
@@ -421,7 +399,6 @@
 				3665F719D485489AAB7855B8 /* Localizable.xcstrings */,
 				09A3B694A9394D78ADA5B9A4 /* PrivacyInfo.xcprivacy */,
 			);
-			name = Resources;
 			path = Resources;
 			sourceTree = "<group>";
 		};
@@ -474,6 +451,8 @@
 				TargetAttributes = {
 					6F6E2D17C1F45B9153FDB5A8 = {
 						CreatedOnToolsVersion = 16.4;
+						DevelopmentTeam = RUYUP6W3YT;
+						ProvisioningStyle = Manual;
 					};
 					A9F1E7B5ACA08F4F53C89521 = {
 						CreatedOnToolsVersion = 16.4;
@@ -490,8 +469,6 @@
 				Base,
 			);
 			mainGroup = E7B9169C938029F55E218702;
-			minimizedProjectReferenceProxies = 0;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 69D29F375313355F7B0B2041 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -719,8 +696,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -750,8 +726,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RUYUP6W3YT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Lunivo/Resources/Info.plist;
@@ -760,6 +740,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lunivo.app;
 				PRODUCT_NAME = Lunivo;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Lunivo;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -775,8 +757,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RUYUP6W3YT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Lunivo/Resources/Info.plist;
@@ -785,6 +771,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lunivo.app;
 				PRODUCT_NAME = Lunivo;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Lunivo;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
