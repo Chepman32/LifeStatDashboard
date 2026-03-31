@@ -75,7 +75,7 @@ struct MilestonesView: View {
             .navigationTitle("Milestones")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button(editMode == .active ? "Done" : "Reorder") {
+                    Button(LocalizedStringKey(editMode == .active ? "Done" : "Reorder")) {
                         withAnimation(.smooth) {
                             editMode = editMode == .active ? .inactive : .active
                         }
