@@ -11,15 +11,15 @@ struct MethodologyView: View {
             DisclosureGroup {
                 ForEach(section.rows) { row in
                     VStack(alignment: .leading, spacing: 8) {
-                        Text(row.title)
+                        Text(LocalizedStringKey(row.title))
                             .font(.headline.weight(.semibold))
                         Text(row.formula)
                             .font(.subheadline.monospaced())
                             .foregroundStyle(theme.palette.accent)
-                        Text(row.derivationType.title)
+                        Text(LocalizedStringKey(row.derivationType.title))
                             .font(.caption.weight(.bold))
                             .foregroundStyle(theme.palette.textSecondary)
-                        Text(row.note)
+                        Text(LocalizedStringKey(row.note))
                             .font(.footnote)
                             .foregroundStyle(theme.palette.textSecondary)
                     }
@@ -27,9 +27,9 @@ struct MethodologyView: View {
                 }
             } label: {
                 VStack(alignment: .leading, spacing: 6) {
-                    Text(section.title)
+                    Text(LocalizedStringKey(section.title))
                         .font(.headline.weight(.semibold))
-                    Text(section.summary)
+                    Text(LocalizedStringKey(section.summary))
                         .font(.footnote)
                         .foregroundStyle(theme.palette.textSecondary)
                 }

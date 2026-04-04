@@ -78,6 +78,7 @@ enum LiveTickerVisibility: String, Codable, CaseIterable, Identifiable {
 }
 
 enum AppLanguage: String, Codable, CaseIterable, Identifiable {
+    case system
     case english
     case chineseSimplified
     case japanese
@@ -113,6 +114,7 @@ enum AppLanguage: String, Codable, CaseIterable, Identifiable {
 
     var title: String {
         switch self {
+        case .system: "System"
         case .english: "English"
         case .chineseSimplified: "简体中文"
         case .japanese: "日本語"
@@ -148,6 +150,8 @@ enum AppLanguage: String, Codable, CaseIterable, Identifiable {
 
     var locale: Locale {
         switch self {
+        case .system:
+            Locale.autoupdatingCurrent
         case .english: Locale(identifier: "en")
         case .chineseSimplified: Locale(identifier: "zh-Hans")
         case .japanese: Locale(identifier: "ja")
@@ -178,6 +182,15 @@ enum AppLanguage: String, Codable, CaseIterable, Identifiable {
         case .greek: Locale(identifier: "el")
         case .malay: Locale(identifier: "ms")
         case .filipino: Locale(identifier: "fil")
+        }
+    }
+
+    func localizedTitle(locale: Locale) -> String {
+        switch self {
+        case .system:
+            LunivoLocalization.string(title, locale: locale)
+        default:
+            title
         }
     }
 }

@@ -154,7 +154,7 @@ struct SettingsView: View {
                 set: { model.updateLanguage($0) }
             )) {
                 ForEach(AppLanguage.allCases) { language in
-                    Text(language.title).tag(language)
+                    Text(language.localizedTitle(locale: locale)).tag(language)
                 }
             }
             .listRowBackground(rowBG(palette))

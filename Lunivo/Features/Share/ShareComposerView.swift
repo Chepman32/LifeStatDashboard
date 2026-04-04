@@ -113,7 +113,7 @@ struct ShareComposerView: View {
                         set: { selectedStatID = $0 }
                     )) {
                         ForEach(allStats) { stat in
-                            Text(stat.title).tag(Optional(stat.id))
+                            Text(LocalizedStringKey(stat.title)).tag(Optional(stat.id))
                         }
                     }
                     .pickerStyle(.menu)

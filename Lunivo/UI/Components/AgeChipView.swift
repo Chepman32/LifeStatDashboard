@@ -3,14 +3,17 @@ import SwiftUI
 struct AgeChipView: View {
     let summary: AgeSummary
     let theme: LunivoTheme
+    @Environment(\.locale) private var locale
 
     var body: some View {
         let palette = theme.palette
+        let format = LunivoLocalization.string("%lld years • %lld months • %lld days", locale: locale)
+        let ageText = String.localizedStringWithFormat(format, summary.years, summary.months, summary.days)
 
         HStack(spacing: 8) {
             Image(systemName: "clock.arrow.circlepath")
                 .font(.caption.weight(.bold))
-            Text("\(summary.years) years • \(summary.months) months • \(summary.days) days")
+            Text(ageText)
                 .font(.caption.weight(.semibold))
                 .monospacedDigit()
         }

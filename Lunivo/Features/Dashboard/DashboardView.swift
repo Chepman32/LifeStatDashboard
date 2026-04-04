@@ -82,7 +82,7 @@ struct DashboardView: View {
                     Text("Your Life Dashboard")
                         .font(LunivoTypography.display(34, weight: .bold))
                         .foregroundStyle(palette.textPrimary)
-                    Text(selectedCategory == .space ? "Still moving through space." : currentSubtitle)
+                    Text(LocalizedStringKey(selectedCategory == .space ? "Still moving through space." : currentSubtitle))
                         .font(.headline.weight(.medium))
                         .foregroundStyle(palette.textSecondary)
                         .contentTransition(.opacity)
@@ -116,6 +116,7 @@ struct DashboardView: View {
 private struct StatCardView: View {
     let stat: LifeStat
     let theme: LunivoTheme
+    @Environment(\.locale) private var locale
     @State private var lifted = false
     @State private var alternateIndex = 0
 
@@ -126,16 +127,21 @@ private struct StatCardView: View {
             VStack(alignment: .leading, spacing: 18) {
                 HStack(alignment: .top) {
                     VStack(alignment: .leading, spacing: 12) {
-                        Label(stat.title, systemImage: stat.iconName)
+                        Label(LocalizedStringKey(stat.title), systemImage: stat.iconName)
                             .font(.headline.weight(.semibold))
                             .foregroundStyle(palette.textPrimary)
-                        RollingNumberText(text: stat.formattedValue, unit: stat.unit, theme: theme, emphasis: stat.highlight)
+                        RollingNumberText(
+                            text: stat.formattedValue,
+                            unit: LunivoLocalization.string(stat.unit, locale: locale),
+                            theme: theme,
+                            emphasis: stat.highlight
+                        )
                     }
 
                     Spacer(minLength: 16)
 
                     VStack(alignment: .trailing, spacing: 8) {
-                        Text(stat.derivationType.title)
+                        Text(LocalizedStringKey(stat.derivationType.title))
                             .font(.caption2.weight(.bold))
                             .foregroundStyle(palette.textSecondary)
                             .padding(.horizontal, 10)
@@ -153,11 +159,11 @@ private struct StatCardView: View {
                 statDecoration
                     .frame(height: stat.highlight ? 118 : 84)
 
-                Text(stat.shortDescription)
+                Text(LocalizedStringKey(stat.shortDescription))
                     .font(.subheadline.weight(.medium))
                     .foregroundStyle(palette.textSecondary)
 
-                Text(stat.wittyComparison)
+                Text(LocalizedStringKey(stat.wittyComparison))
                     .font(LunivoTypography.editorial(stat.highlight ? 20 : 18, weight: .medium))
                     .foregroundStyle(palette.textPrimary)
 
@@ -165,14 +171,14 @@ private struct StatCardView: View {
                     TabView(selection: $alternateIndex) {
                         ForEach(Array(stat.alternateRepresentations.enumerated()), id: \.element.id) { index, alternate in
                             VStack(alignment: .leading, spacing: 6) {
-                                Text(alternate.title)
+                                Text(LocalizedStringKey(alternate.title))
                                     .font(.caption.weight(.semibold))
                                     .tracking(1.8)
                                     .foregroundStyle(palette.textSecondary)
                                 Text(alternate.value)
                                     .font(.headline.weight(.semibold))
                                     .foregroundStyle(palette.textPrimary)
-                                Text(alternate.subtitle)
+                                Text(LocalizedStringKey(alternate.subtitle))
                                     .font(.caption)
                                     .foregroundStyle(palette.textSecondary)
                             }

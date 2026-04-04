@@ -91,6 +91,7 @@ struct MilestoneRow: View {
     let theme: LunivoTheme
     let favorite: Bool
     let onFavorite: () -> Void
+    @Environment(\.locale) private var locale
 
     var body: some View {
         let palette = theme.palette
@@ -119,7 +120,7 @@ struct MilestoneRow: View {
                 }
 
                 if let estimatedDate = milestone.estimatedDate {
-                    Text(LunivoDateFormatter.medium(date: estimatedDate, locale: Locale.current))
+                    Text(LunivoDateFormatter.medium(date: estimatedDate, locale: locale))
                         .font(.subheadline.weight(.medium))
                         .foregroundStyle(palette.textSecondary)
                 }

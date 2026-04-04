@@ -7,6 +7,7 @@ struct LiveTickerRibbon: View {
     let cycleInterval: Double
     let visibility: LiveTickerVisibility
     var onTap: ((LifeStat) -> Void)? = nil
+    @Environment(\.locale) private var locale
 
     @State private var currentIndex = 0
 
@@ -22,11 +23,11 @@ struct LiveTickerRibbon: View {
                         .frame(width: 30)
 
                     VStack(alignment: .leading, spacing: 4) {
-                        Text(stat.title)
+                        Text(LocalizedStringKey(stat.title))
                             .font(.caption.weight(.semibold))
                             .tracking(1.8)
                             .foregroundStyle(palette.textSecondary)
-                        Text("\(stat.formattedValue) \(stat.unit)")
+                        Text("\(stat.formattedValue) \(LunivoLocalization.string(stat.unit, locale: locale))")
                             .font(visibility == .compact ? .subheadline.weight(.semibold) : .headline.weight(.semibold))
                             .monospacedDigit()
                             .foregroundStyle(palette.textPrimary)

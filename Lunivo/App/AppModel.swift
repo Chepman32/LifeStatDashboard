@@ -90,10 +90,10 @@ final class AppModel: ObservableObject {
         persistence.reset()
         let fresh = UserProfile.default
         profile = fresh
-        preferredLanguage = .english
+        preferredLanguage = .system
         hasCompletedOnboarding = false
         favoriteMilestoneIDs = []
-        snapshot = engine.snapshot(profile: fresh, now: .now, language: .english)
+        snapshot = engine.snapshot(profile: fresh, now: .now, language: .system)
     }
 
     func toggleFavoriteMilestone(_ milestoneID: String) {

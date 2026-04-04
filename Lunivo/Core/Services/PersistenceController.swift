@@ -49,7 +49,7 @@ final class PersistenceController {
     func loadLanguage() -> AppLanguage {
         guard let rawValue = defaults.string(forKey: Keys.language),
               let language = AppLanguage(rawValue: rawValue) else {
-            return .english
+            return .system
         }
         return language
     }
