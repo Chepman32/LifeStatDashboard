@@ -99,6 +99,26 @@ struct ShareComposerView: View {
     }
 
     @ViewBuilder
+    private func templateGrid(palette: ThemePalette) -> some View {
+        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
+            ForEach(ShareTemplate.allCases) { t in
+                Button { template = t } label: {
+                    Text(t.localizedTitle(locale: locale))
+                        .font(.system(size: 13, weight: .medium))
+                        .multilineTextAlignment(.center)
+                        .lineLimit(2)
+                        .padding(.vertical, 6)
+                        .frame(maxWidth: .infinity)
+                        .background(template == t ? palette.textSecondary.opacity(0.25) : Color.clear)
+                        .cornerRadius(8)
+                }
+                .buttonStyle(.plain)
+                .foregroundStyle(palette.textPrimary)
+            }
+        }
+    }
+
+    @ViewBuilder
     private func controls(theme: LunivoTheme) -> some View {
         let palette = theme.palette
 
@@ -122,12 +142,7 @@ struct ShareComposerView: View {
                         .font(.caption.weight(.bold))
                         .tracking(2)
                         .foregroundStyle(palette.textSecondary)
-                    Picker("Template", selection: $template) {
-                        ForEach(ShareTemplate.allCases) { template in
-                            Text(template.localizedTitle(locale: locale)).tag(template)
-                        }
-                    }
-                    .pickerStyle(.segmented)
+                    templateGrid(palette: palette)
                 }
 
                 Group {
