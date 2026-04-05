@@ -14,20 +14,6 @@ struct ShareCanvasView: View {
                 CosmicBackgroundView(theme: configuration.theme, intensity: 0.95, animate: false)
 
                 VStack(alignment: .leading, spacing: 28) {
-                    HStack(spacing: 12) {
-                        Image(uiImage: UIImage(named: "AppIconImage") ?? UIImage())
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 48, height: 48)
-                            .clipShape(RoundedRectangle(cornerRadius: 11, style: .continuous))
-                        Text("Lunivo")
-                            .font(LunivoTypography.editorial(42, weight: .bold))
-                            .foregroundStyle(palette.textPrimary)
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.7)
-                        Spacer()
-                    }
-
                     switch configuration.template {
                     case .heroNumber:
                         heroCard(stat: stats.first ?? placeholderStat)
