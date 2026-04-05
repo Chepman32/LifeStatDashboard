@@ -22,6 +22,8 @@ struct SettingsView: View {
             .navigationTitle(LunivoLocalization.string("Settings", locale: locale))
             .tint(palette.accent)
         }
+        .environment(\.locale, locale)
+        .id(model.preferredLanguage.id)
     }
 
     private func rowBG(_ palette: ThemePalette) -> some View {
@@ -154,7 +156,7 @@ struct SettingsView: View {
             ) == .orderedAscending
         }
 
-        Section(LunivoLocalization.string("Language", locale: locale)) {
+        return Section(LunivoLocalization.string("Language", locale: locale)) {
             Picker(LunivoLocalization.string("Preferred language", locale: locale), selection: Binding(
                 get: { model.preferredLanguage },
                 set: { model.updateLanguage($0) }

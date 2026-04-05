@@ -19,6 +19,38 @@ enum LunivoNumberFormatter {
         )
     }
 
+    static func shareCompact(_ value: Double, locale: Locale, fractionDigits: Int = 1) -> String {
+        guard let suffixes = shortCompactSuffixes(for: locale) else {
+            return compact(value, locale: locale, fractionDigits: fractionDigits)
+        }
+
+        let absoluteValue = abs(value)
+        let thresholds: [(value: Double, suffix: String)] = [
+            (1_000_000_000_000, suffixes.trillion),
+            (1_000_000_000, suffixes.billion),
+            (1_000_000, suffixes.million),
+            (1_000, suffixes.thousand)
+        ]
+
+        guard let match = thresholds.first(where: { absoluteValue >= $0.value }) else {
+            let digits = value.rounded() == value ? 0 : fractionDigits
+            return exact(value, locale: locale, fractionDigits: digits)
+        }
+
+        let scaledValue = value / match.value
+        let digits: Int
+        switch abs(scaledValue) {
+        case 100...:
+            digits = 0
+        case 10...:
+            digits = 1
+        default:
+            digits = fractionDigits
+        }
+
+        return "\(exact(scaledValue, locale: locale, fractionDigits: digits)) \(match.suffix)"
+    }
+
     static func distance(_ value: Double, unitPreference: UnitPreference, locale: Locale) -> (String, String) {
         switch unitPreference {
         case .metric:
@@ -44,6 +76,24 @@ enum LunivoNumberFormatter {
         formatter.locale = locale
         formatter.unitsStyle = .full
         return formatter.localizedString(for: date, relativeTo: .now)
+    }
+
+    private struct CompactSuffixSet {
+        let thousand: String
+        let million: String
+        let billion: String
+        let trillion: String
+    }
+
+    private static func shortCompactSuffixes(for locale: Locale) -> CompactSuffixSet? {
+        switch locale.language.languageCode?.identifier {
+        case "ru":
+            return CompactSuffixSet(thousand: "тыс.", million: "млн", billion: "млрд", trillion: "трлн")
+        case "uk":
+            return CompactSuffixSet(thousand: "тис.", million: "млн", billion: "млрд", trillion: "трлн")
+        default:
+            return nil
+        }
     }
 }
 

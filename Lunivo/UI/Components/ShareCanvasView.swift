@@ -60,17 +60,23 @@ struct ShareCanvasView: View {
                     .font(.caption.weight(.bold))
                     .tracking(2.6)
                     .foregroundStyle(palette.textSecondary)
-                Text(stat.compactValue)
+                Text(displayValue(for: stat))
                     .font(LunivoTypography.hero(110))
                     .monospacedDigit()
                     .foregroundStyle(palette.textPrimary)
+                    .lineLimit(1)
                     .minimumScaleFactor(0.5)
+                    .allowsTightening(true)
                 Text(stat.unit)
                     .font(.title3.weight(.semibold))
                     .foregroundStyle(palette.accent)
-                Text(stat.wittyComparison)
-                    .font(LunivoTypography.editorial(28))
+                Text(shareSummary(for: stat))
+                    .font(LunivoTypography.editorial(24))
                     .foregroundStyle(palette.textPrimary)
+                    .lineLimit(3)
+                    .minimumScaleFactor(0.8)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .layoutPriority(1)
                 if configuration.includeMethodology {
                     methodologyTag(for: stat)
                 }
@@ -82,14 +88,19 @@ struct ShareCanvasView: View {
         let palette = configuration.theme.palette
         return GlassCard(theme: configuration.theme, cornerRadius: 42, padding: 36) {
             VStack(alignment: .leading, spacing: 24) {
-                Text(stat.compactValue + " " + stat.unit)
+                Text(displayValue(for: stat) + " " + stat.unit)
                     .font(LunivoTypography.hero(72))
                     .monospacedDigit()
                     .foregroundStyle(palette.textPrimary)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.55)
                 Text(stat.wittyComparison)
                     .font(LunivoTypography.editorial(36, weight: .bold))
                     .foregroundStyle(palette.textPrimary)
                     .multilineTextAlignment(.leading)
+                    .lineLimit(4)
+                    .minimumScaleFactor(0.75)
+                    .fixedSize(horizontal: false, vertical: true)
                 if let alternate = stat.alternateRepresentations.first {
                     Text("\(alternate.title): \(alternate.value)")
                         .font(.headline.weight(.semibold))
@@ -114,9 +125,11 @@ struct ShareCanvasView: View {
                         VStack(alignment: .leading, spacing: 10) {
                             Text(stat.title)
                                 .font(.headline.weight(.semibold))
-                            Text("\(stat.compactValue) \(stat.unit)")
+                            Text("\(displayValue(for: stat)) \(stat.unit)")
                                 .font(LunivoTypography.hero(36))
                                 .monospacedDigit()
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.65)
                         }
                         Spacer()
                         Image(systemName: stat.iconName)
@@ -142,18 +155,25 @@ struct ShareCanvasView: View {
                     .frame(width: 24, height: 24)
                     .offset(x: 210, y: 0)
                 VStack(spacing: 10) {
-                    Text(stat.compactValue)
+                    Text(displayValue(for: stat))
                         .font(LunivoTypography.hero(82))
                         .monospacedDigit()
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.5)
                     Text(stat.title)
                         .font(LunivoTypography.editorial(28, weight: .bold))
                         .multilineTextAlignment(.center)
+                        .lineLimit(3)
+                        .minimumScaleFactor(0.75)
                 }
             }
             Text(stat.wittyComparison)
                 .font(.title3.weight(.medium))
                 .foregroundStyle(palette.textSecondary)
                 .multilineTextAlignment(.center)
+                .lineLimit(3)
+                .minimumScaleFactor(0.8)
+                .fixedSize(horizontal: false, vertical: true)
         }
     }
 
@@ -171,10 +191,12 @@ struct ShareCanvasView: View {
                         .font(.caption.weight(.bold))
                         .tracking(3)
                         .foregroundStyle(palette.textSecondary)
-                    Text(stat.compactValue)
+                    Text(displayValue(for: stat))
                         .font(LunivoTypography.hero(96))
                         .monospacedDigit()
                         .foregroundStyle(palette.textPrimary)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.5)
                     Text(stat.unit)
                         .font(.title3.weight(.medium))
                         .foregroundStyle(palette.textSecondary)
@@ -185,11 +207,22 @@ struct ShareCanvasView: View {
     }
 
     private func methodologyTag(for stat: LifeStat) -> some View {
-        Text(stat.derivationType.localizedTitle(locale: locale))
+        Text(stat.derivationType.shortLocalizedTitle(locale: locale))
             .font(.caption.weight(.bold))
             .padding(.horizontal, 14)
             .padding(.vertical, 9)
             .background(.white.opacity(0.09), in: Capsule())
+            .lineLimit(1)
+            .minimumScaleFactor(0.75)
+            .fixedSize(horizontal: false, vertical: true)
+    }
+
+    private func displayValue(for stat: LifeStat) -> String {
+        LunivoNumberFormatter.shareCompact(stat.rawValue, locale: locale)
+    }
+
+    private func shareSummary(for stat: LifeStat) -> String {
+        stat.wittyComparison.isEmpty ? stat.shortDescription : stat.wittyComparison
     }
 
     private var placeholderStat: LifeStat {

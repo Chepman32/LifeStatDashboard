@@ -84,6 +84,29 @@ enum DerivationType: String, Codable {
     func localizedTitle(locale: Locale) -> String {
         LunivoLocalization.string(title, locale: locale)
     }
+
+    func shortLocalizedTitle(locale: Locale) -> String {
+        switch locale.language.languageCode?.identifier {
+        case "ru":
+            switch self {
+            case .exactFromTime: "Точно"
+            case .physicalConstant: "Физ. конст."
+            case .lifestyleEstimate: "Оценка"
+            }
+        case "uk":
+            switch self {
+            case .exactFromTime: "Точно"
+            case .physicalConstant: "Фіз. конст."
+            case .lifestyleEstimate: "Оцінка"
+            }
+        default:
+            switch self {
+            case .exactFromTime: "Exact"
+            case .physicalConstant: "Phys. constant"
+            case .lifestyleEstimate: "Estimate"
+            }
+        }
+    }
 }
 
 enum StatUnitStyle: Codable {

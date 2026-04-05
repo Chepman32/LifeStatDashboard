@@ -6,9 +6,11 @@ struct ShareComposerView: View {
     @Environment(\.locale) private var locale
     @State private var template: ShareTemplate = .heroNumber
     @State private var ratio: ShareRatio = .story
+    @State private var exportKind: ShareExportKind = .image
     @State private var selectedStatID: String?
-    @State private var sharedImage: UIImage?
+    @State private var sharedItems: [Any] = []
     @State private var isSharing = false
+    @State private var isExporting = false
 
     var body: some View {
         let theme = model.profile.selectedTheme
@@ -28,12 +30,13 @@ struct ShareComposerView: View {
 
                     controls(theme: theme)
 
-                    Button("Export") {
-                        sharedImage = ShareRenderer.image(for: selectedStats, configuration: configuration)
-                        isSharing = sharedImage != nil
-                        HapticsManager.shared.notify(.success)
+                    Button(isExporting ? LunivoLocalization.string("Preparing video…", locale: locale) : exportButtonTitle) {
+                        Task {
+                            await exportContent()
+                        }
                     }
                     .buttonStyle(PrimaryButtonStyle(theme: theme))
+                    .disabled(isExporting)
                 }
                 .padding(.horizontal, 20)
                 .padding(.vertical, 24)
@@ -42,8 +45,10 @@ struct ShareComposerView: View {
             .navigationBarHidden(true)
         }
         .sheet(isPresented: $isSharing) {
-            if let sharedImage {
-                ActivityView(activityItems: [sharedImage])
+            if !sharedItems.isEmpty {
+                ActivityView(activityItems: sharedItems)
+            } else {
+                EmptyView()
             }
         }
     }
@@ -58,12 +63,29 @@ struct ShareComposerView: View {
 
     private var selectedStats: [LifeStat] {
         if template == .multiCard {
-            return Array(allStats.prefix(3))
+            return Array(orderedStats.prefix(3))
         }
+        return [selectedStat]
+    }
+
+    private var slideshowStats: [LifeStat] {
+        orderedStats
+    }
+
+    private var selectedStat: LifeStat {
         if let selectedStatID, let stat = allStats.first(where: { $0.id == selectedStatID }) {
-            return [stat]
+            return stat
         }
-        return [allStats.first ?? fallbackStat]
+        return allStats.first ?? fallbackStat
+    }
+
+    private var orderedStats: [LifeStat] {
+        guard !allStats.isEmpty else { return [fallbackStat] }
+        guard let selectedIndex = allStats.firstIndex(where: { $0.id == selectedStat.id }) else {
+            return allStats
+        }
+
+        return Array(allStats[selectedIndex...]) + Array(allStats[..<selectedIndex])
     }
 
     private var configuration: ShareRenderConfiguration {
@@ -82,6 +104,19 @@ struct ShareComposerView: View {
 
         GlassCard(theme: theme, cornerRadius: 30, padding: 18) {
             VStack(alignment: .leading, spacing: 18) {
+                Group {
+                    Text(LunivoLocalization.string("Export Type", locale: locale))
+                        .font(.caption.weight(.bold))
+                        .tracking(2)
+                        .foregroundStyle(palette.textSecondary)
+                    Picker(LunivoLocalization.string("Export Type", locale: locale), selection: $exportKind) {
+                        ForEach(ShareExportKind.allCases) { kind in
+                            Text(kind.localizedTitle(locale: locale)).tag(kind)
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                }
+
                 Group {
                     Text("Template")
                         .font(.caption.weight(.bold))
@@ -108,17 +143,27 @@ struct ShareComposerView: View {
                     .pickerStyle(.segmented)
                 }
 
-                if template != .multiCard {
-                    Picker("Stat", selection: Binding(
-                        get: { selectedStatID ?? allStats.first?.id },
+                Group {
+                    Text(LunivoLocalization.string("Metric", locale: locale))
+                        .font(.caption.weight(.bold))
+                        .tracking(2)
+                        .foregroundStyle(palette.textSecondary)
+                    Picker(LunivoLocalization.string("Metric", locale: locale), selection: Binding(
+                        get: { selectedStat.id },
                         set: { selectedStatID = $0 }
                     )) {
                         ForEach(allStats) { stat in
-                            Text(stat.title).tag(Optional(stat.id))
+                            Text(stat.title).tag(stat.id)
                         }
                     }
                     .pickerStyle(.menu)
                     .tint(palette.textPrimary)
+                }
+
+                if exportKind == .slideshowVideo {
+                    Text(LunivoLocalization.string("Video exports a slideshow of all metrics, starting from the selected one.", locale: locale))
+                        .font(.footnote)
+                        .foregroundStyle(palette.textSecondary)
                 }
 
                 Toggle("Show methodology label", isOn: Binding(
@@ -138,6 +183,39 @@ struct ShareComposerView: View {
             .toggleStyle(.switch)
             .foregroundStyle(palette.textPrimary)
         }
+    }
+
+    private var exportButtonTitle: String {
+        switch exportKind {
+        case .image:
+            LunivoLocalization.string("Export Image", locale: locale)
+        case .slideshowVideo:
+            LunivoLocalization.string("Export Video", locale: locale)
+        }
+    }
+
+    @MainActor
+    private func exportContent() async {
+        isExporting = true
+        defer { isExporting = false }
+
+        switch exportKind {
+        case .image:
+            guard let image = ShareRenderer.image(for: selectedStats, configuration: configuration) else {
+                HapticsManager.shared.notify(.error)
+                return
+            }
+            sharedItems = [image]
+        case .slideshowVideo:
+            guard let videoURL = await ShareRenderer.slideshowVideo(for: slideshowStats, configuration: configuration) else {
+                HapticsManager.shared.notify(.error)
+                return
+            }
+            sharedItems = [videoURL]
+        }
+
+        isSharing = true
+        HapticsManager.shared.notify(.success)
     }
 
     private var fallbackStat: LifeStat {
