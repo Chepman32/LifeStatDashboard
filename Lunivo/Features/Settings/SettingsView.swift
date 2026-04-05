@@ -146,12 +146,20 @@ struct SettingsView: View {
     }
 
     private func localizationSection(palette: ThemePalette, locale: Locale) -> some View {
+        let sortedLanguages = AppLanguage.allCases.sorted { lhs, rhs in
+            lhs.localizedTitle(locale: locale).compare(
+                rhs.localizedTitle(locale: locale),
+                options: [.caseInsensitive, .diacriticInsensitive],
+                locale: locale
+            ) == .orderedAscending
+        }
+
         Section(LunivoLocalization.string("Language", locale: locale)) {
             Picker(LunivoLocalization.string("Preferred language", locale: locale), selection: Binding(
                 get: { model.preferredLanguage },
                 set: { model.updateLanguage($0) }
             )) {
-                ForEach(AppLanguage.allCases) { language in
+                ForEach(sortedLanguages) { language in
                     Text(language.localizedTitle(locale: locale)).tag(language)
                 }
             }
