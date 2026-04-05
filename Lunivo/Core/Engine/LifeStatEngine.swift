@@ -3,7 +3,7 @@ import Foundation
 struct LifeStatEngine {
     private let calendar = Calendar(identifier: .gregorian)
 
-    func snapshot(profile: UserProfile, now: Date = .now, language: AppLanguage = .english) -> LifeSnapshot {
+    func snapshot(profile: UserProfile, now: Date = .now, language: AppLanguage = .system) -> LifeSnapshot {
         let clampedNow = max(now, profile.effectiveBirthDate)
         let timeline = LifeTimeline(profile: profile, now: clampedNow, calendar: calendar)
         let locale = language.locale

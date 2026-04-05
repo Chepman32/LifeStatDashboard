@@ -46,7 +46,7 @@ struct LifeTimeline {
             months: months,
             days: daysComponent,
             totalDays: Int(days.rounded(.down)),
-            yearsLabel: "\(years) years"
+            yearsLabel: "\(years)"
         )
 
         self.leapDaysCrossed = LifeTimeline.countLeapDays(from: birth, to: now, calendar: calendar)

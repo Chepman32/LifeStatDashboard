@@ -96,6 +96,11 @@ struct OnboardingView: View {
     private func birthday(theme: LunivoTheme) -> some View {
         let preview = LifeTimeline(profile: draft, now: .now, calendar: Calendar.current).ageSummary.totalDays
         let palette = theme.palette
+        let previewText = LunivoLocalization.formatted(
+            "You’ve lived approximately %@ days.",
+            locale: model.locale,
+            preview.formatted()
+        )
 
         VStack(alignment: .leading, spacing: 18) {
             Text("When did the timeline start?")
@@ -125,7 +130,7 @@ struct OnboardingView: View {
                 }
             }
 
-            Text("You’ve lived approximately \(preview) days.")
+            Text(previewText)
                 .font(.title3.weight(.semibold))
                 .monospacedDigit()
                 .foregroundStyle(palette.textPrimary)
@@ -208,7 +213,7 @@ struct OnboardingView: View {
     @ViewBuilder
     private func reveal(theme: LunivoTheme) -> some View {
         let palette = theme.palette
-        let previewSnapshot = LifeStatEngine().snapshot(profile: draft, now: .now)
+        let previewSnapshot = LifeStatEngine().snapshot(profile: draft, now: .now, language: model.preferredLanguage)
         let hero = previewSnapshot.statsByCategory[.time]?.first
 
         VStack(alignment: .leading, spacing: 22) {
