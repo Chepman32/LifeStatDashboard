@@ -59,9 +59,14 @@ struct ShareCanvasView: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
                     .allowsTightening(true)
-                Text(stat.unit)
-                    .font(.title3.weight(.semibold))
-                    .foregroundStyle(palette.accent)
+                HStack(spacing: 8) {
+                    Text(stat.unit)
+                        .font(.title3.weight(.semibold))
+                        .foregroundStyle(palette.accent)
+                    if configuration.includeMethodology {
+                        methodologyTag(for: stat)
+                    }
+                }
                 Text(shareSummary(for: stat))
                     .font(LunivoTypography.editorial(24))
                     .foregroundStyle(palette.textPrimary)
@@ -69,9 +74,6 @@ struct ShareCanvasView: View {
                     .minimumScaleFactor(0.8)
                     .fixedSize(horizontal: false, vertical: true)
                     .layoutPriority(1)
-                if configuration.includeMethodology {
-                    methodologyTag(for: stat)
-                }
             }
         }
     }
