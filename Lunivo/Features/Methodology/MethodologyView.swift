@@ -2,6 +2,7 @@ import SwiftUI
 
 struct MethodologyView: View {
     @EnvironmentObject private var model: AppModel
+    @Environment(\.locale) private var locale
     @State private var searchText = ""
 
     var body: some View {
@@ -11,15 +12,15 @@ struct MethodologyView: View {
             DisclosureGroup {
                 ForEach(section.rows) { row in
                     VStack(alignment: .leading, spacing: 8) {
-                        Text(LocalizedStringKey(row.title))
+                        Text(row.title)
                             .font(.headline.weight(.semibold))
                         Text(row.formula)
                             .font(.subheadline.monospaced())
                             .foregroundStyle(theme.palette.accent)
-                        Text(LocalizedStringKey(row.derivationType.title))
+                        Text(row.derivationType.localizedTitle(locale: locale))
                             .font(.caption.weight(.bold))
                             .foregroundStyle(theme.palette.textSecondary)
-                        Text(LocalizedStringKey(row.note))
+                        Text(row.note)
                             .font(.footnote)
                             .foregroundStyle(theme.palette.textSecondary)
                     }
@@ -27,9 +28,9 @@ struct MethodologyView: View {
                 }
             } label: {
                 VStack(alignment: .leading, spacing: 6) {
-                    Text(LocalizedStringKey(section.title))
+                    Text(section.title)
                         .font(.headline.weight(.semibold))
-                    Text(LocalizedStringKey(section.summary))
+                    Text(section.summary)
                         .font(.footnote)
                         .foregroundStyle(theme.palette.textSecondary)
                 }

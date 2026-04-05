@@ -46,7 +46,7 @@ struct LifeStatEngine {
             statsByCategory: statsByCategory,
             tickerStats: [time.first, body.first, body[1], space[1], life[1], body[2]].compactMap { $0 },
             closestMilestone: milestoneSpotlight,
-            methodologySections: methodologySections()
+            methodologySections: methodologySections(locale: locale)
         )
     }
 
@@ -78,8 +78,8 @@ struct LifeStatEngine {
                 witty: "Your heart likely kept perfect time without asking permission.",
                 methodology: "Elapsed minutes multiplied by a blended 72 BPM assumption.",
                 alternates: [
-                    alt("Per day", value: formatted(72 * 60 * 24, locale: locale), subtitle: "Average beats on an ordinary day"),
-                    alt("At 1 billion", value: countdownDate(current: heartbeats, rate: 1.2, nextTarget: nextRoundNumber(for: heartbeats), locale: locale), subtitle: "Projected next major heartbeat milestone")
+                    alt("Per day", value: formatted(72 * 60 * 24, locale: locale), subtitle: "Average beats on an ordinary day", locale: locale),
+                    alt("At 1 billion", value: countdownDate(current: heartbeats, rate: 1.2, nextTarget: nextRoundNumber(for: heartbeats), locale: locale), subtitle: "Projected next major heartbeat milestone", locale: locale)
                 ]
             ),
             stat(
@@ -98,8 +98,8 @@ struct LifeStatEngine {
                 witty: "Millions of breaths, and the occasional sigh still finds room.",
                 methodology: "Elapsed minutes multiplied by an average 15.5 breaths per minute.",
                 alternates: [
-                    alt("Per hour", value: formatted(15.5 * 60, locale: locale), subtitle: "Breaths in a typical hour"),
-                    alt("Sleep share", value: "\(formatted(33, locale: locale))%", subtitle: "Approximate portion spent resting")
+                    alt("Per hour", value: formatted(15.5 * 60, locale: locale), subtitle: "Breaths in a typical hour", locale: locale),
+                    alt("Sleep share", value: "\(formatted(33, locale: locale))%", subtitle: "Approximate portion spent resting", locale: locale)
                 ]
             ),
             stat(
@@ -118,8 +118,8 @@ struct LifeStatEngine {
                 witty: "You have edited reality one eyelid at a time.",
                 methodology: "Waking minutes multiplied by an estimated 17 blinks per minute.",
                 alternates: [
-                    alt("Per waking day", value: formatted(17 * 60 * 16, locale: locale), subtitle: "Assuming roughly 16 waking hours"),
-                    alt("In film terms", value: formatted(blinks / 24, locale: locale), subtitle: "Equivalent seconds at 24 frames per second")
+                    alt("Per waking day", value: formatted(17 * 60 * 16, locale: locale), subtitle: "Assuming roughly 16 waking hours", locale: locale),
+                    alt("In film terms", value: formatted(blinks / 24, locale: locale), subtitle: "Equivalent seconds at 24 frames per second", locale: locale)
                 ]
             ),
             stat(
@@ -138,8 +138,8 @@ struct LifeStatEngine {
                 witty: "A reminder that rest has quietly occupied years of the plot.",
                 methodology: "Elapsed lifetime hours multiplied by a 33.3% sleep assumption.",
                 alternates: [
-                    alt("In days", value: formatted(sleepHours / 24, locale: locale), subtitle: "Full days spent sleeping"),
-                    alt("Sleep ratio", value: "\(formatted(33.3, locale: locale))%", subtitle: "A third of the whole arc, more or less")
+                    alt("In days", value: formatted(sleepHours / 24, locale: locale), subtitle: "Full days spent sleeping", locale: locale),
+                    alt("Sleep ratio", value: "\(formatted(33.3, locale: locale))%", subtitle: "A third of the whole arc, more or less", locale: locale)
                 ]
             ),
             stat(
@@ -158,8 +158,8 @@ struct LifeStatEngine {
                 witty: "Entire private universes, drafted and discarded overnight.",
                 methodology: "Estimated sleep hours divided by 1.5 hours per dream-heavy cycle.",
                 alternates: [
-                    alt("Per year", value: formatted(dreams / max(1, Double(timeline.ageSummary.years)), locale: locale), subtitle: "Average annual dream count"),
-                    alt("REM cycles", value: formatted(dreams, locale: locale), subtitle: "A loose one-to-one with dream cycles")
+                    alt("Per year", value: formatted(dreams / max(1, Double(timeline.ageSummary.years)), locale: locale), subtitle: "Average annual dream count", locale: locale),
+                    alt("REM cycles", value: formatted(dreams, locale: locale), subtitle: "A loose one-to-one with dream cycles", locale: locale)
                 ]
             ),
             growthStat(
@@ -221,8 +221,8 @@ struct LifeStatEngine {
                 witty: "The number is absurd. That part is real.",
                 methodology: "Direct elapsed time between your birth date and the current device time.",
                 alternates: [
-                    alt("Minutes", value: formatted(minutes, locale: locale), subtitle: "The same time, less dramatic punctuation"),
-                    alt("Days", value: formatted(days, locale: locale), subtitle: "A calmer way to say the same thing")
+                    alt("Minutes", value: formatted(minutes, locale: locale), subtitle: "The same time, less dramatic punctuation", locale: locale),
+                    alt("Days", value: formatted(days, locale: locale), subtitle: "A calmer way to say the same thing", locale: locale)
                 ]
             ),
             stat(
@@ -241,8 +241,8 @@ struct LifeStatEngine {
                 witty: "An elegant count of every day you have successfully occupied.",
                 methodology: "Exact elapsed seconds divided by 86,400.",
                 alternates: [
-                    alt("Weeks", value: formatted(weeks, locale: locale), subtitle: "Rounded into seven-day chapters"),
-                    alt("Months", value: formatted(months, locale: locale), subtitle: "Calendar months crossed so far")
+                    alt("Weeks", value: formatted(weeks, locale: locale), subtitle: "Rounded into seven-day chapters", locale: locale),
+                    alt("Months", value: formatted(months, locale: locale), subtitle: "Calendar months crossed so far", locale: locale)
                 ]
             ),
             stat(
@@ -261,8 +261,8 @@ struct LifeStatEngine {
                 witty: "Enough weeks to lose count, but still not enough to finish every plan.",
                 methodology: "Elapsed days divided by seven.",
                 alternates: [
-                    alt("Working weeks", value: formatted(weeks * 0.714, locale: locale), subtitle: "Assuming five workdays in seven"),
-                    alt("Sundays", value: formatted(weeks, locale: locale), subtitle: "One ending and one beginning, repeated")
+                    alt("Working weeks", value: formatted(weeks * 0.714, locale: locale), subtitle: "Assuming five workdays in seven", locale: locale),
+                    alt("Sundays", value: formatted(weeks, locale: locale), subtitle: "One ending and one beginning, repeated", locale: locale)
                 ]
             ),
             stat(
@@ -281,8 +281,8 @@ struct LifeStatEngine {
                 witty: "A lifetime of horizons, whether or not you made eye contact with them.",
                 methodology: "Elapsed days rounded down to whole solar day cycles.",
                 alternates: [
-                    alt("Golden hours", value: formatted(sunrises * 2, locale: locale), subtitle: "If you count both edges of the day"),
-                    alt("Future 10,000", value: countdownDate(current: sunrises, rate: 1 / 86_400, nextTarget: nextRoundNumber(for: sunrises), locale: locale), subtitle: "Projected next solar milestone")
+                    alt("Golden hours", value: formatted(sunrises * 2, locale: locale), subtitle: "If you count both edges of the day", locale: locale),
+                    alt("Future 10,000", value: countdownDate(current: sunrises, rate: 1 / 86_400, nextTarget: nextRoundNumber(for: sunrises), locale: locale), subtitle: "Projected next solar milestone", locale: locale)
                 ]
             ),
             stat(
@@ -301,8 +301,8 @@ struct LifeStatEngine {
                 witty: "Extra calendar fabric, quietly stitched into your life.",
                 methodology: "Calendar-based count of leap days between birth date and now.",
                 alternates: [
-                    alt("Leap years", value: formatted(leapDays, locale: locale), subtitle: "Whole extra days successfully collected"),
-                    alt("Calendar quirk", value: "1 day at a time", subtitle: "Rare enough to stay special")
+                    alt("Leap years", value: formatted(leapDays, locale: locale), subtitle: "Whole extra days successfully collected", locale: locale),
+                    alt("Calendar quirk", value: LunivoLocalization.string("1 day at a time", locale: locale), subtitle: "Rare enough to stay special", locale: locale)
                 ]
             )
         ]
@@ -335,8 +335,8 @@ struct LifeStatEngine {
                 witty: "A yearly spiral completed with almost suspicious consistency.",
                 methodology: "Elapsed days divided by Earth's orbital period of 365.256 days.",
                 alternates: [
-                    alt("Birthdays", value: formatted(Double(timeline.ageSummary.years), locale: locale), subtitle: "The ceremonial version of the same idea"),
-                    alt("Next full orbit", value: countdownDate(current: orbits, rate: 1 / (365.256 * 86_400), nextTarget: ceil(orbits), locale: locale), subtitle: "Projected next orbital return")
+                    alt("Birthdays", value: formatted(Double(timeline.ageSummary.years), locale: locale), subtitle: "The ceremonial version of the same idea", locale: locale),
+                    alt("Next full orbit", value: countdownDate(current: orbits, rate: 1 / (365.256 * 86_400), nextTarget: ceil(orbits), locale: locale), subtitle: "Projected next orbital return", locale: locale)
                 ]
             ),
             distanceStat(
@@ -370,8 +370,8 @@ struct LifeStatEngine {
                 witty: "Enough lunar finales to make time feel theatrical.",
                 methodology: "Elapsed days divided by the synodic month constant of 29.53 days.",
                 alternates: [
-                    alt("Years in moons", value: formatted(fullMoons / 12.37, locale: locale), subtitle: "Lunar years, more or less"),
-                    alt("500th full moon", value: countdownDate(current: fullMoons, rate: 1 / (29.53058867 * 86_400), nextTarget: nextRoundNumber(for: fullMoons), locale: locale), subtitle: "Projected next moon milestone")
+                    alt("Years in moons", value: formatted(fullMoons / 12.37, locale: locale), subtitle: "Lunar years, more or less", locale: locale),
+                    alt("500th full moon", value: countdownDate(current: fullMoons, rate: 1 / (29.53058867 * 86_400), nextTarget: nextRoundNumber(for: fullMoons), locale: locale), subtitle: "Projected next moon milestone", locale: locale)
                 ]
             ),
             stat(
@@ -390,8 +390,8 @@ struct LifeStatEngine {
                 witty: "An entire side plot running on a 27-day cadence above you.",
                 methodology: "Elapsed days divided by the Moon's sidereal orbital period of 27.32 days.",
                 alternates: [
-                    alt("Per year", value: formatted(moonOrbits / max(1, Double(timeline.ageSummary.years)), locale: locale), subtitle: "Average lunar laps each year"),
-                    alt("Lunar pace", value: "27.3 days", subtitle: "One orbit, give or take")
+                    alt("Per year", value: formatted(moonOrbits / max(1, Double(timeline.ageSummary.years)), locale: locale), subtitle: "Average lunar laps each year", locale: locale),
+                    alt("Lunar pace", value: LunivoLocalization.string("27.3 days", locale: locale), subtitle: "One orbit, give or take", locale: locale)
                 ]
             ),
             stat(
@@ -410,8 +410,8 @@ struct LifeStatEngine {
                 witty: "Enough seasonal resets to know that change is normal and repetitive.",
                 methodology: "Elapsed days divided by one quarter of a tropical year.",
                 alternates: [
-                    alt("Years", value: formatted(seasonCycles / 4, locale: locale), subtitle: "Four seasons per full orbit"),
-                    alt("Next round number", value: countdownDate(current: seasonCycles, rate: 4 / (365.25 * 86_400), nextTarget: nextRoundNumber(for: seasonCycles), locale: locale), subtitle: "Projected next seasonal milestone")
+                    alt("Years", value: formatted(seasonCycles / 4, locale: locale), subtitle: "Four seasons per full orbit", locale: locale),
+                    alt("Next round number", value: countdownDate(current: seasonCycles, rate: 4 / (365.25 * 86_400), nextTarget: nextRoundNumber(for: seasonCycles), locale: locale), subtitle: "Projected next seasonal milestone", locale: locale)
                 ]
             ),
             stat(
@@ -430,8 +430,8 @@ struct LifeStatEngine {
                 witty: "A clean little reminder that another orbit is already underway.",
                 methodology: "Elapsed time since your last birthday divided by time until the next one.",
                 alternates: [
-                    alt("Days since birthday", value: formatted(timeline.daysSinceLastBirthday, locale: locale), subtitle: "So far on this current loop"),
-                    alt("Days to next", value: formatted(timeline.daysUntilNextBirthday, locale: locale), subtitle: "Remaining before the next return")
+                    alt("Days since birthday", value: formatted(timeline.daysSinceLastBirthday, locale: locale), subtitle: "So far on this current loop", locale: locale),
+                    alt("Days to next", value: formatted(timeline.daysUntilNextBirthday, locale: locale), subtitle: "Remaining before the next return", locale: locale)
                 ]
             )
         ]
@@ -466,8 +466,8 @@ struct LifeStatEngine {
                 witty: "A substantial archive of breakfasts, late dinners, and compromised snacks.",
                 methodology: "Elapsed days multiplied by an estimated 2.65 meals per day.",
                 alternates: [
-                    alt("Years of meals", value: formatted(meals / 365, locale: locale), subtitle: "If each day offered roughly one memorable plate"),
-                    alt("Restaurant nights", value: formatted(meals * 0.18, locale: locale), subtitle: "If a fraction happened somewhere with menus")
+                    alt("Years of meals", value: formatted(meals / 365, locale: locale), subtitle: "If each day offered roughly one memorable plate", locale: locale),
+                    alt("Restaurant nights", value: formatted(meals * 0.18, locale: locale), subtitle: "If a fraction happened somewhere with menus", locale: locale)
                 ]
             ),
             stat(
@@ -488,8 +488,8 @@ struct LifeStatEngine {
                 witty: "Enough words to fill books, texts, apologies, and very average small talk.",
                 methodology: "Estimated waking hours multiplied by roughly 930 spoken words per hour.",
                 alternates: [
-                    alt("Novel equivalents", value: formatted(words / 80_000, locale: locale), subtitle: "Using 80,000 words per novel"),
-                    alt("Per day awake", value: formatted(930 * 16, locale: locale), subtitle: "A loose daily speaking total")
+                    alt("Novel equivalents", value: formatted(words / 80_000, locale: locale), subtitle: "Using 80,000 words per novel", locale: locale),
+                    alt("Per day awake", value: formatted(930 * 16, locale: locale), subtitle: "A loose daily speaking total", locale: locale)
                 ]
             ),
             stat(
@@ -508,8 +508,8 @@ struct LifeStatEngine {
                 witty: "An ocean would be exaggeration. A respectable reservoir would not.",
                 methodology: "Elapsed days multiplied by an estimated 6.5 glasses of water per day.",
                 alternates: [
-                    alt("Liters", value: formatted(water * 0.24, locale: locale), subtitle: "Assuming 240 mL per glass"),
-                    alt("Daily rhythm", value: "6.5", subtitle: "Estimated glasses per day")
+                    alt("Liters", value: formatted(water * 0.24, locale: locale), subtitle: "Assuming 240 mL per glass", locale: locale),
+                    alt("Daily rhythm", value: LunivoLocalization.string("6.5", locale: locale), subtitle: "Estimated glasses per day", locale: locale)
                 ]
             ),
             stat(
@@ -528,8 +528,8 @@ struct LifeStatEngine {
                 witty: "Enough steps to cross cities, routines, and several existential afternoons.",
                 methodology: "Elapsed days multiplied by a blended estimate of 5,200 steps per day.",
                 alternates: [
-                    alt("Kilometers walked", value: formatted(steps * 0.000762, locale: locale), subtitle: "Assuming roughly 0.762 meters per step"),
-                    alt("10k days", value: formatted(steps / 10_000, locale: locale), subtitle: "Equivalent days at a classic goal")
+                    alt("Kilometers walked", value: formatted(steps * 0.000762, locale: locale), subtitle: "Assuming roughly 0.762 meters per step", locale: locale),
+                    alt("10k days", value: formatted(steps / 10_000, locale: locale), subtitle: "Equivalent days at a classic goal", locale: locale)
                 ]
             ),
             stat(
@@ -548,8 +548,8 @@ struct LifeStatEngine {
                 witty: "Enough songs to keep even your nostalgia in rotation.",
                 methodology: "Elapsed seconds divided by an average song length of 210 seconds.",
                 alternates: [
-                    alt("Albums", value: formatted(songs / 10, locale: locale), subtitle: "At ten songs per album"),
-                    alt("Listening years", value: formatted((songs * 210) / 31_536_000, locale: locale), subtitle: "If you never stopped the playback")
+                    alt("Albums", value: formatted(songs / 10, locale: locale), subtitle: "At ten songs per album", locale: locale),
+                    alt("Listening years", value: formatted((songs * 210) / 31_536_000, locale: locale), subtitle: "If you never stopped the playback", locale: locale)
                 ]
             ),
             stat(
@@ -568,8 +568,8 @@ struct LifeStatEngine {
                 witty: "A private ritual repeated more often than anyone admits.",
                 methodology: "Elapsed days multiplied by an estimated 58 phone unlocks per day.",
                 alternates: [
-                    alt("Per hour awake", value: formatted(58 / 16, locale: locale), subtitle: "Unlocks per waking hour"),
-                    alt("Attention checks", value: formatted(phoneUnlocks, locale: locale), subtitle: "A gentle estimate, not an accusation")
+                    alt("Per hour awake", value: formatted(58 / 16, locale: locale), subtitle: "Unlocks per waking hour", locale: locale),
+                    alt("Attention checks", value: formatted(phoneUnlocks, locale: locale), subtitle: "A gentle estimate, not an accusation", locale: locale)
                 ]
             ),
             stat(
@@ -588,8 +588,8 @@ struct LifeStatEngine {
                 witty: "Possibly enough coffee to explain several ambitions and a few recoveries.",
                 methodology: "Elapsed days multiplied by an estimated 0.82 coffees per day.",
                 alternates: [
-                    alt("Liters", value: formatted(coffees * 0.24, locale: locale), subtitle: "At roughly 240 mL per cup"),
-                    alt("Coffee shops", value: formatted(coffees / 2.7, locale: locale), subtitle: "If many cups happened on the move")
+                    alt("Liters", value: formatted(coffees * 0.24, locale: locale), subtitle: "At roughly 240 mL per cup", locale: locale),
+                    alt("Coffee shops", value: formatted(coffees / 2.7, locale: locale), subtitle: "If many cups happened on the move", locale: locale)
                 ]
             ),
             stat(
@@ -608,8 +608,8 @@ struct LifeStatEngine {
                 witty: "A very long festival, no intermission guaranteed.",
                 methodology: "Elapsed minutes divided by a 120-minute film runtime.",
                 alternates: [
-                    alt("Seasons of TV", value: formatted(movies / 5, locale: locale), subtitle: "At roughly five films worth per prestige season"),
-                    alt("Credits still rolling", value: "Always", subtitle: "The runtime has not ended")
+                    alt("Seasons of TV", value: formatted(movies / 5, locale: locale), subtitle: "At roughly five films worth per prestige season", locale: locale),
+                    alt("Credits still rolling", value: LunivoLocalization.string("Always", locale: locale), subtitle: "The runtime has not ended", locale: locale)
                 ]
             ),
             stat(
@@ -628,8 +628,8 @@ struct LifeStatEngine {
                 witty: "Enough typing to compose plans, revisions, and a dignified amount of overthinking.",
                 methodology: "Elapsed days multiplied by an estimated 2,100 typed characters per day.",
                 alternates: [
-                    alt("Pages", value: formatted(typing / 1_800, locale: locale), subtitle: "At roughly 1,800 characters per page"),
-                    alt("Daily total", value: formatted(2_100, locale: locale), subtitle: "A conservative estimate per day")
+                    alt("Pages", value: formatted(typing / 1_800, locale: locale), subtitle: "At roughly 1,800 characters per page", locale: locale),
+                    alt("Daily total", value: formatted(2_100, locale: locale), subtitle: "A conservative estimate per day", locale: locale)
                 ]
             ),
             stat(
@@ -648,8 +648,8 @@ struct LifeStatEngine {
                 witty: "Small bursts of relief, counted generously but not irresponsibly.",
                 methodology: "Elapsed days multiplied by an estimated 17 laughs per day.",
                 alternates: [
-                    alt("Per week", value: formatted(17 * 7, locale: locale), subtitle: "Average weekly laugh count"),
-                    alt("Comic value", value: "Unquantifiable", subtitle: "The count is not the meaning")
+                    alt("Per week", value: formatted(17 * 7, locale: locale), subtitle: "Average weekly laugh count", locale: locale),
+                    alt("Comic value", value: LunivoLocalization.string("Unquantifiable", locale: locale), subtitle: "The count is not the meaning", locale: locale)
                 ]
             )
         ]
@@ -680,8 +680,8 @@ struct LifeStatEngine {
                 witty: "You have traveled billions through space and that one task still feels negotiable.",
                 methodology: "Same orbital-distance calculation, reframed with restraint and honesty.",
                 alternates: [
-                    alt("Earth circles", value: formatted(distanceKm / 40_075, locale: locale), subtitle: "Enough to wrap Earth many times"),
-                    alt("Still pending", value: "Possibly", subtitle: "A soft accusation, not a data point")
+                    alt("Earth circles", value: formatted(distanceKm / 40_075, locale: locale), subtitle: "Enough to wrap Earth many times", locale: locale),
+                    alt("Still pending", value: LunivoLocalization.string("Possibly", locale: locale), subtitle: "A soft accusation, not a data point", locale: locale)
                 ]
             ),
             stat(
@@ -700,8 +700,8 @@ struct LifeStatEngine {
                 witty: "A multi-billion beat performance with no meeting requests.",
                 methodology: "The heartbeat count, stated with appropriate awe.",
                 alternates: [
-                    alt("Per hesitation", value: "Still running", subtitle: "Your internal engine remains committed"),
-                    alt("Billions", value: formatted(heartbeats / 1_000_000_000, locale: locale), subtitle: "In clean big-number terms")
+                    alt("Per hesitation", value: LunivoLocalization.string("Still running", locale: locale), subtitle: "Your internal engine remains committed", locale: locale),
+                    alt("Billions", value: formatted(heartbeats / 1_000_000_000, locale: locale), subtitle: "In clean big-number terms", locale: locale)
                 ]
             ),
             stat(
@@ -720,8 +720,8 @@ struct LifeStatEngine {
                 witty: "Enough words to shelve entire versions of yourself.",
                 methodology: "Estimated spoken words divided by 80,000 words per novel.",
                 alternates: [
-                    alt("Long novels", value: formatted((timeline.wakingHours * 930) / 120_000, locale: locale), subtitle: "At 120,000 words each"),
-                    alt("Short books", value: formatted((timeline.wakingHours * 930) / 50_000, locale: locale), subtitle: "At 50,000 words each")
+                    alt("Long novels", value: formatted((timeline.wakingHours * 930) / 120_000, locale: locale), subtitle: "At 120,000 words each", locale: locale),
+                    alt("Short books", value: formatted((timeline.wakingHours * 930) / 50_000, locale: locale), subtitle: "At 50,000 words each", locale: locale)
                 ]
             ),
             stat(
@@ -740,8 +740,8 @@ struct LifeStatEngine {
                 witty: "You have completed millions of breaths and still occasionally sighed about it.",
                 methodology: "The same breath estimate, written with a little more dramatic truth.",
                 alternates: [
-                    alt("Daily baseline", value: formatted(15.5 * 60 * 24, locale: locale), subtitle: "Estimated breaths in one day"),
-                    alt("Next round number", value: countdownDate(current: breaths, rate: 15.5 / 60, nextTarget: nextRoundNumber(for: breaths), locale: locale), subtitle: "Projected next breathing milestone")
+                    alt("Daily baseline", value: formatted(15.5 * 60 * 24, locale: locale), subtitle: "Estimated breaths in one day", locale: locale),
+                    alt("Next round number", value: countdownDate(current: breaths, rate: 15.5 / 60, nextTarget: nextRoundNumber(for: breaths), locale: locale), subtitle: "Projected next breathing milestone", locale: locale)
                 ]
             ),
             stat(
@@ -760,8 +760,8 @@ struct LifeStatEngine {
                 witty: "You have survived this many Mondays and still expect better from the next one.",
                 methodology: "Calendar-based count of Mondays crossed since your birth date.",
                 alternates: [
-                    alt("Work weeks", value: formatted(mondays, locale: locale), subtitle: "One reluctant beginning at a time"),
-                    alt("Motivation status", value: "Still not found", subtitle: "A required line item, now properly documented")
+                    alt("Work weeks", value: formatted(mondays, locale: locale), subtitle: "One reluctant beginning at a time", locale: locale),
+                    alt("Motivation status", value: LunivoLocalization.string("Still not found", locale: locale), subtitle: "A required line item, now properly documented", locale: locale)
                 ]
             )
         ]
@@ -803,17 +803,17 @@ struct LifeStatEngine {
         return LifeStat(
             id: id,
             category: category,
-            title: title,
+            title: LunivoLocalization.string(title, locale: locale),
             iconName: icon,
             rawValue: rawValue,
             formattedValue: formattedValue,
             compactValue: compactValue,
-            unit: unit,
+            unit: LunivoLocalization.string(unit, locale: locale),
             precisionStyle: style,
             derivationType: derivation,
-            shortDescription: description,
-            wittyComparison: witty,
-            methodologySummary: methodology,
+            shortDescription: LunivoLocalization.string(description, locale: locale),
+            wittyComparison: LunivoLocalization.string(witty, locale: locale),
+            methodologySummary: LunivoLocalization.string(methodology, locale: locale),
             alternateRepresentations: alternates,
             nextMilestones: milestones,
             deltaPerSecond: deltaPerSecond,
@@ -842,20 +842,20 @@ struct LifeStatEngine {
         return LifeStat(
             id: id,
             category: category,
-            title: title,
+            title: LunivoLocalization.string(title, locale: locale),
             iconName: icon,
             rawValue: timeline.profile.unitPreference == .metric ? millimeters / 10 : millimeters / 25.4,
             formattedValue: display.0,
             compactValue: display.0,
-            unit: display.1,
+            unit: LunivoLocalization.string(display.1, locale: locale),
             precisionStyle: timeline.profile.unitPreference == .metric ? .centimeters : .inches,
             derivationType: .lifestyleEstimate,
-            shortDescription: description,
-            wittyComparison: witty,
-            methodologySummary: methodology,
+            shortDescription: LunivoLocalization.string(description, locale: locale),
+            wittyComparison: LunivoLocalization.string(witty, locale: locale),
+            methodologySummary: LunivoLocalization.string(methodology, locale: locale),
             alternateRepresentations: [
-                alt("Millimeters", value: formatted(millimeters, locale: locale), subtitle: "The unromantic raw unit"),
-                alt("Daily rate", value: timeline.profile.unitPreference == .metric ? "0.35 mm" : "0.014 in", subtitle: "Estimated growth per day")
+                alt("Millimeters", value: formatted(millimeters, locale: locale), subtitle: "The unromantic raw unit", locale: locale),
+                alt("Daily rate", value: LunivoLocalization.string(timeline.profile.unitPreference == .metric ? "0.35 mm" : "0.014 in", locale: locale), subtitle: "Estimated growth per day", locale: locale)
             ],
             nextMilestones: milestoneSeries(for: id, title: title, current: millimeters, ratePerSecond: dailyRateMillimeters / 86_400, unit: "mm", description: witty, locale: locale),
             deltaPerSecond: rate,
@@ -886,20 +886,20 @@ struct LifeStatEngine {
         return LifeStat(
             id: id,
             category: category,
-            title: title,
+            title: LunivoLocalization.string(title, locale: locale),
             iconName: icon,
             rawValue: adjustedRaw,
             formattedValue: distance.0,
             compactValue: distance.0,
-            unit: distance.1,
+            unit: LunivoLocalization.string(distance.1, locale: locale),
             precisionStyle: timeline.profile.unitPreference == .metric ? .kilometers : .miles,
             derivationType: .physicalConstant,
-            shortDescription: description,
-            wittyComparison: witty,
-            methodologySummary: methodology,
+            shortDescription: LunivoLocalization.string(description, locale: locale),
+            wittyComparison: LunivoLocalization.string(witty, locale: locale),
+            methodologySummary: LunivoLocalization.string(methodology, locale: locale),
             alternateRepresentations: [
-                alt("Earth circles", value: formatted(kilometers / 40_075, locale: locale), subtitle: "At Earth's equatorial circumference"),
-                alt("AU traveled", value: formatted(kilometers / 149_597_870.7, locale: locale), subtitle: "Astronomical units, for scale")
+                alt("Earth circles", value: formatted(kilometers / 40_075, locale: locale), subtitle: "At Earth's equatorial circumference", locale: locale),
+                alt("AU traveled", value: formatted(kilometers / 149_597_870.7, locale: locale), subtitle: "Astronomical units, for scale", locale: locale)
             ],
             nextMilestones: milestoneSeries(for: id, title: title, current: adjustedRaw, ratePerSecond: adjustedRate, unit: distance.1, description: witty, locale: locale),
             deltaPerSecond: adjustedRate,
@@ -915,15 +915,17 @@ struct LifeStatEngine {
             let secondsUntilTarget = ratePerSecond > 0 ? max(0, (target - current) / ratePerSecond) : nil
             let date = secondsUntilTarget.map { Date().addingTimeInterval($0) }
             let progress = min(max(current / target, 0), 1)
+            let localizedDescription = LunivoLocalization.string(description, locale: locale)
+            let marker = LunivoLocalization.formatted("Next marker: %@ %@.", locale: locale, compact(target, locale: locale), LunivoLocalization.string(unit, locale: locale))
             return Milestone(
                 id: "\(id)-\(target)",
                 statID: id,
-                title: title,
+                title: LunivoLocalization.string(title, locale: locale),
                 value: compact(target, locale: locale),
                 targetValue: target,
                 estimatedDate: date,
                 progress: progress,
-                description: "\(description) Next marker: \(compact(target, locale: locale)) \(unit)."
+                description: localizedDescription + " " + marker
             )
         }
     }
@@ -954,44 +956,48 @@ struct LifeStatEngine {
         LunivoNumberFormatter.compact(value, locale: locale, fractionDigits: value < 1000 ? 1 : 1)
     }
 
-    private func alt(_ title: String, value: String, subtitle: String) -> LifeStatAlternate {
-        LifeStatAlternate(title: title, value: value, subtitle: subtitle)
+    private func alt(_ title: String, value: String, subtitle: String, locale: Locale) -> LifeStatAlternate {
+        LifeStatAlternate(
+            title: LunivoLocalization.string(title, locale: locale),
+            value: value,
+            subtitle: LunivoLocalization.string(subtitle, locale: locale)
+        )
     }
 
     private func countdownDate(current: Double, rate: Double, nextTarget: Double, locale: Locale) -> String {
-        guard rate > 0 else { return "Static" }
+        guard rate > 0 else { return LunivoLocalization.string("Static", locale: locale) }
         let seconds = max(0, (nextTarget - current) / rate)
         let date = Date().addingTimeInterval(seconds)
         return LunivoDateFormatter.medium(date: date, locale: locale)
     }
 
-    private func methodologySections() -> [MethodologySection] {
+    private func methodologySections(locale: Locale) -> [MethodologySection] {
         [
             MethodologySection(
-                title: "Exact from time",
-                summary: "These values come directly from elapsed time and calendar math.",
+                title: LunivoLocalization.string("Exact from time", locale: locale),
+                summary: LunivoLocalization.string("These values come directly from elapsed time and calendar math.", locale: locale),
                 rows: [
-                    MethodologyRow(title: "Seconds lived", formula: "current time - birth time", derivationType: .exactFromTime, note: "No estimation layer."),
-                    MethodologyRow(title: "Days and weeks", formula: "elapsed seconds / 86,400", derivationType: .exactFromTime, note: "Displayed in multiple calendar-friendly units."),
-                    MethodologyRow(title: "Leap days crossed", formula: "count February 29 dates crossed", derivationType: .exactFromTime, note: "Calendar aware.")
+                    MethodologyRow(title: LunivoLocalization.string("Seconds lived", locale: locale), formula: "current time - birth time", derivationType: .exactFromTime, note: LunivoLocalization.string("No estimation layer.", locale: locale)),
+                    MethodologyRow(title: LunivoLocalization.string("Days and weeks", locale: locale), formula: "elapsed seconds / 86,400", derivationType: .exactFromTime, note: LunivoLocalization.string("Displayed in multiple calendar-friendly units.", locale: locale)),
+                    MethodologyRow(title: LunivoLocalization.string("Leap days crossed", locale: locale), formula: "count February 29 dates crossed", derivationType: .exactFromTime, note: LunivoLocalization.string("Calendar aware.", locale: locale))
                 ]
             ),
             MethodologySection(
-                title: "Physical constants",
-                summary: "These use stable astronomical or physiological constants to turn time into scale.",
+                title: LunivoLocalization.string("Physical constants", locale: locale),
+                summary: LunivoLocalization.string("These use stable astronomical or physiological constants to turn time into scale.", locale: locale),
                 rows: [
-                    MethodologyRow(title: "Earth orbits", formula: "elapsed days / 365.256", derivationType: .physicalConstant, note: "Uses Earth's sidereal year."),
-                    MethodologyRow(title: "Space distance", formula: "elapsed seconds × 29.78 km/s", derivationType: .physicalConstant, note: "Based on Earth's orbital velocity."),
-                    MethodologyRow(title: "Full moons", formula: "elapsed days / 29.53058867", derivationType: .physicalConstant, note: "Uses the synodic month.")
+                    MethodologyRow(title: LunivoLocalization.string("Earth orbits", locale: locale), formula: "elapsed days / 365.256", derivationType: .physicalConstant, note: LunivoLocalization.string("Uses Earth's sidereal year.", locale: locale)),
+                    MethodologyRow(title: LunivoLocalization.string("Space distance", locale: locale), formula: "elapsed seconds × 29.78 km/s", derivationType: .physicalConstant, note: LunivoLocalization.string("Based on Earth's orbital velocity.", locale: locale)),
+                    MethodologyRow(title: LunivoLocalization.string("Full moons", locale: locale), formula: "elapsed days / 29.53058867", derivationType: .physicalConstant, note: LunivoLocalization.string("Uses the synodic month.", locale: locale))
                 ]
             ),
             MethodologySection(
-                title: "Lifestyle estimates",
-                summary: "These are intentionally labeled estimates. They are for delight and perspective, not clinical truth.",
+                title: LunivoLocalization.string("Lifestyle estimates", locale: locale),
+                summary: LunivoLocalization.string("These are intentionally labeled estimates. They are for delight and perspective, not clinical truth.", locale: locale),
                 rows: [
-                    MethodologyRow(title: "Words spoken", formula: "waking hours × 930 words/hour", derivationType: .lifestyleEstimate, note: "A blended average."),
-                    MethodologyRow(title: "Meals and water", formula: "elapsed days × daily estimate", derivationType: .lifestyleEstimate, note: "Uses broad, demographic-neutral assumptions."),
-                    MethodologyRow(title: "Phone unlocks", formula: "elapsed days × 58", derivationType: .lifestyleEstimate, note: "Represents general digital behavior.")
+                    MethodologyRow(title: LunivoLocalization.string("Words spoken", locale: locale), formula: "waking hours × 930 words/hour", derivationType: .lifestyleEstimate, note: LunivoLocalization.string("A blended average.", locale: locale)),
+                    MethodologyRow(title: LunivoLocalization.string("Meals and water", locale: locale), formula: "elapsed days × daily estimate", derivationType: .lifestyleEstimate, note: LunivoLocalization.string("Uses broad, demographic-neutral assumptions.", locale: locale)),
+                    MethodologyRow(title: LunivoLocalization.string("Phone unlocks", locale: locale), formula: "elapsed days × 58", derivationType: .lifestyleEstimate, note: LunivoLocalization.string("Represents general digital behavior.", locale: locale))
                 ]
             )
         ]
@@ -1003,7 +1009,7 @@ private extension Milestone {
         LifeStat(
             id: id,
             category: .milestones,
-            title: "Closest Upcoming Milestone",
+            title: LunivoLocalization.string("Closest Upcoming Milestone", locale: locale),
             iconName: "sparkles",
             rawValue: targetValue,
             formattedValue: value,
@@ -1013,10 +1019,18 @@ private extension Milestone {
             derivationType: .lifestyleEstimate,
             shortDescription: description,
             wittyComparison: description,
-            methodologySummary: "Projected using the current live rate of the source statistic.",
+            methodologySummary: LunivoLocalization.string("Projected using the current live rate of the source statistic.", locale: locale),
             alternateRepresentations: [
-                LifeStatAlternate(title: "Date", value: estimatedDate.map { LunivoDateFormatter.medium(date: $0, locale: locale) } ?? "Static", subtitle: "Estimated arrival"),
-                LifeStatAlternate(title: "Progress", value: LunivoNumberFormatter.exact(progress * 100, locale: locale, fractionDigits: 1) + "%", subtitle: "How close you already are")
+                LifeStatAlternate(
+                    title: LunivoLocalization.string("Date", locale: locale),
+                    value: estimatedDate.map { LunivoDateFormatter.medium(date: $0, locale: locale) } ?? LunivoLocalization.string("Static", locale: locale),
+                    subtitle: LunivoLocalization.string("Estimated arrival", locale: locale)
+                ),
+                LifeStatAlternate(
+                    title: LunivoLocalization.string("Progress", locale: locale),
+                    value: LunivoNumberFormatter.exact(progress * 100, locale: locale, fractionDigits: 1) + "%",
+                    subtitle: LunivoLocalization.string("How close you already are", locale: locale)
+                )
             ],
             nextMilestones: [self],
             deltaPerSecond: 0,

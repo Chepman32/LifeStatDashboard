@@ -2,6 +2,7 @@ import SwiftUI
 
 struct DashboardView: View {
     @EnvironmentObject private var model: AppModel
+    @Environment(\.locale) private var locale
     @State private var selectedCategory: StatCategory = .body
 
     var body: some View {
@@ -82,7 +83,7 @@ struct DashboardView: View {
                     Text("Your Life Dashboard")
                         .font(LunivoTypography.display(34, weight: .bold))
                         .foregroundStyle(palette.textPrimary)
-                    Text(LocalizedStringKey(selectedCategory == .space ? "Still moving through space." : currentSubtitle))
+                    Text(LunivoLocalization.string(selectedCategory == .space ? "Still moving through space." : currentSubtitle, locale: locale))
                         .font(.headline.weight(.medium))
                         .foregroundStyle(palette.textSecondary)
                         .contentTransition(.opacity)
@@ -127,12 +128,12 @@ private struct StatCardView: View {
             VStack(alignment: .leading, spacing: 18) {
                 HStack(alignment: .top) {
                     VStack(alignment: .leading, spacing: 12) {
-                        Label(LocalizedStringKey(stat.title), systemImage: stat.iconName)
+                        Label(stat.title, systemImage: stat.iconName)
                             .font(.headline.weight(.semibold))
                             .foregroundStyle(palette.textPrimary)
                         RollingNumberText(
                             text: stat.formattedValue,
-                            unit: LunivoLocalization.string(stat.unit, locale: locale),
+                            unit: stat.unit,
                             theme: theme,
                             emphasis: stat.highlight
                         )
@@ -141,7 +142,7 @@ private struct StatCardView: View {
                     Spacer(minLength: 16)
 
                     VStack(alignment: .trailing, spacing: 8) {
-                        Text(LocalizedStringKey(stat.derivationType.title))
+                        Text(stat.derivationType.localizedTitle(locale: locale))
                             .font(.caption2.weight(.bold))
                             .foregroundStyle(palette.textSecondary)
                             .padding(.horizontal, 10)
@@ -159,11 +160,11 @@ private struct StatCardView: View {
                 statDecoration
                     .frame(height: stat.highlight ? 118 : 84)
 
-                Text(LocalizedStringKey(stat.shortDescription))
+                Text(stat.shortDescription)
                     .font(.subheadline.weight(.medium))
                     .foregroundStyle(palette.textSecondary)
 
-                Text(LocalizedStringKey(stat.wittyComparison))
+                Text(stat.wittyComparison)
                     .font(LunivoTypography.editorial(stat.highlight ? 20 : 18, weight: .medium))
                     .foregroundStyle(palette.textPrimary)
 
@@ -171,14 +172,14 @@ private struct StatCardView: View {
                     TabView(selection: $alternateIndex) {
                         ForEach(Array(stat.alternateRepresentations.enumerated()), id: \.element.id) { index, alternate in
                             VStack(alignment: .leading, spacing: 6) {
-                                Text(LocalizedStringKey(alternate.title))
+                                Text(alternate.title)
                                     .font(.caption.weight(.semibold))
                                     .tracking(1.8)
                                     .foregroundStyle(palette.textSecondary)
                                 Text(alternate.value)
                                     .font(.headline.weight(.semibold))
                                     .foregroundStyle(palette.textPrimary)
-                                Text(LocalizedStringKey(alternate.subtitle))
+                                Text(alternate.subtitle)
                                     .font(.caption)
                                     .foregroundStyle(palette.textSecondary)
                             }
@@ -293,15 +294,25 @@ private extension Milestone {
             rawValue: targetValue,
             formattedValue: value,
             compactValue: value,
-            unit: "milestone",
+            unit: LunivoLocalization.string("milestone", locale: locale),
             precisionStyle: .count,
             derivationType: .lifestyleEstimate,
             shortDescription: description,
-            wittyComparison: estimatedDate.map { "Estimated for \(LunivoDateFormatter.medium(date: $0, locale: locale))." } ?? "Already reached.",
-            methodologySummary: "Projected using the source stat's current rate.",
+            wittyComparison: estimatedDate.map {
+                LunivoLocalization.formatted("Estimated for %@.", locale: locale, LunivoDateFormatter.medium(date: $0, locale: locale))
+            } ?? LunivoLocalization.string("Already reached.", locale: locale),
+            methodologySummary: LunivoLocalization.string("Projected using the current live rate of the source statistic.", locale: locale),
             alternateRepresentations: [
-                LifeStatAlternate(title: "Progress", value: LunivoNumberFormatter.exact(progress * 100, locale: locale, fractionDigits: 1) + "%", subtitle: "Current completion"),
-                LifeStatAlternate(title: "Date", value: estimatedDate.map { LunivoDateFormatter.medium(date: $0, locale: locale) } ?? "Static", subtitle: "Projected milestone date")
+                LifeStatAlternate(
+                    title: LunivoLocalization.string("Progress", locale: locale),
+                    value: LunivoNumberFormatter.exact(progress * 100, locale: locale, fractionDigits: 1) + "%",
+                    subtitle: LunivoLocalization.string("Current completion", locale: locale)
+                ),
+                LifeStatAlternate(
+                    title: LunivoLocalization.string("Date", locale: locale),
+                    value: estimatedDate.map { LunivoDateFormatter.medium(date: $0, locale: locale) } ?? LunivoLocalization.string("Static", locale: locale),
+                    subtitle: LunivoLocalization.string("Projected milestone date", locale: locale)
+                )
             ],
             nextMilestones: [self],
             deltaPerSecond: 0,

@@ -27,7 +27,7 @@ struct MilestonesView: View {
                                     .font(LunivoTypography.hero(44))
                                     .monospacedDigit()
                                     .foregroundStyle(palette.accent)
-                                Text(LocalizedStringKey(hero.estimatedDate.map { LunivoDateFormatter.medium(date: $0, locale: model.locale) } ?? "Static"))
+                                Text(hero.estimatedDate.map { LunivoDateFormatter.medium(date: $0, locale: model.locale) } ?? LunivoLocalization.string("Static", locale: model.locale))
                                     .font(.headline.weight(.medium))
                                     .foregroundStyle(palette.textSecondary)
                                 ProgressView(value: hero.progress)
@@ -100,7 +100,7 @@ struct MilestoneRow: View {
             VStack(alignment: .leading, spacing: 12) {
                 HStack {
                     VStack(alignment: .leading, spacing: 6) {
-                        Text(LocalizedStringKey(milestone.title))
+                        Text(milestone.title)
                             .font(.headline.weight(.semibold))
                             .foregroundStyle(palette.textPrimary)
                         Text(milestone.value)
@@ -128,7 +128,7 @@ struct MilestoneRow: View {
                 ProgressView(value: milestone.progress)
                     .tint(palette.accent)
 
-                Text(LocalizedStringKey(milestone.description))
+                Text(milestone.description)
                     .font(.footnote)
                     .foregroundStyle(palette.textSecondary)
             }

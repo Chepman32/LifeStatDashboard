@@ -5,6 +5,7 @@ struct StatDetailView: View {
 
     @EnvironmentObject private var model: AppModel
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.locale) private var locale
     @State private var mode: DetailMode = .overview
     @State private var shareImage: UIImage?
     @State private var isSharing = false
@@ -24,7 +25,7 @@ struct StatDetailView: View {
 
                         Picker("Mode", selection: $mode) {
                             ForEach(DetailMode.allCases) { mode in
-                                Text(LocalizedStringKey(mode.title)).tag(mode)
+                                Text(mode.localizedTitle(locale: locale)).tag(mode)
                             }
                         }
                         .pickerStyle(.segmented)
@@ -89,7 +90,7 @@ struct StatDetailView: View {
         GlassCard(theme: theme, cornerRadius: 36, padding: 24) {
             VStack(alignment: .leading, spacing: 18) {
                 Label {
-                    Text(LocalizedStringKey(stat.title))
+                    Text(stat.title)
                 } icon: {
                     Image(systemName: stat.iconName)
                 }
@@ -98,14 +99,14 @@ struct StatDetailView: View {
 
                 RollingNumberText(text: stat.formattedValue, unit: stat.unit, theme: theme, emphasis: true)
 
-                Text(LocalizedStringKey(stat.derivationType.title))
+                Text(stat.derivationType.localizedTitle(locale: locale))
                     .font(.caption.weight(.bold))
                     .foregroundStyle(palette.textSecondary)
                     .padding(.horizontal, 12)
                     .padding(.vertical, 8)
                     .background(.white.opacity(0.08), in: Capsule())
 
-                Text(LocalizedStringKey(stat.shortDescription))
+                Text(stat.shortDescription)
                     .font(.headline.weight(.medium))
                     .foregroundStyle(palette.textSecondary)
             }
@@ -120,13 +121,13 @@ struct StatDetailView: View {
                 Text("Context")
                     .font(.headline.weight(.semibold))
                     .foregroundStyle(palette.textPrimary)
-                Text(LocalizedStringKey(stat.wittyComparison))
+                Text(stat.wittyComparison)
                     .font(LunivoTypography.editorial(28))
                     .foregroundStyle(palette.textPrimary)
 
                 Divider().overlay(.white.opacity(0.1))
 
-                Text(LocalizedStringKey(stat.methodologySummary))
+                Text(stat.methodologySummary)
                     .font(.body.weight(.medium))
                     .foregroundStyle(palette.textSecondary)
             }
@@ -141,10 +142,10 @@ struct StatDetailView: View {
                 Text("How it is calculated")
                     .font(.headline.weight(.semibold))
                     .foregroundStyle(palette.textPrimary)
-                Text(LocalizedStringKey(stat.methodologySummary))
+                Text(stat.methodologySummary)
                     .font(.body.weight(.medium))
                     .foregroundStyle(palette.textSecondary)
-                Text(LocalizedStringKey(stat.derivationType.title))
+                Text(stat.derivationType.localizedTitle(locale: locale))
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(palette.accent)
                 Text("These numbers are deterministic and local only. No external services are involved.")
@@ -160,14 +161,14 @@ struct StatDetailView: View {
             ForEach(stat.alternateRepresentations) { alternate in
                 GlassCard(theme: theme, cornerRadius: 28, padding: 18) {
                     VStack(alignment: .leading, spacing: 8) {
-                        Text(LocalizedStringKey(alternate.title))
+                        Text(alternate.title)
                             .font(.caption.weight(.semibold))
                             .tracking(2)
                             .foregroundStyle(theme.palette.textSecondary)
                         Text(alternate.value)
                             .font(.title2.weight(.bold))
                             .foregroundStyle(theme.palette.textPrimary)
-                        Text(LocalizedStringKey(alternate.subtitle))
+                        Text(alternate.subtitle)
                             .font(.subheadline)
                             .foregroundStyle(theme.palette.textSecondary)
                     }
@@ -201,6 +202,10 @@ struct StatDetailView: View {
             case .comparisons: "Comparisons"
             case .milestones: "Milestones"
             }
+        }
+
+        func localizedTitle(locale: Locale) -> String {
+            LunivoLocalization.string(title, locale: locale)
         }
     }
 }

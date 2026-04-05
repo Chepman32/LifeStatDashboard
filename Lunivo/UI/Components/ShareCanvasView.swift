@@ -65,10 +65,10 @@ struct ShareCanvasView: View {
                     .monospacedDigit()
                     .foregroundStyle(palette.textPrimary)
                     .minimumScaleFactor(0.5)
-                Text(LunivoLocalization.string(stat.unit, locale: locale))
+                Text(stat.unit)
                     .font(.title3.weight(.semibold))
                     .foregroundStyle(palette.accent)
-                Text(LocalizedStringKey(stat.wittyComparison))
+                Text(stat.wittyComparison)
                     .font(LunivoTypography.editorial(28))
                     .foregroundStyle(palette.textPrimary)
                 if configuration.includeMethodology {
@@ -82,16 +82,16 @@ struct ShareCanvasView: View {
         let palette = configuration.theme.palette
         return GlassCard(theme: configuration.theme, cornerRadius: 42, padding: 36) {
             VStack(alignment: .leading, spacing: 24) {
-                Text(stat.compactValue + " " + LunivoLocalization.string(stat.unit, locale: locale))
+                Text(stat.compactValue + " " + stat.unit)
                     .font(LunivoTypography.hero(72))
                     .monospacedDigit()
                     .foregroundStyle(palette.textPrimary)
-                Text(LocalizedStringKey(stat.wittyComparison))
+                Text(stat.wittyComparison)
                     .font(LunivoTypography.editorial(36, weight: .bold))
                     .foregroundStyle(palette.textPrimary)
                     .multilineTextAlignment(.leading)
                 if let alternate = stat.alternateRepresentations.first {
-                    Text("\(LunivoLocalization.string(alternate.title, locale: locale)): \(alternate.value)")
+                    Text("\(alternate.title): \(alternate.value)")
                         .font(.headline.weight(.semibold))
                         .foregroundStyle(palette.textSecondary)
                 }
@@ -112,9 +112,9 @@ struct ShareCanvasView: View {
                 GlassCard(theme: configuration.theme, cornerRadius: 34, padding: 26) {
                     HStack {
                         VStack(alignment: .leading, spacing: 10) {
-                            Text(LocalizedStringKey(stat.title))
+                            Text(stat.title)
                                 .font(.headline.weight(.semibold))
-                            Text("\(stat.compactValue) \(LunivoLocalization.string(stat.unit, locale: locale))")
+                            Text("\(stat.compactValue) \(stat.unit)")
                                 .font(LunivoTypography.hero(36))
                                 .monospacedDigit()
                         }
@@ -145,12 +145,12 @@ struct ShareCanvasView: View {
                     Text(stat.compactValue)
                         .font(LunivoTypography.hero(82))
                         .monospacedDigit()
-                    Text(LocalizedStringKey(stat.title))
+                    Text(stat.title)
                         .font(LunivoTypography.editorial(28, weight: .bold))
                         .multilineTextAlignment(.center)
                 }
             }
-            Text(LocalizedStringKey(stat.wittyComparison))
+            Text(stat.wittyComparison)
                 .font(.title3.weight(.medium))
                 .foregroundStyle(palette.textSecondary)
                 .multilineTextAlignment(.center)
@@ -175,7 +175,7 @@ struct ShareCanvasView: View {
                         .font(LunivoTypography.hero(96))
                         .monospacedDigit()
                         .foregroundStyle(palette.textPrimary)
-                    Text(LunivoLocalization.string(stat.unit, locale: locale))
+                    Text(stat.unit)
                         .font(.title3.weight(.medium))
                         .foregroundStyle(palette.textSecondary)
                 }
@@ -185,7 +185,7 @@ struct ShareCanvasView: View {
     }
 
     private func methodologyTag(for stat: LifeStat) -> some View {
-        Text(LocalizedStringKey(stat.derivationType.title))
+        Text(stat.derivationType.localizedTitle(locale: locale))
             .font(.caption.weight(.bold))
             .padding(.horizontal, 14)
             .padding(.vertical, 9)

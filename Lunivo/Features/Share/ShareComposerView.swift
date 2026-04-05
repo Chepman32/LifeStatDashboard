@@ -3,6 +3,7 @@ import UIKit
 
 struct ShareComposerView: View {
     @EnvironmentObject private var model: AppModel
+    @Environment(\.locale) private var locale
     @State private var template: ShareTemplate = .heroNumber
     @State private var ratio: ShareRatio = .story
     @State private var selectedStatID: String?
@@ -88,7 +89,7 @@ struct ShareComposerView: View {
                         .foregroundStyle(palette.textSecondary)
                     Picker("Template", selection: $template) {
                         ForEach(ShareTemplate.allCases) { template in
-                            Text(template.title).tag(template)
+                            Text(template.localizedTitle(locale: locale)).tag(template)
                         }
                     }
                     .pickerStyle(.segmented)
@@ -101,7 +102,7 @@ struct ShareComposerView: View {
                         .foregroundStyle(palette.textSecondary)
                     Picker("Format", selection: $ratio) {
                         ForEach(ShareRatio.allCases) { ratio in
-                            Text(ratio.rawValue.capitalized).tag(ratio)
+                            Text(ratio.localizedTitle(locale: locale)).tag(ratio)
                         }
                     }
                     .pickerStyle(.segmented)
@@ -113,7 +114,7 @@ struct ShareComposerView: View {
                         set: { selectedStatID = $0 }
                     )) {
                         ForEach(allStats) { stat in
-                            Text(LocalizedStringKey(stat.title)).tag(Optional(stat.id))
+                            Text(stat.title).tag(Optional(stat.id))
                         }
                     }
                     .pickerStyle(.menu)

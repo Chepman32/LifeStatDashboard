@@ -23,11 +23,11 @@ struct LiveTickerRibbon: View {
                         .frame(width: 30)
 
                     VStack(alignment: .leading, spacing: 4) {
-                        Text(LocalizedStringKey(stat.title))
+                        Text(stat.title)
                             .font(.caption.weight(.semibold))
                             .tracking(1.8)
                             .foregroundStyle(palette.textSecondary)
-                        Text("\(stat.formattedValue) \(LunivoLocalization.string(stat.unit, locale: locale))")
+                        Text("\(stat.formattedValue) \(stat.unit)")
                             .font(visibility == .compact ? .subheadline.weight(.semibold) : .headline.weight(.semibold))
                             .monospacedDigit()
                             .foregroundStyle(palette.textPrimary)

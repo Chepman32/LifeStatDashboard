@@ -19,6 +19,10 @@ enum ShareTemplate: String, CaseIterable, Identifiable {
         case .minimalMono: "Minimal Mono"
         }
     }
+
+    func localizedTitle(locale: Locale) -> String {
+        LunivoLocalization.string(title, locale: locale)
+    }
 }
 
 enum ShareRatio: String, CaseIterable, Identifiable {
@@ -28,6 +32,19 @@ enum ShareRatio: String, CaseIterable, Identifiable {
     case wallpaper
 
     var id: String { rawValue }
+
+    var title: String {
+        switch self {
+        case .square: "Square"
+        case .story: "Story"
+        case .poster: "Poster"
+        case .wallpaper: "Wallpaper"
+        }
+    }
+
+    func localizedTitle(locale: Locale) -> String {
+        LunivoLocalization.string(title, locale: locale)
+    }
 
     var size: CGSize {
         switch self {
