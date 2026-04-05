@@ -15,8 +15,6 @@ struct SettingsView: View {
                 tickerSection(palette: palette, locale: locale)
                 localizationSection(palette: palette, locale: locale)
                 methodologySection(palette: palette, locale: locale)
-                privacySection(palette: palette, locale: locale)
-                aboutSection(palette: palette, locale: locale)
             }
             .scrollContentBackground(.hidden)
             .background(Color.clear)
@@ -169,23 +167,6 @@ struct SettingsView: View {
             .listRowBackground(rowBG(palette))
             Text(LunivoLocalization.string("All calculations happen on this device and are labeled by derivation type.", locale: locale))
                 .listRowBackground(rowBG(palette))
-        }
-    }
-
-    private func privacySection(palette: ThemePalette, locale: Locale) -> some View {
-        Section(LunivoLocalization.string("Privacy", locale: locale)) {
-            Text(LunivoLocalization.string("All calculations happen on this device.", locale: locale)).listRowBackground(rowBG(palette))
-            Text(LunivoLocalization.string("No account.", locale: locale)).listRowBackground(rowBG(palette))
-            Text(LunivoLocalization.string("No server.", locale: locale)).listRowBackground(rowBG(palette))
-            Text(LunivoLocalization.string("No tracking.", locale: locale)).listRowBackground(rowBG(palette))
-        }
-    }
-
-    private func aboutSection(palette: ThemePalette, locale: Locale) -> some View {
-        Section(LunivoLocalization.string("About", locale: locale)) {
-            Text(LunivoLocalization.string("Version 1.0", locale: locale)).listRowBackground(rowBG(palette))
-            Text(LunivoLocalization.string("Built as a native SwiftUI iPhone app with deterministic offline calculations.", locale: locale)).listRowBackground(rowBG(palette))
-            Text(LunivoLocalization.string("Typography uses Apple-native system type with Helvetica Neue for select editorial treatments.", locale: locale)).listRowBackground(rowBG(palette))
         }
     }
 }
