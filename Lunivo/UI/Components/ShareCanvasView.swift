@@ -7,43 +7,20 @@ struct ShareCanvasView: View {
 
     var body: some View {
         GeometryReader { proxy in
-            let palette = configuration.theme.palette
             let canvasSize = proxy.size
 
-            ZStack {
-                CosmicBackgroundView(theme: configuration.theme, intensity: 0.95, animate: false)
-
-                VStack(alignment: .leading, spacing: 28) {
-                    switch configuration.template {
-                    case .heroNumber:
-                        heroCard(stat: stats.first ?? placeholderStat)
-                    case .cosmicComparison:
-                        comparisonCard(stat: stats.first ?? placeholderStat)
-                    case .multiCard:
-                        multiCard(stats: Array(stats.prefix(3)))
-                    case .orbitPoster:
-                        orbitPoster(stat: stats.first ?? placeholderStat, canvasSize: canvasSize)
-                    case .minimalMono:
-                        minimalCard(stat: stats.first ?? placeholderStat)
-                    }
-
-                    Spacer(minLength: 0)
-
-                    HStack {
-                        Text("Offline. Local. Deterministic.")
-                            .font(.footnote.weight(.semibold))
-                            .foregroundStyle(palette.textSecondary)
-                        Spacer()
-                        Text("lifta")
-                            .font(LunivoTypography.editorial(18, weight: .bold))
-                            .foregroundStyle(palette.textPrimary.opacity(0.8))
-                    }
-                }
-                .padding(contentPadding(for: canvasSize))
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+            switch configuration.template {
+            case .heroNumber:
+                heroCard(stat: stats.first ?? placeholderStat)
+            case .cosmicComparison:
+                comparisonCard(stat: stats.first ?? placeholderStat)
+            case .multiCard:
+                multiCard(stats: Array(stats.prefix(3)))
+            case .orbitPoster:
+                orbitPoster(stat: stats.first ?? placeholderStat, canvasSize: canvasSize)
+            case .minimalMono:
+                minimalCard(stat: stats.first ?? placeholderStat)
             }
-            .frame(width: canvasSize.width, height: canvasSize.height)
-            .clipped()
         }
     }
 
@@ -177,10 +154,6 @@ struct ShareCanvasView: View {
                 .fixedSize(horizontal: false, vertical: true)
         }
         .frame(maxWidth: .infinity)
-    }
-
-    private func contentPadding(for size: CGSize) -> CGFloat {
-        min(56, max(20, size.width * 0.05))
     }
 
     private func minimalCard(stat: LifeStat) -> some View {
