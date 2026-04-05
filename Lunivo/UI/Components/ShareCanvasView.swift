@@ -6,49 +6,56 @@ struct ShareCanvasView: View {
     @Environment(\.locale) private var locale
 
     var body: some View {
-        let palette = configuration.theme.palette
-        ZStack {
-            CosmicBackgroundView(theme: configuration.theme, intensity: 0.95, animate: false)
+        GeometryReader { proxy in
+            let palette = configuration.theme.palette
+            let canvasSize = proxy.size
 
-            VStack(alignment: .leading, spacing: 28) {
-                HStack {
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text("Lunivo")
-                            .font(LunivoTypography.editorial(34, weight: .bold))
-                            .foregroundStyle(palette.textPrimary)
-                        Text("Your life, translated into impossible numbers.")
-                            .font(.subheadline.weight(.medium))
-                            .foregroundStyle(palette.textSecondary)
+            ZStack {
+                CosmicBackgroundView(theme: configuration.theme, intensity: 0.95, animate: false)
+
+                VStack(alignment: .leading, spacing: 28) {
+                    HStack {
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("Lunivo")
+                                .font(LunivoTypography.editorial(34, weight: .bold))
+                                .foregroundStyle(palette.textPrimary)
+                            Text("Your life, translated into impossible numbers.")
+                                .font(.subheadline.weight(.medium))
+                                .foregroundStyle(palette.textSecondary)
+                        }
+                        Spacer()
                     }
-                    Spacer()
-                }
 
-                switch configuration.template {
-                case .heroNumber:
-                    heroCard(stat: stats.first ?? placeholderStat)
-                case .cosmicComparison:
-                    comparisonCard(stat: stats.first ?? placeholderStat)
-                case .multiCard:
-                    multiCard(stats: Array(stats.prefix(3)))
-                case .orbitPoster:
-                    orbitPoster(stat: stats.first ?? placeholderStat)
-                case .minimalMono:
-                    minimalCard(stat: stats.first ?? placeholderStat)
-                }
+                    switch configuration.template {
+                    case .heroNumber:
+                        heroCard(stat: stats.first ?? placeholderStat)
+                    case .cosmicComparison:
+                        comparisonCard(stat: stats.first ?? placeholderStat)
+                    case .multiCard:
+                        multiCard(stats: Array(stats.prefix(3)))
+                    case .orbitPoster:
+                        orbitPoster(stat: stats.first ?? placeholderStat, canvasSize: canvasSize)
+                    case .minimalMono:
+                        minimalCard(stat: stats.first ?? placeholderStat)
+                    }
 
-                Spacer()
+                    Spacer(minLength: 0)
 
-                HStack {
-                    Text("Offline. Local. Deterministic.")
-                        .font(.footnote.weight(.semibold))
-                        .foregroundStyle(palette.textSecondary)
-                    Spacer()
-                    Text("lifta")
-                        .font(LunivoTypography.editorial(18, weight: .bold))
-                        .foregroundStyle(palette.textPrimary.opacity(0.8))
+                    HStack {
+                        Text("Offline. Local. Deterministic.")
+                            .font(.footnote.weight(.semibold))
+                            .foregroundStyle(palette.textSecondary)
+                        Spacer()
+                        Text("lifta")
+                            .font(LunivoTypography.editorial(18, weight: .bold))
+                            .foregroundStyle(palette.textPrimary.opacity(0.8))
+                    }
                 }
+                .padding(contentPadding(for: canvasSize))
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
             }
-            .padding(56)
+            .frame(width: canvasSize.width, height: canvasSize.height)
+            .clipped()
         }
     }
 
@@ -140,28 +147,35 @@ struct ShareCanvasView: View {
         }
     }
 
-    private func orbitPoster(stat: LifeStat) -> some View {
+    private func orbitPoster(stat: LifeStat, canvasSize: CGSize) -> some View {
         let palette = configuration.theme.palette
+        let outerDiameter = min(520, canvasSize.width * 0.82, canvasSize.height * 0.5)
+        let innerDiameter = outerDiameter * 0.81
+        let markerSize = min(24, max(14, outerDiameter * 0.046))
+        let orbitOffset = innerDiameter / 2
+        let valueFontSize = min(82, max(46, outerDiameter * 0.158))
+        let titleFontSize = min(28, max(22, outerDiameter * 0.054))
+
         return VStack(spacing: 28) {
             ZStack {
                 Circle()
                     .stroke(palette.cardStroke.opacity(0.45), lineWidth: 2)
-                    .frame(width: 520, height: 520)
+                    .frame(width: outerDiameter, height: outerDiameter)
                 Circle()
                     .stroke(palette.accent.opacity(0.34), lineWidth: 10)
-                    .frame(width: 420, height: 420)
+                    .frame(width: innerDiameter, height: innerDiameter)
                 Circle()
                     .fill(palette.accent)
-                    .frame(width: 24, height: 24)
-                    .offset(x: 210, y: 0)
+                    .frame(width: markerSize, height: markerSize)
+                    .offset(x: orbitOffset, y: 0)
                 VStack(spacing: 10) {
                     Text(displayValue(for: stat))
-                        .font(LunivoTypography.hero(82))
+                        .font(LunivoTypography.hero(valueFontSize))
                         .monospacedDigit()
                         .lineLimit(1)
                         .minimumScaleFactor(0.5)
                     Text(stat.title)
-                        .font(LunivoTypography.editorial(28, weight: .bold))
+                        .font(LunivoTypography.editorial(titleFontSize, weight: .bold))
                         .multilineTextAlignment(.center)
                         .lineLimit(3)
                         .minimumScaleFactor(0.75)
@@ -175,6 +189,11 @@ struct ShareCanvasView: View {
                 .minimumScaleFactor(0.8)
                 .fixedSize(horizontal: false, vertical: true)
         }
+        .frame(maxWidth: .infinity)
+    }
+
+    private func contentPadding(for size: CGSize) -> CGFloat {
+        min(56, max(20, size.width * 0.05))
     }
 
     private func minimalCard(stat: LifeStat) -> some View {
