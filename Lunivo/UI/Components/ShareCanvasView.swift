@@ -14,15 +14,17 @@ struct ShareCanvasView: View {
                 CosmicBackgroundView(theme: configuration.theme, intensity: 0.95, animate: false)
 
                 VStack(alignment: .leading, spacing: 28) {
-                    HStack {
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text("Lunivo")
-                                .font(LunivoTypography.editorial(34, weight: .bold))
-                                .foregroundStyle(palette.textPrimary)
-                            Text("Your life, translated into impossible numbers.")
-                                .font(.subheadline.weight(.medium))
-                                .foregroundStyle(palette.textSecondary)
-                        }
+                    HStack(spacing: 12) {
+                        Image(uiImage: UIImage(named: "AppIconImage") ?? UIImage())
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 48, height: 48)
+                            .clipShape(RoundedRectangle(cornerRadius: 11, style: .continuous))
+                        Text("Lunivo")
+                            .font(LunivoTypography.editorial(42, weight: .bold))
+                            .foregroundStyle(palette.textPrimary)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.7)
                         Spacer()
                     }
 
@@ -63,10 +65,7 @@ struct ShareCanvasView: View {
         let palette = configuration.theme.palette
         return GlassCard(theme: configuration.theme, cornerRadius: 40, padding: 36) {
             VStack(alignment: .leading, spacing: 18) {
-                Text(LunivoLocalization.string(stat.title, locale: locale).uppercased(with: locale))
-                    .font(.caption.weight(.bold))
-                    .tracking(2.6)
-                    .foregroundStyle(palette.textSecondary)
+                brandLockup(palette: palette)
                 Text(displayValue(for: stat))
                     .font(LunivoTypography.hero(110))
                     .monospacedDigit()
@@ -206,10 +205,7 @@ struct ShareCanvasView: View {
             )
             .overlay {
                 VStack(alignment: .leading, spacing: 18) {
-                    Text(LunivoLocalization.string(stat.title, locale: locale).uppercased(with: locale))
-                        .font(.caption.weight(.bold))
-                        .tracking(3)
-                        .foregroundStyle(palette.textSecondary)
+                    brandLockup(palette: palette)
                     Text(displayValue(for: stat))
                         .font(LunivoTypography.hero(96))
                         .monospacedDigit()
@@ -223,6 +219,24 @@ struct ShareCanvasView: View {
                 .padding(42)
             }
             .frame(maxWidth: .infinity, minHeight: 560)
+    }
+
+    private func brandLockup(palette: ThemePalette) -> some View {
+        HStack(spacing: 12) {
+            Image(uiImage: UIImage(named: "AppIconImage") ?? UIImage())
+                .resizable()
+                .scaledToFill()
+                .frame(width: 44, height: 44)
+                .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+
+            Text("Lunivo")
+                .font(LunivoTypography.editorial(34, weight: .bold))
+                .foregroundStyle(palette.textPrimary)
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("Lunivo")
     }
 
     private func methodologyTag(for stat: LifeStat) -> some View {

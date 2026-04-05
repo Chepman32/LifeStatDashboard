@@ -24,9 +24,10 @@ struct ShareComposerView: View {
 
                     GlassCard(theme: theme, cornerRadius: 34, padding: 12) {
                         ShareCanvasView(stats: selectedStats, configuration: configuration)
-                            .frame(height: 420)
+                            .aspectRatio(ratio.size.width / ratio.size.height, contentMode: .fit)
                             .clipShape(RoundedRectangle(cornerRadius: 26, style: .continuous))
                     }
+                    .animation(.easeInOut(duration: 0.25), value: ratio)
 
                     controls(theme: theme)
 
