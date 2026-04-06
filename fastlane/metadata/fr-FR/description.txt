@@ -53,5 +53,3 @@ Appuyez sur n'importe quelle carte de statistique pour ouvrir sa vue détaillée
 Les statistiques exactes — comme les secondes vécues, les jours bissextiles ou les orbites terrestres — utilisent une arithmétique calendaire précise et des constantes astronomiques vérifiées. Les estimations de mode de vie — comme les repas ou les pas — utilisent des moyennes mondiales bien documentées et sont toujours clairement indiquées.
 
 VOTRE VIE À GRANDE ÉCHELLE
-
-La plupart des applications se concentrent sur ce que vous n'avez pas encore fait. Lunivo vous montre ce que vous avez déjà accompli — en battements de cœur, en orbites, en respirations, en kilomètres parcourus dans l'espace — et vous laisse entièrement la signification.

@@ -53,5 +53,3 @@ Ketik mana-mana kad statistik untuk membuka paparan terperinci penuhnya. Lihat f
 Statistik tepat — seperti saat yang telah dijalani, tahun lompat, atau orbit Bumi — menggunakan aritmetik kalendar yang tepat dan pemalar astronomi yang telah disahkan. Anggaran gaya hidup — seperti makanan atau langkah — menggunakan purata global yang telah dikaji dengan baik dan sentiasa ditandai dengan jelas.
 
 KEHIDUPAN ANDA DALAM SKALA
-
-Kebanyakan aplikasi memberi tumpuan kepada apa yang belum anda lakukan. Lunivo menunjukkan apa yang telah anda capai — dalam denyutan jantung, dalam orbit, dalam nafas, dalam kilometer yang dilalui melalui angkasa — dan sepenuhnya menyerahkan makna kepada anda.
