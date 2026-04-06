@@ -74,7 +74,6 @@
 		02D07F2A5FBCDF0B2385CA2A /* PersistenceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		09A3B694A9394D78ADA5B9A4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		1D41015BC3F347B48B7A57AE /* Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
-		6A6BDB8F0E6C4826B7D1C7F0 /* LunivoSupplementalTranslations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LunivoSupplementalTranslations.swift; sourceTree = "<group>"; };
 		252BE1D747B81D623E8AE809 /* RollingNumberText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RollingNumberText.swift; sourceTree = "<group>"; };
 		334282688EB04573E62A41C4 /* LifeTimeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LifeTimeline.swift; sourceTree = "<group>"; };
 		35003674DFAFDDA012201884 /* LiveTickerRibbon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiveTickerRibbon.swift; sourceTree = "<group>"; };
@@ -87,6 +86,7 @@
 		4726643C7BF71735FC5338FD /* StatDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatDetailView.swift; sourceTree = "<group>"; };
 		4CEDCC26F628E1D3755DB82A /* AppModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		60DB49AC6D5DA8188752890E /* Formatters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		6A6BDB8F0E6C4826B7D1C7F0 /* LunivoSupplementalTranslations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LunivoSupplementalTranslations.swift; sourceTree = "<group>"; };
 		76CCF4663A2456C6E440F4A5 /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		791F7701437519B24FAA6913 /* ShareRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShareRenderer.swift; sourceTree = "<group>"; };
 		7E49239E44C89EAD02647925 /* Icon-76@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
@@ -761,7 +761,7 @@
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RUYUP6W3YT;
@@ -792,7 +792,7 @@
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RUYUP6W3YT;
