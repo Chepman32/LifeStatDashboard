@@ -209,6 +209,7 @@ struct UserProfile: Codable, Equatable {
     var largeTextMode: Bool
     var showMethodologyInShare: Bool
     var showEstimatedTagsInShare: Bool
+    var hapticsEnabled: Bool
 
     static let `default` = UserProfile(
         birthDate: Calendar.current.date(byAdding: .year, value: -28, to: .now) ?? .now,
@@ -223,7 +224,8 @@ struct UserProfile: Codable, Equatable {
         backgroundIntensity: 0.85,
         largeTextMode: false,
         showMethodologyInShare: true,
-        showEstimatedTagsInShare: true
+        showEstimatedTagsInShare: true,
+        hapticsEnabled: true
     )
 
     var effectiveBirthDate: Date {
@@ -240,5 +242,55 @@ struct UserProfile: Codable, Equatable {
 
     var isValidBirthDate: Bool {
         effectiveBirthDate <= .now && effectiveBirthDate >= Calendar.current.date(byAdding: .year, value: -130, to: .now)!
+    }
+
+    init(
+        birthDate: Date,
+        hasBirthTime: Bool,
+        unitPreference: UnitPreference,
+        selectedTheme: LunivoTheme,
+        motionPreference: MotionPreference,
+        displayDensity: DisplayDensity,
+        liveTickerVisibility: LiveTickerVisibility,
+        liveTickerAutoCycle: Bool,
+        liveTickerInterval: Double,
+        backgroundIntensity: Double,
+        largeTextMode: Bool,
+        showMethodologyInShare: Bool,
+        showEstimatedTagsInShare: Bool,
+        hapticsEnabled: Bool = true
+    ) {
+        self.birthDate = birthDate
+        self.hasBirthTime = hasBirthTime
+        self.unitPreference = unitPreference
+        self.selectedTheme = selectedTheme
+        self.motionPreference = motionPreference
+        self.displayDensity = displayDensity
+        self.liveTickerVisibility = liveTickerVisibility
+        self.liveTickerAutoCycle = liveTickerAutoCycle
+        self.liveTickerInterval = liveTickerInterval
+        self.backgroundIntensity = backgroundIntensity
+        self.largeTextMode = largeTextMode
+        self.showMethodologyInShare = showMethodologyInShare
+        self.showEstimatedTagsInShare = showEstimatedTagsInShare
+        self.hapticsEnabled = hapticsEnabled
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        birthDate = try container.decode(Date.self, forKey: .birthDate)
+        hasBirthTime = try container.decode(Bool.self, forKey: .hasBirthTime)
+        unitPreference = try container.decode(UnitPreference.self, forKey: .unitPreference)
+        selectedTheme = try container.decode(LunivoTheme.self, forKey: .selectedTheme)
+        motionPreference = try container.decode(MotionPreference.self, forKey: .motionPreference)
+        displayDensity = try container.decode(DisplayDensity.self, forKey: .displayDensity)
+        liveTickerVisibility = try container.decode(LiveTickerVisibility.self, forKey: .liveTickerVisibility)
+        liveTickerAutoCycle = try container.decode(Bool.self, forKey: .liveTickerAutoCycle)
+        liveTickerInterval = try container.decode(Double.self, forKey: .liveTickerInterval)
+        backgroundIntensity = try container.decode(Double.self, forKey: .backgroundIntensity)
+        largeTextMode = try container.decode(Bool.self, forKey: .largeTextMode)
+        showMethodologyInShare = try container.decode(Bool.self, forKey: .showMethodologyInShare)
+        showEstimatedTagsInShare = try container.decode(Bool.self, forKey: .showEstimatedTagsInShare)
+        hapticsEnabled = try container.decodeIfPresent(Bool.self, forKey: .hapticsEnabled) ?? true
     }
 }

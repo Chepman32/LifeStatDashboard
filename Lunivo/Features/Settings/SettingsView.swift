@@ -115,6 +115,12 @@ struct SettingsView: View {
             }
             .listRowBackground(rowBG(palette))
 
+            Toggle(LunivoLocalization.string("Haptic feedback", locale: locale), isOn: Binding(
+                get: { model.profile.hapticsEnabled },
+                set: { v in model.updateProfile { $0.hapticsEnabled = v } }
+            ))
+            .listRowBackground(rowBG(palette))
+
             Stepper(
                 "\(LunivoLocalization.string("Ticker interval", locale: locale)): \(model.profile.liveTickerInterval.formatted(.number.precision(.fractionLength(0))))s",
                 value: Binding(

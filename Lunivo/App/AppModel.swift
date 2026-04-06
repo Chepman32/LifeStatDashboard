@@ -34,6 +34,7 @@ final class AppModel: ObservableObject {
             }
         )
 
+        HapticsManager.shared.enabled = storedProfile.hapticsEnabled
         startTicker()
     }
 
@@ -66,6 +67,7 @@ final class AppModel: ObservableObject {
 
     func updateProfile(_ update: (inout UserProfile) -> Void) {
         update(&profile)
+        HapticsManager.shared.enabled = profile.hapticsEnabled
         persistence.saveProfile(profile)
         refresh()
     }

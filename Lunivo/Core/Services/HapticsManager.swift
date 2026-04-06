@@ -11,6 +11,8 @@ final class HapticsManager {
     private let selection = UISelectionFeedbackGenerator()
     private let notification = UINotificationFeedbackGenerator()
 
+    var enabled = true
+
     private init() {}
 
     func prepare() {
@@ -20,6 +22,7 @@ final class HapticsManager {
     }
 
     func impact(_ style: UIImpactFeedbackGenerator.FeedbackStyle) {
+        guard enabled else { return }
         switch style {
         case .light:
             light.impactOccurred()
@@ -33,10 +36,12 @@ final class HapticsManager {
     }
 
     func selectionChanged() {
+        guard enabled else { return }
         selection.selectionChanged()
     }
 
     func notify(_ type: UINotificationFeedbackGenerator.FeedbackType) {
+        guard enabled else { return }
         notification.notificationOccurred(type)
     }
 }

@@ -65,8 +65,9 @@ struct LiveTickerRibbon: View {
             )
             .task(id: autoCycle) {
                 guard autoCycle, stats.count > 1 else { return }
-                while autoCycle {
+                while !Task.isCancelled {
                     try? await Task.sleep(for: .seconds(cycleInterval))
+                    guard !Task.isCancelled else { break }
                     await MainActor.run { step(1) }
                 }
             }
