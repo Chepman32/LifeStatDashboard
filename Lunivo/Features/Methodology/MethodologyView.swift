@@ -4,12 +4,22 @@ struct MethodologyView: View {
     @EnvironmentObject private var model: AppModel
     @Environment(\.locale) private var locale
     @State private var searchText = ""
+    @State private var expandedSections: Set<String> = []
 
     var body: some View {
         let theme = model.profile.selectedTheme
 
         List(filteredSections) { section in
-            DisclosureGroup {
+            DisclosureGroup(isExpanded: Binding(
+                get: { expandedSections.contains(section.title) },
+                set: { isExpanded in
+                    if isExpanded {
+                        expandedSections.insert(section.title)
+                    } else {
+                        expandedSections.remove(section.title)
+                    }
+                }
+            )) {
                 ForEach(section.rows) { row in
                     VStack(alignment: .leading, spacing: 8) {
                         Text(row.title)
